@@ -10,7 +10,7 @@
 ### Integrantes:
 
 - ###### Joel:
-  - Lores ipsum
+  - Mi Nombre es Joel Gutierrez, actualmente estoy trabajando en el area de ventas por telefonía, la verdad que me gusta mucho la programación y el poder dar una solución a problemas cotidianos para empresas y clientes que lo soliciten.
    ###### David:
     - Lores ipsum
    ###### Lucas:

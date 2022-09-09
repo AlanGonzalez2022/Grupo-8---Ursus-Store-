@@ -12,7 +12,8 @@
 - ###### Joel:
   - Mi Nombre es Joel Gutierrez, actualmente estoy trabajando en el area de ventas por telefonía, la verdad que me gusta mucho la programación y el poder dar una solución a problemas cotidianos para empresas y clientes que lo soliciten.
    ###### David:
-    - Lores ipsum
+    - Mi nombre es David Blanco, trabajo actualmente como analista contable, siempre me llamo la atencion todo el mundo de la programacion pero nunca me anime a 
+      entrar, estoy arrancando desde 0 pero con muchisima motivacion.  
    ###### Lucas:
     - Lores ipsum
    ###### Nahuel:

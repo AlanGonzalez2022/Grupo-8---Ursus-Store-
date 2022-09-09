@@ -26,7 +26,7 @@
 - Claridad a la hora de realizar búsquedas: Estructura separada por temporada como banner principal, categoría en su siguiente escalón y ofertadas inmediatamente debajo
 - Asimismo, separación por género en el margen izquierdo para ampliar la posibilidad de elección de los clientes de acuerdo a sus necesidades
 - Navigation bar con opciones de Sign Up, Sign In y carrito de compras: Apuntamos a ofrecer las 3 necesidades del cliente de una forma simple, estética y visualmente clara
-- Footer: (A completar desarrollo)
+- Footer: Vamos a agregar los siguientes items, -Sobre nosotros,  -Los derechos de autor, -Soporte(Pestaña nueva para un envío de mail), - Redes sociales.
 
 ## Referentes
 

@@ -27,7 +27,7 @@
 - Claridad a la hora de realizar búsquedas: Estructura separada por temporada como banner principal, categoría en su siguiente escalón y ofertadas inmediatamente debajo
 - Asimismo, separación por género en el margen izquierdo para ampliar la posibilidad de elección de los clientes de acuerdo a sus necesidades
 - Navigation bar con opciones de Sign Up, Sign In y carrito de compras: Apuntamos a ofrecer las 3 necesidades del cliente de una forma simple, estética y visualmente clara
-- Footer: Vamos a agregar los siguientes items, -Sobre nosotros,  -Los derechos de autor, -Soporte(Pestaña nueva para un envío de mail), - Redes sociales.
+- Footer: Vamos a agregar los siguientes items, -Sobre nosotros, -Nuestro locales,  -Los derechos de autor, -Soporte(Pestaña nueva para un envío de mail), - Redes sociales.
 
 ## Referentes
 
@@ -37,7 +37,7 @@ Zara: Mucho más minimalista, centrado en un gran poder de development y estéti
 
 3: Nike: Su página web es simple: Footer negro, navigation bar en blanco y letras de ambos en colores opuestos, al igual que todo el cuerpo de la página. La única coloración surge de los productos a la venta, lo que logra en nuestra opinión que el cliente se focalice en eso y no en cuestiones estéticas ajenas al sentido del sitio web.
 
-4: Adidas:
+4: Adidas: 
 
 5: El sitio de nuestros compañeros!:
 

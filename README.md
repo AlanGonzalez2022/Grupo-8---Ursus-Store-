@@ -5,7 +5,7 @@
 ## Tienda de ropa para gente joven en el rango de 15-30 años
 
 ### Por qué dicho mercado
-- Somos un grupo de emprendedores jóvenes que pertenecen a una generación que necesita respuestas en tiempo real y una visualización inmediata y efectiva de sus búsquedas. Conocemos las necesidades de nuestro público y es por ello que apuntamos a una visualización web simple, clara, straight to the point donde podrán buscar de acuerdo a su género, categoría y oferta por temporada. Una vez que eligen su estilo de ropa se abrirá la posibilidad de buscar en la página interna de dicho estilo toda la indumentaria en esa línea categorizada por tamaño, color, precio, así como todas las funcionalidades necesarias tanto para continuar buscando productos como para dirigirse hacia el pago de sus productos.
+- Somos un grupo de emprendedores jóvenes que pertenecen a una generación que necesita respuestas en tiempo real y una visualización inmediata y efectiva de sus búsquedas. Conocemos las necesidades de nuestro público y es por ello que apuntamos a una visualización web simple, clara, straight to the point donde podrán buscar de acuerdo a su género, categoría y oferta por temporada. Una vez que eligen su estilo de ropa se abrirá la posibilidad de buscar en la página interna de dicho estilo toda la indumentaria en esa línea categorizada por tamaño, color, precio, así como todas las funcionalidades necesarias tanto para continuar buscando productos como para dirigirse hacia el pago los mismos.
 
 ### Integrantes:
 
@@ -19,7 +19,7 @@
    ###### Nahuel:
     - Lores ipsum
    ###### Alan:
-    - Full-time trader, apasionado por los mercados, entiende las demandas de mercado de los jóvenes de su edad y busca colaborar desde su espacio para guiar a la misma
+    - Full-time trader, apasionado por los mercados y en una relación compleja con JavaScript. Entiendo las demandas de mercado de los jóvenes de mi edad y busco colaborar desde mi espacio para guiar a la misma de una forma rápida y amena.
 
 
 ## Características
@@ -35,11 +35,11 @@ Shein: Si bien se observa en cierta forma sobrecargado de información, tiene la
 
 Zara: Mucho más minimalista, centrado en un gran poder de development y estética más allá de un sitio de e-commerce. Nos ayudó su sección de items para observar cómo podíamos organizar los filtros por colores y tamaños.
 
-3:
+3: Nike: Su página web es simple: Footer negro, navigation bar en blanco y letras de ambos en colores opuestos, al igual que todo el cuerpo de la página. La única coloración surge de los productos a la venta, lo que logra en nuestra opinión que el cliente se focalice en eso y no en cuestiones estéticas ajenas al sentido del sitio web.
 
-4:
+4: Adidas:
 
-5:
+5: El sitio de nuestros compañeros!:
 
 
 

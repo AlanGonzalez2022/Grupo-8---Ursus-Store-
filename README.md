@@ -30,10 +30,10 @@
 - Footer: Vamos a agregar los siguientes items, -Sobre nosotros, -Nuestro locales,  -Los derechos de autor, -Soporte(Pestaña nueva para un envío de mail), - Redes sociales.
 
 ## Referentes
-https://shein.com
-https://kingofthekongo.com.ar
-https://vulkclothing.com/
-https://www.elburgues.com/
-https://bowen.com.ar/
+1. https://shein.com
+2. https://kingofthekongo.com.ar
+3. https://vulkclothing.com/
+4. https://www.elburgues.com/
+5. https://bowen.com.ar/
 
 Tomamos estos sitios de referencia ya que presentan un look&feel limpio, claro y moderno. Además apuntan al mismo target objetivo y comercializan productos similares a Ursus. También utilizamos referencias de estos para brindarle distintas facilidades al usuario a la hora de realizar su búsqueda con una gran variedad de filtros.

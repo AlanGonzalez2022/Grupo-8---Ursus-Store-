@@ -30,16 +30,10 @@
 - Footer: Vamos a agregar los siguientes items, -Sobre nosotros, -Nuestro locales,  -Los derechos de autor, -Soporte(Pestaña nueva para un envío de mail), - Redes sociales.
 
 ## Referentes
+https://shein.com
+https://kingofthekongo.com.ar
+https://vulkclothing.com/
+https://www.elburgues.com/
+https://bowen.com.ar/
 
-Shein: Si bien se observa en cierta forma sobrecargado de información, tiene la estructura necesaria para que el cliente pueda decidir entre varias formas de acceder a los productos deseados. Un banner por temporada, categorías en una navigation bar por encima del bar, y ofertas al pie de la página web. Fue util a la hora de organizar la estructura que queríamos que tuviera el sitio web para el público al que apuntamos.
-
-Zara: Mucho más minimalista, centrado en un gran poder de development y estética más allá de un sitio de e-commerce. Nos ayudó su sección de items para observar cómo podíamos organizar los filtros por colores y tamaños.
-
-3: Nike: Su página web es simple: Footer negro, navigation bar en blanco y letras de ambos en colores opuestos, al igual que todo el cuerpo de la página. La única coloración surge de los productos a la venta, lo que logra en nuestra opinión que el cliente se focalice en eso y no en cuestiones estéticas ajenas al sentido del sitio web.
-
-4: Adidas: 
-
-5: El sitio de nuestros compañeros!:
-
-
-
+Tomamos estos sitios de referencia ya que presentan un look&feel limpio, claro y moderno. Además apuntan al mismo target objetivo y comercializan productos similares a Ursus. También utilizamos referencias de estos para brindarle distintas facilidades al usuario a la hora de realizar su búsqueda con una gran variedad de filtros.

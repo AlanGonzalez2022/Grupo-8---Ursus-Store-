@@ -12,12 +12,11 @@
 - ###### Joel:
   - Mi Nombre es Joel Gutierrez, actualmente estoy trabajando en el area de ventas por telefonía, la verdad que me gusta mucho la programación y el poder dar una solución a problemas cotidianos para empresas y clientes que lo soliciten.
    ###### David:
-    - Mi nombre es David Blanco, trabajo actualmente como analista contable, siempre me llamo la atencion todo el mundo de la programacion pero nunca me anime a 
-      entrar, estoy arrancando desde 0 pero con muchisima motivacion.  
+    - Mi nombre es David Blanco, trabajo actualmente como analista contable, siempre me llamo la atencion todo el mundo de la programacion pero nunca me anime a entrar, estoy arrancando desde 0 pero con muchisima motivacion.  
    ###### Lucas:
     - Mi nombre es Lucas Tassone, trabajo en una agencia de marketing digital, desarrollandome en Ads y CMs. Si bien empecé de cero con programación, a medida que avanza el curso, me entusiasma más y siempre con el objetivo de poder dedicarme a esto en el futuro.
    ###### Nahuel:
-    - Lores ipsum
+    - Mi nombre es Nahuel, actualmente me encuentro trabajando en una agencia digital en el area de Ads(Meta , Google , Linkedin, TikTok, etc.) y también como coordinador de equipo. Amante de los deportes y los videojuegos. 
    ###### Alan:
     - Full-time trader, apasionado por los mercados y en una relación compleja con JavaScript. Entiendo las demandas de mercado de los jóvenes de mi edad y busco colaborar desde mi espacio para guiar a la misma de una forma rápida y amena.
 

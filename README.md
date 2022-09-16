@@ -15,7 +15,7 @@
     - Mi nombre es David Blanco, trabajo actualmente como analista contable, siempre me llamo la atencion todo el mundo de la programacion pero nunca me anime a 
       entrar, estoy arrancando desde 0 pero con muchisima motivacion.  
    ###### Lucas:
-    - Lores ipsum
+    - Mi nombre es Lucas Tassone, trabajo en una agencia de marketing digital, desarrollandome en Ads y CMs. Si bien empecé de cero con programación, a medida que avanza el curso, me entusiasma más y siempre con el objetivo de poder dedicarme a esto en el futuro.
    ###### Nahuel:
     - Lores ipsum
    ###### Alan:

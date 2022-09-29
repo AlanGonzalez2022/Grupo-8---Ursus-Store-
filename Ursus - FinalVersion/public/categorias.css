@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.main-header{
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: -1vw;
+  margin-right: -5vw;
+  width: 100vw;
+  background-color: black;
+  position: fixed;
+  z-index: 2;
+  top: -1vw;
+}
+
+
+img.logo{
+    width: 20vw;
+    display: block;
+    margin-left: 14vw;
+}
+
+.right-navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25vw;
+    align-items: center;
+    size: 5vw;
+    margin-left: 52px;
+   }
+
+.right-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.right-navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgb(63,83,217);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding-top: 3vw;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 30vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: white solid 1px;
+    padding-bottom: white solid 1px;
+    overflow: auto;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    background-color: black;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      background-color: rgb(63,53,217);
+      cursor: pointer;
+    }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: rgb(63,53,217);}
+
+section{
+    width: 70%;
+    margin-left: 15vw;
+    margin-top: 4vw;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.categorias {
+    justify-content: center;
+}
+
+/*h2 classes*/
+
+.remeras {    
+    margin-bottom: 19vw;
+}
+
+h2.remeras{
+    margin-top: 18vw;
+}
+
+.remeras-fixing{
+    margin-top: -16vw;
+    color: white;
+}
+
+.shorts {    
+    margin-bottom: 2vw;
+    margin-top: 2vw
+}
+
+.calzado {    
+    margin-bottom: 2vw;
+    margin-top: 2vw
+}
+
+.vestidos {    
+    margin-bottom: 2vw;
+    margin-top: 2vw
+}
+
+/* Footer CSS */
+
+footer {
+    display: flex;
+    margin-top: 3vw;
+}
+
+.footer a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+}
+  
+.pie-de-pagina {
+    display: flex;
+}
+  
+.iconos {
+    display: flex;
+    color: white;
+    align-items: center;
+
+}
+
+footer i {
+    padding-left: 1em;
+}

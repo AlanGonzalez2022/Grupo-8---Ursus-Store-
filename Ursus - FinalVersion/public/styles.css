@@ -59,8 +59,8 @@ img.logo{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30vw;
-  margin-top: 9vw;
+  margin-bottom: 8vw;
+  margin-top: -17vw;
   margin-left: 0vw;
 }
 
@@ -98,8 +98,10 @@ img.logo{
 }
 
 
-h2{
+h3{
   color: white;
+  text-align: center;
+  padding-top: 17vw;
 }
 /* //////////////////////////////SLIDER NUMERO 1 FIN  //////////////////////////////*/
 
@@ -113,9 +115,9 @@ p {
   width: 90%;
   margin-left: 5vw;
   height: auto;
-  margin-top: 30vw;
+  margin-top: 2vw;
   border: solid yellow 5px;
-  margin-bottom: -16vw;
+  margin-bottom: -13vw;
 }
 
 .carrousel__contenedor {
@@ -181,6 +183,38 @@ opacity: 0.5;
 opacity: 1;
 }
 /* ///////////////////////////////////// FIN CARROUSEL DEL MEDIO //////////////////////////////////// */
+
+/*/////////////////////////////////////FOOTER////////////////////////////////////////////////////////*/
+
+/* Footer CSS */
+
+footer {
+  display: flex;
+  margin-top: 26vw;
+}
+
+.footer a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+}
+
+.pie-de-pagina {
+  display: flex;
+}
+
+.iconos {
+  display: flex;
+  color: white;
+  align-items: center;
+
+}
+
+footer i {
+  padding-left: 1em;
+}
+
+/*/////////////////////////////////////FIN FOOTER////////////////////////////////////////////////////////*/
 
 /* Dropdown Button */
 .dropbtn {

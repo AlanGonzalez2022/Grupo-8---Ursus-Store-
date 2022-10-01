@@ -66,7 +66,7 @@ img.logo{
   .dropdown {
     position: relative;
     display: inline-block;
-    padding-top: 3vw;
+    padding-top: 5.1vw;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -159,25 +159,42 @@ h2.remeras{
 footer {
     display: flex;
     margin-top: 3vw;
-}
-
-.footer a {
+  }
+  
+  .footer a {
     color: white;
     display: flex;
     text-decoration: none;
-}
+  }
+
+  .pie-de-pagina{
+      display: flex;
+  }
   
-.pie-de-pagina {
+  .pie-de-pagina-textos {
     display: flex;
-}
+    margin-left: 7vw;
+    font-size: 3vw;
+  }
   
-.iconos {
+  .iconos {
     display: flex;
     color: white;
     align-items: center;
-
-}
-
-footer i {
+  
+  }
+  
+  footer i {
     padding-left: 1em;
-}
+  }
+  
+  .fa-square-facebook, .fa-instagram, .fa-twitter{
+    margin-right: -3vw;
+  }
+  
+  .fa-envelope{
+    margin-right: 5vw;
+  }
+  
+  /*/////////////////////////////////////FIN FOOTER////////////////////////////////////////////////////////*/
+  

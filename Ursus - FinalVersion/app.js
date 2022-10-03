@@ -19,3 +19,7 @@ app.get('/categorias', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/categorias.html'));
 });
 
+app.get('/productosporcategoria', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/productosporcategoria.html'));
+});
+

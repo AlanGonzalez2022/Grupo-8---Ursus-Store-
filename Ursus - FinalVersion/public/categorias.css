@@ -111,7 +111,10 @@ img.logo{
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: rgb(63,53,217);}
+  .dropdown:hover .dropbtn {
+    background-color: rgb(63,53,217);
+    transition: 0.5s;
+  }
 
 section{
     width: 70%;
@@ -279,38 +282,57 @@ footer {
    font-size: 3.1vw;
    margin-top: 2vw;
  }
+
+ .remeras-fixing:hover, .marco-shorts:hover, .marco-calzado:hover, .marco-vestidos:hover, .marco-camisas:hover, .marco-anteojos:hover,
+  .marco-accesorios:hover, .marco-trajes:hover{
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transform: scale(1.2);
+    transition: 2s;
+  }
+
+  .right-navbar .fa-solid:hover{
+    color: rgb(63,53,217);
+    transform: scale(1.3);
+    transition: 0.5s;
+  }
+
+  .fa-brands:hover,.fa-envelope:hover, .pie-de-pagina-textos1:hover, .pie-de-pagina-textos2:hover, .pie-de-pagina-textos3:hover{
+    cursor: pointer;
+  }
+
 }
 
-@media (min-width:769px){
+@media (min-width:769px) {
   .main-header{
     top: -3vw;
+    width: 100%;
   }
 
   .primavera-titulo{
    font-size: 4vw;
    padding-top: 21vw;
- }
+  }
 
  .masvisitados-titulo, .oferta-titulo{
    font-size: 4vw;
- }
+  }
 
  .dropdown{
    top: -1.9vw;
    padding-top: 3.1vw;
- }
+  }
 
  .dropbtn{
    margin-top: 7vw;
    margin-left: 2vw;
- }
+  }
 
  .right-navbar a {
    text-decoration: none;
    color: white;
    margin-left: -3vw;
    font-size: 3vw;
- }
+  }
 
  .right-navbar {
    display: flex;
@@ -322,49 +344,91 @@ footer {
    margin-left: 9vw;
    margin-right: 6vw;
    padding-top: 3vw;
- }
+  }  
 
  .main-header-top-bar{
    margin-left: -1vw;
- }
+  }
 
  .remeras, .shorts, .calzado, .vestidos, .accesorios, .trajes-de-baño, .camisas, .anteojos{
    font-size: 5vw;
- }
+  }
+
+  .shorts{
+    margin-top: 23vw;
+  }
+
+  p.marco-shorts{
+    margin-top: 3vw;
+  }
 
  .footer {
   display: flex;
   margin-top: 3vw;
   margin-left: 6vw;
- }
+  }
 
  .pie-de-pagina{
    display: flex;
-   margin-left: 7vw;
+   margin-left: 5vw;
    font-size: 3vw;
- }
+  }
 
  .pie-de-pagina-textos{
    margin-right: 3vw;
- }
+  }
 
  .fa-square-facebook, .fa-instagram, .fa-twitter{
    margin-right: 0vw;
- }
+  }
  
  .fa-envelope{
    margin-right: 0vw;
- }
+  }
 
  .iconos{
-   font-size: 3vw;
-   margin-right: 11vw;
- }
+  font-size: 4vw;
+  margin-right: 3vw;
+  }
+
 
  .dropdown:hover .dropbtn {
    background-color: rgb(63,53,217);
    padding-right: 2vw;
    margin-left: 0vw;
- }
+   transition: 0.5s;
+  }
+
+  .enmarcado-categorias{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-left: -6vw;
+  }
+
+  .categorias{
+    width: 45%;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 3vw;
+    margin-left: 2vw;
+  }
+
+  .remeras-fixing:hover, .marco-shorts:hover, .marco-calzado:hover, .marco-vestidos:hover, .marco-camisas:hover, .marco-anteojos:hover,
+  .marco-accesorios:hover, .marco-trajes:hover{
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transform: scale(1.2);
+    transition: 2s;
+  }
+
+  .right-navbar .fa-solid:hover{
+    color: rgb(63,53,217);
+    transform: scale(1.3);
+    transition: 0.5s;
+  }
+
+  .fa-brands:hover,.fa-envelope:hover, .pie-de-pagina-textos1:hover, .pie-de-pagina-textos2:hover, .pie-de-pagina-textos3:hover{
+    cursor: pointer;
+  }
 }
   

@@ -215,6 +215,7 @@ footer {
   display: flex;
   color: white;
   align-items: center;
+  font-size: 3vw;
 
 }
 
@@ -283,9 +284,22 @@ footer i {
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: rgb(63,53,217);}
+  .dropdown:hover .dropbtn {
+    background-color: rgb(63,53,217);
+    transition: 0.5s;
+  }
 
- /* ////////////////////////////////////TERCER BANNER////////////////////////////////////////////////////////////////*
+ /* ////////////////////////////////////TERCER BANNER////////////////////////////////////////////////////////////////* */ 
+
+ .right-navbar .fa-solid:hover{
+  color: rgb(63,53,217);
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+.fa-brands:hover,.fa-envelope:hover, .pie-de-pagina-textos:hover{
+  cursor: pointer;
+} 
  
  /* ////////////////////////////////////Media Queries//////////////////////////////////////////////////////////////// */
 

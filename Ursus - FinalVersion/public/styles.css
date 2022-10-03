@@ -57,14 +57,7 @@ img.logo{
     text-decoration: none;
     color: white;
     margin-left: -3vw;
-    transition: transform .2s;
 }
-
-.right-navbar a:hover{
-    transform:scale(1.3);
-    color: rgb(63,53,217);
-}
-
 
 .container {
   width: 100%;

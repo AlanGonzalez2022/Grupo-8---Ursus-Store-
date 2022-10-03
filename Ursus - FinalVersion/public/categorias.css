@@ -163,6 +163,11 @@ h2.remeras{
     margin-top: 2vw
 }
 
+ .accesorios, .trajes-de-baño, .camisas, .anteojos{
+  margin-bottom: 2vw;
+  margin-top: 2vw
+ }
+
 /* Footer CSS */
 
 footer {
@@ -252,7 +257,7 @@ footer {
  .dropdown {
    position: relative;
    display: inline-block;
-   padding-top: 1.1vw;
+   padding-top: 5.1vw;
  }
 
  .dropbtn {
@@ -292,6 +297,7 @@ footer {
 
  .dropdown{
    top: -1.9vw;
+   padding-top: 3.1vw;
  }
 
  .dropbtn{
@@ -322,7 +328,7 @@ footer {
    margin-left: -1vw;
  }
 
- .remeras, .shorts, .calzado, .vestidos{
+ .remeras, .shorts, .calzado, .vestidos, .accesorios, .trajes-de-baño, .camisas, .anteojos{
    font-size: 5vw;
  }
 

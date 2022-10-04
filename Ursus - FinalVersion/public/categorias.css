@@ -215,6 +215,30 @@ footer {
   .fa-envelope{
     margin-right: 5vw;
   }
+
+  .fa-square-facebook:hover{
+    cursor: pointer;
+    color: blue;
+    transform: scale(1.2);
+  }
+
+.fa-instagram:hover{
+  cursor: pointer;
+  color: violet;
+  transform: scale(1.2);
+}
+
+.fa-twitter:hover{
+  cursor: pointer;
+  color: rgb(12, 202, 208);
+  transform: scale(1.2);
+}
+
+.fa-envelope:hover{
+  cursor: pointer;
+  color: white;
+  transform: scale(1.2);
+}
   
   /*/////////////////////////////////////FIN FOOTER////////////////////////////////////////////////////////*/
 
@@ -247,6 +271,30 @@ footer {
   .fa-square-facebook, .fa-instagram, .fa-twitter{
    margin-right: -1vw;
  }
+
+ .fa-square-facebook:hover{
+  cursor: pointer;
+  color: blue;
+  transform: scale(1.2);
+}
+
+.fa-instagram:hover{
+cursor: pointer;
+color: violet;
+transform: scale(1.2);
+}
+
+.fa-twitter:hover{
+cursor: pointer;
+color: rgb(12, 202, 208);
+transform: scale(1.2);
+}
+
+.fa-envelope:hover{
+cursor: pointer;
+color: white;
+transform: scale(1.2);
+}
 
  .primavera-titulo{
    font-size: 4vw;
@@ -302,7 +350,7 @@ footer {
 
 }
 
-@media (min-width:769px) {
+@media (min-width:769px) and (max-width: 1031px) {
   .main-header{
     top: -5vw;
     width: 100%;
@@ -409,6 +457,30 @@ footer {
   margin-left: 27vw;
   }
 
+  .fa-square-facebook:hover{
+    cursor: pointer;
+    color: blue;
+    transform: scale(1.2);
+  }
+
+.fa-instagram:hover{
+  cursor: pointer;
+  color: violet;
+  transform: scale(1.2);
+}
+
+.fa-twitter:hover{
+  cursor: pointer;
+  color: rgb(12, 202, 208);
+  transform: scale(1.2);
+}
+
+.fa-envelope:hover{
+  cursor: pointer;
+  color: white;
+  transform: scale(1.2);
+}
+
 
  .dropdown:hover .dropbtn {
    background-color: rgb(63,53,217);
@@ -460,4 +532,174 @@ footer {
     cursor: pointer;
   }
 }
+
+@media (min-width:1031px){
+
+  img.logo{
+    width: 12vw;
+    display: block;
+    margin-left: 12vw;
+    margin-top: 1vw;
+  }
+
+  .dropdown {
+    position: static;
+    display: inline-block;
+    top: -1.9vw;
+    padding-top: 2.1vw;
+    margin-left: 4vw;
+  }
+
+  .dropbtn{
+    margin-top: 7vw;
+    margin-left: 2vw;
+    font-size: 2vw;
+  }
+
+  .dropbtn:hover {
+    cursor: pointer;
+   }
+
+  .right-navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: -3vw;
+    font-size: 1vw;
+  }
+
+  .right-navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 7vw;
+    align-items: center;
+    margin-left: 9vw;
+    margin-right: 2vw;
+    padding-top: 2vw;
+  }
+
+  .main-header{
+    top: -5vw;
+    width: 100%;
+  }
+
+  .main-header-top-bar{
+    margin-left: -3vw;
+  }
+
+  .right-navbar .fa-solid:hover{
+    color: rgb(63,53,217);
+    transform: scale(1.3);
+    transition: 0.5s;
+  }
+
+  section{
+    width: 70%;
+    margin-left: 15vw;
+    margin-top: -2vw;
+  }
+
+  .enmarcado-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-left: -15vw;
+  }
+
+  .categorias {
+    width: 45%;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 3vw;
+    margin-left: 3vw;
+  } 
+
+  .shorts {
+    padding-top: 6vw;
+    margin-bottom: 3vw;
+    margin-top: 17vw;
+  }
+
+  .remeras-fixing:hover, .marco-shorts:hover, .marco-calzado:hover, .marco-vestidos:hover, .marco-camisas:hover, .marco-anteojos:hover,
+  .marco-accesorios:hover, .marco-trajes:hover{
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transform: scale(1.2);
+    transition: 2s;
+  }
+
+  .footer {
+    display: flex;
+    margin-top: 2vw;
+    margin-left: 12vw;
+    margin-bottom: 3vw;
+    }
   
+  .pie-de-pagina{
+     display: flex;
+     margin-left: -2vw;
+     font-size: 1vw;
+  }
+  
+  .pie-de-pagina-textos{
+     margin-right: 3vw;
+  }
+  
+  .pie-de-pagina-textos1{
+    font-size: 1vw;
+    margin-left: -7vw; 
+  }
+  
+  .pie-de-pagina-textos2, .pie-de-pagina-textos3{
+    font-size: 1vw;
+    margin-left: 2vw;
+  }
+  
+  .fa-square-facebook, .fa-instagram, .fa-twitter{
+    margin-right: 0vw;
+  }
+
+  .fa-square-facebook:hover{
+      cursor: pointer;
+      color: blue;
+      transform: scale(1.2);
+  }
+
+  .fa-instagram:hover{
+    cursor: pointer;
+    color: violet;
+    transform: scale(1.2);
+  }
+
+  .fa-twitter:hover{
+    cursor: pointer;
+    color: rgb(12, 202, 208);
+    transform: scale(1.2);
+  }
+
+  .fa-envelope:hover{
+    cursor: pointer;
+    color: white;
+    transform: scale(1.2);
+  }
+   
+  .fa-envelope{
+    margin-right: 0vw;
+  }
+
+  .iconos{
+   font-size: 1vw;
+   margin-left: 66vw;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: rgb(63,53,217);
+    padding-right: 2vw;
+    margin-left: 0vw;
+    transition: 0.5s;
+    padding-top: 1vw;
+    font-size: 2vw;
+    border-radius: 6px;
+    padding-bottom: 1vw;
+    }
+}

@@ -23,3 +23,6 @@ app.get('/productosporcategoria', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/productosporcategoria.html'));
 });
 
+app.get('/detalle-producto', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/detalle-producto.html'));
+});

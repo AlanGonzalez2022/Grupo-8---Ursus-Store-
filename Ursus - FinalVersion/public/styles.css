@@ -195,9 +195,11 @@ opacity: 1;
 
 /* Footer CSS */
 
-footer {
+footer {  
   display: flex;
-  margin-top: 26vw;
+  margin-top: 24vw;
+  margin-bottom: 3vw;
+
 }
 
 .footer a {
@@ -208,7 +210,7 @@ footer {
 
 .pie-de-pagina {
   display: flex;
-  margin-left: 7vw;
+  margin-left: 6vw;
 }
 
 .iconos {
@@ -224,7 +226,7 @@ footer i {
 }
 
 .fa-square-facebook, .fa-instagram, .fa-twitter{
-  margin-right: -3vw;
+  margin-right: 0;
 }
 
 .fa-envelope{
@@ -352,26 +354,42 @@ footer i {
   }
  }
 
- @media (min-width:769px){
+ @media (min-width:769px) and (max-width:1030px) {
   .primavera-titulo{
     font-size: 4vw;
-    padding-top: 21vw;
+    padding-top: 17vw;
   }
 
   .masvisitados-titulo, .oferta-titulo{
     font-size: 4vw;
+    margin-top: 0vw;
   }
 
-  .dropbtn{
-    margin-top: 7vw;
-    margin-left: 2vw;
+  img.logo{
+    width: 15vw;
+    display: block;
+    margin-left: 12vw;
+    margin-top: 3vw;
   }
+
+  .dropdown{
+    top: -1.9vw;
+    padding-top: 3.1vw;
+    padding-top: 2.1vw;
+   margin-left: 4vw;
+   }
+ 
+  .dropbtn{
+   margin-top: 7vw;
+   margin-left: 2vw;
+   font-size: 3vw;
+   }
 
   .right-navbar a {
     text-decoration: none;
     color: white;
     margin-left: -3vw;
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .right-navbar {
@@ -379,45 +397,240 @@ footer i {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 20vw;
+    width: 11vw;
     align-items: center;
     margin-left: 9vw;
-    margin-right: 6vw;
-    padding-top: 3vw;
+    margin-right: 2vw;
+    padding-top: 6vw;
+  }
+
+  .main-header{
+    top: -5vw;
+    width: 100%;
   }
 
   .main-header-top-bar{
     margin-left: -1vw;
   }
 
-  .pie-de-pagina{
+  section{
+    width: 90%;
+    margin-left: 5vw;
+  }
+
+  .swiper-button-prev{
+    left: 2px;
+    margin-top: 10vw;
+    color: white;
+  }
+  
+  .swiper-button-next{
+    right: 2px;
+    margin-top: 10vw;
+    color: white;
+  }
+
+  .container{
+    width: 80%;
     display: flex;
-    margin-left: 7vw;
-    font-size: 3vw;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8vw;
+    margin-top: -17vw;
+    margin-left: 9vw;
   }
 
+  .footer {
+    display: flex;
+    margin-top: 24vw;
+    margin-left: 5vw;
+    margin-bottom: 3vw;
+    }
+  
+  .pie-de-pagina{
+     display: flex;
+     margin-left: 13vw;
+     font-size: 2vw;
+  }
+  
   .pie-de-pagina-textos{
-    margin-right: 3vw;
+     margin-right: 3vw;
   }
-
+  
+  .pie-de-pagina-textos1{
+    font-size: 2vw;
+    margin-left: -7vw; 
+  }
+  
+  .pie-de-pagina-textos2, .pie-de-pagina-textos3{
+    font-size: 2vw;
+    margin-left: 2vw;
+  }
+  
   .fa-square-facebook, .fa-instagram, .fa-twitter{
     margin-right: 0vw;
   }
-  
+   
   .fa-envelope{
     margin-right: 0vw;
   }
 
   .iconos{
-    font-size: 2vw;
+   font-size: 2vw;
+   margin-left: -2vw;
   }
 
   .dropdown:hover .dropbtn {
     background-color: rgb(63,53,217);
     padding-right: 2vw;
     margin-left: 0vw;
-  }
+    transition: 0.5s;
+    padding-top: 1vw;
+    font-size: 2vw;
+    border-radius: 6px;
+    padding-bottom: 1vw;
+    }
 }
+
+@media (min-width:1031px){
   
+  .primavera-titulo{
+    font-size: 2.5vw;
+    padding-top: 15vw;
+    margin-left: 3vw;
+  }
 
+  .masvisitados-titulo, .oferta-titulo{
+    font-size: 2.5vw;
+    margin-top: 0vw;
+  }
 
+  img.logo{
+    width: 12vw;
+    display: block;
+    margin-left: 12vw;
+    margin-top: 3vw;
+  }
+
+  .dropdown{
+    top: -1.9vw;
+    padding-top: 2.1vw;
+    margin-left: 4vw;
+   }
+ 
+  .dropbtn{
+   margin-top: 7vw;
+   margin-left: 2vw;
+   font-size: 2vw;
+   }
+
+   .dropbtn:hover {
+    cursor: pointer;
+   }
+
+  .right-navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: -3vw;
+    font-size: 1vw;
+  }
+
+  .right-navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 7vw;
+    align-items: center;
+    margin-left: 9vw;
+    margin-right: 2vw;
+    padding-top: 6vw;
+  }
+
+  .main-header{
+    top: -5vw;
+    width: 100%;
+  }
+
+  .main-header-top-bar{
+    margin-left: -3vw;
+  }
+
+  section{
+    width: 70%;
+    margin-left: 12vw;
+  }
+
+  .swiper-button-prev{
+    left: 2px;
+    margin-top: 10vw;
+    color: white;
+  }
+  
+  .swiper-button-next{
+    right: 2px;
+    margin-top: 10vw;
+    color: white;
+  }
+
+  .container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8vw;
+    margin-top: -17vw;
+    margin-left: 9vw;
+  }
+
+  .footer {
+    display: flex;
+    margin-top: 24vw;
+    margin-left: 12vw;
+    margin-bottom: 3vw;
+    }
+  
+  .pie-de-pagina{
+     display: flex;
+     margin-left: 12vw;
+     font-size: 1vw;
+  }
+  
+  .pie-de-pagina-textos{
+     margin-right: 3vw;
+  }
+  
+  .pie-de-pagina-textos1{
+    font-size: 2vw;
+    margin-left: -7vw; 
+  }
+  
+  .pie-de-pagina-textos2, .pie-de-pagina-textos3{
+    font-size: 2vw;
+    margin-left: 2vw;
+  }
+  
+  .fa-square-facebook, .fa-instagram, .fa-twitter{
+    margin-right: 0vw;
+  }
+   
+  .fa-envelope{
+    margin-right: 0vw;
+  }
+
+  .iconos{
+   font-size: 1vw;
+   margin-left: 12vw;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: rgb(63,53,217);
+    padding-right: 2vw;
+    margin-left: 0vw;
+    transition: 0.5s;
+    padding-top: 1vw;
+    font-size: 2vw;
+    border-radius: 6px;
+    padding-bottom: 1vw;
+    }
+}

@@ -304,7 +304,7 @@ footer {
 
 @media (min-width:769px) {
   .main-header{
-    top: -3vw;
+    top: -5vw;
     width: 100%;
   }
 
@@ -318,40 +318,47 @@ footer {
   }
 
  .dropdown{
-   top: -1.9vw;
-   padding-top: 3.1vw;
+  position: static;
+  display: inline-block;
+  padding-top: 2.1vw;
+  margin-left: 4vw;
   }
 
  .dropbtn{
    margin-top: 7vw;
    margin-left: 2vw;
+   font-size: 3vw;
   }
 
  .right-navbar a {
    text-decoration: none;
    color: white;
    margin-left: -3vw;
-   font-size: 3vw;
+   font-size: 2vw;
   }
 
  .right-navbar {
-   display: flex;
-   justify-content: space-between;
-   flex-direction: row;
-   flex-wrap: wrap;
-   width: 20vw;
-   align-items: center;
-   margin-left: 9vw;
-   margin-right: 6vw;
-   padding-top: 3vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 11vw;
+    align-items: center;
+    margin-left: 9vw;
+    margin-right: 2vw;
+    padding-top: 1vw;
   }  
 
  .main-header-top-bar{
    margin-left: -1vw;
   }
 
+  section{
+    margin-top: -2vw;
+  }
+
  .remeras, .shorts, .calzado, .vestidos, .accesorios, .trajes-de-baño, .camisas, .anteojos{
-   font-size: 5vw;
+   font-size: 3vw;
   }
 
   .shorts{
@@ -364,8 +371,9 @@ footer {
 
  .footer {
   display: flex;
-  margin-top: 3vw;
+  margin-top: 2vw;
   margin-left: 6vw;
+  margin-bottom: 3vw;
   }
 
  .pie-de-pagina{
@@ -378,6 +386,16 @@ footer {
    margin-right: 3vw;
   }
 
+  .pie-de-pagina-textos1{
+    font-size: 2vw;
+    margin-left: -7vw; 
+  }
+
+  .pie-de-pagina-textos2, .pie-de-pagina-textos3{
+    font-size: 2vw;
+    margin-left: 2vw;
+  }
+
  .fa-square-facebook, .fa-instagram, .fa-twitter{
    margin-right: 0vw;
   }
@@ -387,8 +405,8 @@ footer {
   }
 
  .iconos{
-  font-size: 4vw;
-  margin-right: 3vw;
+  font-size: 2vw;
+  margin-left: 27vw;
   }
 
 
@@ -397,13 +415,24 @@ footer {
    padding-right: 2vw;
    margin-left: 0vw;
    transition: 0.5s;
+   padding-top: 1vw;
+   font-size: 2vw;
+   border-radius: 6px;
+   padding-bottom: 1vw;
+  }
+
+  img.logo{
+    width: 15vw;
+    display: block;
+    margin-left: 12vw;
+    margin-top: 1vw;
   }
 
   .enmarcado-categorias{
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
-    margin-left: -6vw;
+    margin-left: -15vw;
   }
 
   .categorias{
@@ -411,7 +440,7 @@ footer {
     flex-direction: column;
     align-items: stretch;
     margin-bottom: 3vw;
-    margin-left: 2vw;
+    margin-left: 3vw;
   }
 
   .remeras-fixing:hover, .marco-shorts:hover, .marco-calzado:hover, .marco-vestidos:hover, .marco-camisas:hover, .marco-anteojos:hover,

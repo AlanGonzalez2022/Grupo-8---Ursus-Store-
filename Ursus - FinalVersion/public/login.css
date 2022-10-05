@@ -115,8 +115,7 @@ img.logo{
     background-color: rgb(63,53,217);
     transition: 0.5s;
   }
-/*/////////////////////////////////////////aca termina el NAV BAR//////////////////////////////////////////////////////////////*/
-
+/*/////////////////////////////////////////Acá termina el NAV BAR//////////////////////////////////////////////////////////////*/
 
 
 main {
@@ -156,19 +155,23 @@ label{
 
 .contraseña{
     width: 100%;
-    margin-bottom: 7vw;
+    margin-bottom: 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .olv{
-    margin-bottom: 12vw;
+    margin-bottom: 25vw;
     font-size: 5vw;
+    margin-top: 0vw;
 }
+
 a.boton-iniciar{
   color: white;
+  font-size: 4vw;  text-decoration: none;  
 }
+
 .boton-ing{
     background: rgb(63, 83, 217);
     width: 45%;
@@ -270,9 +273,10 @@ a.boton-iniciar{
 
   /* ////////////////////////////////////Media Queries////////////////////////////////////////////////////////////////
   
-  /////////////////////////////////////////////////////////////*TABLET//////////////////////////////////////*/
+  /////////////////////////////////////////////////////////////TABLET//////////////////////////////////////*/
 
   @media (min-width:477px) and (max-width:768px){
+
     .main-header-top-bar {
       margin-top: 3vw;
       margin-left: -5vw;
@@ -282,6 +286,10 @@ a.boton-iniciar{
       width: 17vw;
       font-size: 3.1vw;
       margin-top: 2vw;
+    }
+
+    .inicio-sesion{
+      margin-top: -15%;
     }
    
     .remeras-fixing:hover, .marco-shorts:hover, .marco-calzado:hover, .marco-vestidos:hover, .marco-camisas:hover, .marco-anteojos:hover,
@@ -301,11 +309,13 @@ a.boton-iniciar{
        cursor: pointer;
      }
   
+  .olv{
+    margin-bottom: 14vw;
+  }
  
- 
-    .footer {
+  .footer {
     margin-left: 3vw;
-    margin-top: 41vw;
+    margin-top: 11vw;
   }
   
   .pie-de-pagina{
@@ -364,15 +374,6 @@ transform: scale(1.2);
       width: 100%;
     }
 
-    .primavera-titulo{
-    font-size: 4vw;
-    padding-top: 21vw;
-    }
-
-  .masvisitados-titulo, .oferta-titulo{
-    font-size: 4vw;
-    }
-
   .dropdown{
     position: static;
     display: inline-block;
@@ -408,206 +409,306 @@ transform: scale(1.2);
   .main-header-top-bar{
     margin-left: -1vw;
     }
-    .footer {
-        display: flex;
-        margin-top: 55vw;
-        margin-left: 6vw;
-        margin-bottom: 3vw;
-        }
-      
-       .pie-de-pagina{
-         display: flex;
-         margin-left: 5vw;
-         font-size: 3vw;
-        }
-      
-       .pie-de-pagina-textos{
-         margin-right: 3vw;
-        }
-      
-        .pie-de-pagina-textos1{
-          font-size: 2vw;
-          margin-left: -7vw; 
-        }
-      
-        .pie-de-pagina-textos2, .pie-de-pagina-textos3{
-          font-size: 2vw;
-          margin-left: 2vw;
-        }
-      
-       .fa-square-facebook, .fa-instagram, .fa-twitter{
-         margin-right: 0vw;
-        }
+   
+  .footer {
+    display: flex;
+    margin-top: -25vw;
+    margin-left: 6vw;
+    margin-bottom: -5vw;
+  }
+
+  .olv {
+    margin-bottom: 25vw;
+    font-size: 5vw;
+    margin-top: 0vw;
+  }
+
+  .boton-ing {
+    background: rgb(63, 83, 217);
+    width: 45%;
+    height: 4vh;
+    border: none;
+    margin-bottom: 6vh;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 28vw;
+    font-size: 3vw;
+    padding: 2vw;
+    margin-top: -12vw;
+  }
+
+  .inicio-sesion {
+    margin: auto;
+    margin-bottom: 6vw;
+    margin-top: -18%;
+    font-size: 3.2vw;
+  }
        
-       .fa-envelope{
-         margin-right: 0vw;
-        }
-      
-       .iconos{
-        font-size: 2vw;
-        margin-left: 27vw;
-        }
-      
-        .fa-square-facebook:hover{
-          cursor: pointer;
-          color: blue;
-          transform: scale(1.2);
-        }
-      
-      .fa-instagram:hover{
-        cursor: pointer;
-        color: violet;
-        transform: scale(1.2);
-      }
-      
-      .fa-twitter:hover{
-        cursor: pointer;
-        color: rgb(12, 202, 208);
-        transform: scale(1.2);
-      }
-      
-      .fa-envelope:hover{
-        cursor: pointer;
-        color: white;
-        transform: scale(1.2);
-      }
-    }
+  .pie-de-pagina{
+    display: flex;
+    margin-left: 5vw;
+    font-size: 3vw;
+  }
+
+  .pie-de-pagina-textos{
+    margin-right: 3vw;
+  }
+
+  .pie-de-pagina-textos1{
+    font-size: 2vw;
+    margin-left: -7vw; 
+  }
+
+  .pie-de-pagina-textos2, .pie-de-pagina-textos3{
+    font-size: 2vw;
+    margin-left: 2vw;
+  }
+
+  .fa-square-facebook, .fa-instagram, .fa-twitter{
+    margin-right: 0vw;
+  }
+  
+  .fa-envelope{
+    margin-right: 0vw;
+  }
+
+  .iconos{
+  font-size: 2vw;
+  margin-left: 27vw;
+  }
+
+  .fa-square-facebook:hover{
+    cursor: pointer;
+    color: blue;
+    transform: scale(1.2);
+  }
+
+.fa-instagram:hover{
+  cursor: pointer;
+  color: violet;
+  transform: scale(1.2);
+}
+
+.fa-twitter:hover{
+  cursor: pointer;
+  color: rgb(12, 202, 208);
+  transform: scale(1.2);
+}
+
+.fa-envelope:hover{
+  cursor: pointer;
+  color: white;
+  transform: scale(1.2);
+}
+}
 
 /*////////////////////// MEDIDAS MAX/////////////////////*/
 
 @media (min-width:1031px){
 
-      img.logo{
-        width: 12vw;
-        display: block;
-        margin-left: 12vw;
-        margin-top: 1vw;
-      }
-    
-      .dropdown {
-        position: static;
-        display: inline-block;
-        top: -1.9vw;
-        padding-top: 2.1vw;
-        margin-left: 4vw;
-      }
-    
-      .dropbtn{
-        margin-top: 7vw;
-        margin-left: 2vw;
-        font-size: 2vw;
-      }
-    
-      .dropbtn:hover {
-        cursor: pointer;
-       }
-    
-      .right-navbar a {
-        text-decoration: none;
-        color: white;
-        margin-left: -3vw;
-        font-size: 1vw;
-      }
-    
-      .right-navbar {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 7vw;
-        align-items: center;
-        margin-left: 9vw;
-        margin-right: 2vw;
-        padding-top: 2vw;
-      }
-    
-      .main-header{
-        top: -5vw;
-        width: 100%;
-      }
-    
-      .main-header-top-bar{
-        margin-left: -3vw;
-      }
-    
-      .right-navbar .fa-solid:hover{
-        color: rgb(63,53,217);
-        transform: scale(1.3);
-        transition: 0.5s;
-      }
-    
-      .footer {
-        display: flex;
-        margin-top: 70vw;
-        margin-left: 12vw;
-        margin-bottom: 3vw;
-        }
-      
-      .pie-de-pagina{
-         display: flex;
-         margin-left: -2vw;
-         font-size: 1vw;
-      }
-      
-      .pie-de-pagina-textos{
-         margin-right: 3vw;
-      }
-      
-      .pie-de-pagina-textos1{
-        font-size: 1vw;
-        margin-left: -7vw; 
-      }
-      
-      .pie-de-pagina-textos2, .pie-de-pagina-textos3{
-        font-size: 1vw;
-        margin-left: 2vw;
-      }
-      
-      .fa-square-facebook, .fa-instagram, .fa-twitter{
-        margin-right: 0vw;
-      }
-    
-      .fa-square-facebook:hover{
-          cursor: pointer;
-          color: blue;
-          transform: scale(1.2);
-      }
-    
-      .fa-instagram:hover{
-        cursor: pointer;
-        color: violet;
-        transform: scale(1.2);
-      }
-    
-      .fa-twitter:hover{
-        cursor: pointer;
-        color: rgb(12, 202, 208);
-        transform: scale(1.2);
-      }
-    
-      .fa-envelope:hover{
-        cursor: pointer;
-        color: white;
-        transform: scale(1.2);
-      }
-       
-      .fa-envelope{
-        margin-right: 0vw;
-      }
-    
-      .iconos{
-       font-size: 1vw;
-       margin-left: 66vw;
-      }
-    
-      .dropdown:hover .dropbtn {
-        background-color: rgb(63,53,217);
-        padding-right: 2vw;
-        margin-left: 0vw;
-        transition: 0.5s;
-        padding-top: 1vw;
-        font-size: 2vw;
-        border-radius: 6px;
-        padding-bottom: 1vw;
-        }
+  img.logo{
+    width: 12vw;
+    display: block;
+    margin-left: 12vw;
+    margin-top: 1vw;
+  }
+
+  .dropdown {
+    position: static;
+    display: inline-block;
+    top: -1.9vw;
+    padding-top: 2.1vw;
+    margin-left: 4vw;
+  }
+
+  .dropbtn{
+    margin-top: 7vw;
+    margin-left: 2vw;
+    font-size: 2vw;
+  }
+
+  .dropbtn:hover {
+    cursor: pointer;
     }
+
+  .right-navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: -3vw;
+    font-size: 1vw;
+  }
+
+  .right-navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 7vw;
+    align-items: center;
+    margin-left: 9vw;
+    margin-right: 2vw;
+    padding-top: 2vw;
+  }
+
+  .main-header{
+    top: -5vw;
+    width: 100%;
+  }
+
+  .main-header-top-bar{
+    margin-left: -3vw;
+  }
+
+  .right-navbar .fa-solid:hover{
+    color: rgb(63,53,217);
+    transform: scale(1.3);
+    transition: 0.5s;
+  }
+
+  .inicio-sesion {
+    margin: auto;
+    margin-bottom: 10vw;
+    margin-top: -16%;
+    font-size: 3.2vw;
+  }
+
+  label{
+    font-size: 2vw;
+  }
+  
+  .barra-mail {
+    display: flex;
+    border-radius: 6px;
+    width: 60%;
+    height: 6vh;
+    margin-top: 3vw;
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  .olv {
+    margin-bottom: 25vw;
+    font-size: 3vw;
+    margin-top: 0vw;
+  }
+
+  a.boton-iniciar {
+    color: white;
+    font-size: 3vw;
+    text-decoration: none;
+  }
+
+  .boton-ing {
+    background: rgb(63, 83, 217);
+    width: 39%;
+    height: 2vh;
+    border: none;
+    margin-bottom: 6vh;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 29vw;
+    font-size: 3vw;
+    padding: 2vw;
+    margin-top: -15vw;
+  }
+
+  .todavía-pregunta{
+    font-size: 2vw;
+    font-weight: bold;
+  }
+
+  .boton-registrate{
+      color: white;
+      text-decoration: none;  
+  }
+
+  .footer {
+    display: flex;    
+    margin-top: -13vw;
+    margin-left: 20vw;
+    margin-bottom: 3vw;
+    }
+
+  .footer a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    font-size: 1.5vw;
+  }
+  
+  .pie-de-pagina{
+    display: flex;
+    margin-left: -2vw;
+    font-size: 1vw;
+  }
+  
+  .pie-de-pagina-textos{
+      margin-right: 3vw;
+  }
+
+  a.pie-de-pagina-textos3{    
+      margin-left: 2vw;  
+  }
+  
+  .pie-de-pagina-textos1{
+    font-size: 1vw;
+    margin-left: -7vw; 
+  }
+  
+  .pie-de-pagina-textos2, .pie-de-pagina-textos3{
+    font-size: 1vw;
+    margin-left: 2vw;
+  }
+  
+  .fa-square-facebook, .fa-instagram, .fa-twitter{
+    margin-right: 0vw;
+  }
+
+  .fa-square-facebook:hover{
+      cursor: pointer;
+      color: blue;
+      transform: scale(1.2);
+  }
+
+  .fa-instagram:hover{
+    cursor: pointer;
+    color: violet;
+    transform: scale(1.2);
+  }
+
+  .fa-twitter:hover{
+    cursor: pointer;
+    color: rgb(12, 202, 208);
+    transform: scale(1.2);
+  }
+
+  .fa-envelope:hover{
+    cursor: pointer;
+    color: white;
+    transform: scale(1.2);
+  }
+    
+  .fa-envelope{
+    margin-right: 0vw;
+  }
+
+  .iconos {
+    font-size: 1.5vw;
+    margin-left: 49vw;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: rgb(63,53,217);
+    padding-right: 2vw;
+    margin-left: 0vw;
+    transition: 0.5s;
+    padding-top: 1vw;
+    font-size: 2vw;
+    border-radius: 6px;
+    padding-bottom: 1vw;
+    }
+}

@@ -247,6 +247,34 @@ footer {
     text-decoration: none;
 }
 
+.fa-square-facebook:hover{
+    cursor: pointer;
+    color: blue;
+    transform: scale(1.2);
+}
+
+.fa-instagram:hover{
+  cursor: pointer;
+  color: violet;
+  transform: scale(1.2);
+}
+
+.fa-twitter:hover{
+  cursor: pointer;
+  color: rgb(12, 202, 208);
+  transform: scale(1.2);
+}
+
+.fa-envelope:hover{
+  cursor: pointer;
+  color: white;
+  transform: scale(1.2);
+}
+
+.agregar:hover{
+    cursor: pointer;
+}
+
 /* Tablet */
 @media (min-width: 477px) and (max-width: 768px){
     .right-navbar {
@@ -264,6 +292,10 @@ footer {
         padding-top: 8px;
     }
 
+    .pie-de-pagina-textos{
+        margin-left: -3vw;
+    }
+
     footer {
         background-color: black;
         display: flex;
@@ -274,10 +306,11 @@ footer {
     .iconos{
         color: white;
         display: flex;
-        width: 50%;
+        width: 20%;
         justify-content: space-evenly;
         flex-direction: row;
         padding-top: 10px;
+        margin-left: 2vw;
     }
 
 }
@@ -311,7 +344,7 @@ footer {
         width: 45%;
         position: absolute;
         right: 38vw;
-        top: 16vw;
+        top: 13vw;
     }
 
     .secundario-producto {
@@ -329,6 +362,7 @@ footer {
     .remera-secundario {
         width: 9vw;
         height: 11vw;
+        margin-bottom: -4vw;
     }
 
     .detalle {
@@ -396,7 +430,7 @@ footer {
     .iconos {
         display: flex;
         color: white;
-        width: 28%;
+        width: 17%;
         flex-direction: row;
         justify-content: space-evenly;
         position: absolute;
@@ -415,5 +449,15 @@ footer {
         background-color: black;
         display: flex;
         height: 3vw;
+    }
+}
+
+@media (min-width:1024px){
+
+    footer {
+    background-color: black;
+    display: flex;
+    height: 3vw;
+    margin-left: 3vw;
     }
 }

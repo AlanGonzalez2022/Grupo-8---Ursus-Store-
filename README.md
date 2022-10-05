@@ -36,3 +36,9 @@
 5. https://bowen.com.ar/
 
 Tomamos estos sitios de referencia ya que presentan un look&feel limpio, claro y moderno. Además apuntan al mismo target objetivo y comercializan productos similares a Ursus. También utilizamos referencias de estos para brindarle distintas facilidades al usuario a la hora de realizar su búsqueda con una gran variedad de filtros.
+
+Link de nuestro tablero de trabajo:
+https://trello.com/b/KtJ1rsvg/grupo8ursus-store
+
+Nuestro GitHub:
+https://github.com/AlanGonzalez2022/Grupo-8---Ursus-Store-

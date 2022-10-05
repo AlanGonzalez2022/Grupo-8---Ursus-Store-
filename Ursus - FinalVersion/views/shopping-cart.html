@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/shopping.css">
+    <title>Carrito De Compras</title>
+</head>
+<header class="main-header">
+
+  <!-- Menú desplegable -->
+  <div class="dropdown"> 
+      <button class="dropbtn"><i class="fa-solid fa-bars"></button></i>
+      <div class="dropdown-content">
+        <a href="#">Hombres</a>
+        <a href="#">Mujeres</a>
+        <a href="#">Niños</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Lo más vendido</a>
+        <a href="#">Temporada</a>
+      </div>
+  </div> 
+ 
+  <div class="main-header-top-bar center">
+      <a href="http://localhost:3032"><img src="./images/logo-ursus.png" class="logo"></a>
+  </div> 
+      <ul class="right-navbar">
+          <li><a href="www.google.com"><i class="fa-solid fa-magnifying-glass lupita"></a></i></li>
+          <li><a href="http://localhost:3032/login"><i class="fa-solid fa-user usuario-existente"></a></i></li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping"></a></i></li>                
+      </ul>
+</header> 
+<body>
+    <main>
+        <div class="basket">
+          <div class="basket-module">
+            <label for="promo-code">Ingresá tu código de descuento</label>
+            <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+            <button class="promo-code-cta">Validar</button>
+          </div>
+          <div class="basket-labels">
+            <ul>
+              <li class="item item-heading">Item</li>
+              <li class="price">Precio</li>
+              <li class="quantity">Cantidad</li>
+              <li class="subtotal">Subtotal</li>
+            </ul>
+          </div>
+          <div class="basket-product">
+            <div class="item">
+              <div class="product-image">
+                <img src="/images/shopping-cart/Hoodie-x-Champion.jpeg" alt="Hoodie-x-Champion" class="product-frame">
+              </div>
+              <div class="product-details">
+                <h1><strong><span class="item-quantity">1</span> x Champion</strong> Hoodie</h1>
+                <p><strong>Gris, Talle L</strong></p>
+                <p>Código Producto - 232321939</p>
+              </div>
+            </div>
+            <div class="price">12000.00</div>
+            <div class="quantity">
+              <input type="number" value="1" min="1" class="quantity-field">
+            </div>
+            <div class="subtotal">12000.00</div>
+            <div class="remove">
+              <button>Eliminar</button>
+            </div>
+          </div>
+          <div class="basket-product">
+            <div class="item">
+              <div class="product-image">
+                <img src="/images/shopping-cart/Hoodie-x-Nike.jpeg" alt="Hoodie-x-Nike" class="product-frame">
+              </div>
+              <div class="product-details">
+                <h1><strong><span class="item-quantity">1</span> x Nike</strong> Hoodie</h1>
+                <p><strong>Negro, Talle M</strong></p>
+                <p>Código Producto - 232321939</p>
+              </div>
+            </div>
+            <div class="price">15000.00</div>
+            <div class="quantity">
+              <input type="number" value="1" min="1" class="quantity-field">
+            </div>
+            <div class="subtotal">15000.00</div>
+            <div class="remove">
+              <button>Eliminar</button>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <div class="summary">
+            <div class="summary-total-items"><span class="total-items"></span> ITEMS</div>
+            <div class="summary-subtotal">
+              <div class="subtotal-title">Subtotal</div>
+              <div class="subtotal-value final-value" id="basket-subtotal">27000.00</div>
+              <div class="summary-promo hide">
+                <div class="promo-title">Promocion</div>
+                <div class="promo-value final-value" id="basket-promo"></div>
+              </div>
+            </div>
+            <div class="summary-total">
+              <div class="total-title">Total</div>
+              <div class="total-value final-value" id="basket-total">27000.00</div>
+            </div>
+            <div class="summary-checkout">
+              <button class="checkout-cta">IR A PAGAR</button>
+            </div>
+          </div>
+        </aside>
+      </main>
+</body>
+<footer class="footer"> 
+  <div class="pie-de-pagina">
+      <div><a class="pie-de-pagina-textos1" href="#">Quienes Somos</a></div>
+      <div><a class="pie-de-pagina-textos2" href="#">Nuestra Visión</a></div>
+      <div><a class="pie-de-pagina-textos3" href="#">Nuestros Locales</a></div>
+  </div>
+  
+  <div class="iconos">
+      <div><i class="fa-brands fa-square-facebook"></i></div>
+      <div><i class="fa-brands fa-instagram"></i></div>
+      <div><i class="fa-brands fa-twitter"></i></div>
+      <i class="fa-solid fa-envelope"></i>
+  </div>
+</footer>
+</html>

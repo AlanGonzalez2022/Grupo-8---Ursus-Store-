@@ -1,5 +1,6 @@
 *{
-    box-sizing: border-box
+    box-sizing: border-box;
+    
 }
 
 body{
@@ -326,13 +327,13 @@ footer {
     }
 
     .remera-secundario {
-        width: 10vw;
+        width: 9vw;
         height: 11vw;
     }
 
     .detalle {
         position: absolute;
-        bottom: 34vw;
+        bottom: 30vw;
         left: 54vw;
     }
 

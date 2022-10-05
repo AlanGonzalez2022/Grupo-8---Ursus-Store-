@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/db26de78cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/login.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <header class="main-header">
+
+        <!-- Menú desplegable -->
+        <div class="dropdown"> 
+            <button class="dropbtn"><i class="fa-solid fa-bars"></button></i>
+            <div class="dropdown-content">
+            <a href="#">Hombres</a>
+            <a href="#">Mujeres</a>
+            <a href="#">Niños</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Lo más vendido</a>
+            <a href="#">Temporada</a>
+            </div>
+        </div> 
+    
+        <div class="main-header-top-bar center">
+            <a href="http://localhost:3032"><img src="./images/logo-ursus.png" class="logo"></a>
+        </div> 
+            <ul class="right-navbar">
+                <li><a href="www.google.com"><i class="fa-solid fa-magnifying-glass lupita"></a></i></li>
+                <li><a href="www.google.com"><i class="fa-solid fa-user usuario-existente"></a></i></li>
+                <li><a href="www.google.com"><i class="fa-solid fa-cart-shopping"></a></i></li>                
+            </ul>
+    </header> 
+
+
+    <main>
+    <div class="contenedor1">
+        <div class="contenedor2">
+            <h1 class="inicio-sesion">INICIAR SESION</h1>
+            
+            <form action="/register" method="GET"></form>
+                <div class="mail">
+                    <label>CORREO ELECTRONICO*</label><input class="barra-mail" type="email" placeholder="Email">
+                </div>
+                <div class="contraseña">
+                    <label>CONTRASEÑA</label><input class="barra-mail" type="password" placeholder="Contraseña">
+                </div>
+            </form>   
+
+            <div class="olv"><h5>¿Olvidaste tu contraseña?</h5></div>
+            <div class="boton-ing"><a class="boton-iniciar"href="http://localhost:3032">Iniciar</a></div>
+
+            <div class="olv">
+                <span>¿Todavia no tenes usuario?</span>
+                <a href="http://localhost:3032/register"><h5 class="boton-registrate">Registrate</h5></a>
+            </div>
+        </div>
+    </div>
+</main>
+    <footer class="footer"> 
+        <div class="pie-de-pagina">
+            <div><a class="pie-de-pagina-textos1" href="#">Quienes Somos</a></div>
+            <div><a class="pie-de-pagina-textos2" href="#">Nuestra Visión</a></div>
+            <div><a class="pie-de-pagina-textos3" href="#">Nuestros Locales</a></div>
+        </div>
+        
+        <div class="iconos">
+            <div><i class="fa-brands fa-square-facebook"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+            <div><i class="fa-brands fa-twitter"></i></div>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </footer>
+</body>
+
+
+</html>

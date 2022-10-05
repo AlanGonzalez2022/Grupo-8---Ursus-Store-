@@ -35,6 +35,6 @@ app.get('/register', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/register.html'));
 });
 
-app.get('/carrito-compras', (req, res) => {
+app.get('/shopping-cart', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/shopping-cart.html'));
 });

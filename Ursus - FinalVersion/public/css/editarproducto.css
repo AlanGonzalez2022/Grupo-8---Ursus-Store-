@@ -1,0 +1,79 @@
+body {
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+img.logo{
+    width: 15vw;
+    display: block;
+    margin-left: 38vw;
+}
+
+form {
+    color: white;
+    margin-top: 13vw;
+    margin-left: 21vw;
+}
+
+.forms{
+        margin-bottom: 1.5em;
+}
+
+.forma{
+    margin-bottom: 1.5em;
+}
+
+.boton-formulario{
+    background-color: rgb(63,53,217);
+    color:white;
+    border-radius: 5px;
+}
+
+.boton-formulario: hover{
+    cursor: pointer;
+}
+
+.alinearboton{
+    margin-left: 10vw;
+}
+
+@media (min-width: 477px) and (max-width: 768px){
+    form {
+        color: white;
+        margin-top: 5vw;
+        margin-left: 24vw;
+    }
+    .alinearboton {
+        margin-left: 7vw;
+    }
+} 
+
+@media (min-width: 769px) and (max-width: 1024px){
+    form {
+        color: white;
+        margin-top: 5vw;
+        margin-left: 24vw;
+    }
+    .alinearboton {
+        margin-left: 7vw;
+    }
+
+    form {
+        color: white;
+        margin-top: 5vw;
+        margin-left: 32vw;
+    }
+} 
+
+@media (min-width: 1024px){
+    form {
+        color: white;
+        margin-top: 5vw;
+        margin-left: 36vw;
+    }
+    
+    .alinearboton {
+        margin-left: 4vw;
+    }
+}

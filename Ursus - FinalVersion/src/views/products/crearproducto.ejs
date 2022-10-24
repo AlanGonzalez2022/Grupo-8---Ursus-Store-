@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/db26de78cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/editarproducto.css">
+    <title>Editar Producto</title>
+</head>
+
+<header class="main-header">
+    <div class="main-header-top-bar center">
+        <a href="http://localhost:3032"><img src="./images/logo-ursus.png" class="logo"></a>
+    </div> 
+</header> 
+
+<body>
+    <form action="/add-product" method="GET">
+        <!-- <div>
+        <label>Producto</label>
+        <input class="forms" type="text" value="Remera">
+        </div>
+        <br> -->
+
+        <div class="forma">
+            <label class="producto" for="producto">Producto:</label>
+            <input minlength="5" required="" type="text" id="producto" name="producto" value="Remera" class="control">           
+          </div>
+        <div>
+        <!-- <label for="descripcion">Nombre</label>
+        <textarea name="descripcion" id="descripcion" placeholder="Ingrese descripción"></textarea>
+        </div>
+        <br> -->
+
+        <div class="forma">
+            <label class="nombre" for="nombre">Nombre:</label>
+            <input minlength="5" required="" type="text" id="nombre" name="nombre" value="Ingrese nombre" class="control">           
+        </div>
+
+        <label>Imagen</label>
+        <input class="forms" type="file" accept=".jpg, .jpeg" value="Imagen">
+        </div>
+        <br>
+        <div>
+        <label>Categoria:</label>
+        <select name="categoria" class="forma" value="Ingrese categoría">
+            <option>Remeras</option>
+            <option>Shorts</option>
+            <option>Calzados</option>
+            <option>Vestidos</option>
+            <option>Camisas</option>
+            <option>Anteojos</option>
+            <option>Accesorios</option>
+            <option>Trajes De Baño</option>
+        </select>
+        </div>
+        <br>
+        <label>Talle</label>
+        <select name="talle" class="forma" value="Ingrese talle" >
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+        <br>
+
+        <div class="forma">
+            <label class="precio" for="precio">Precio:</label>
+            <input minlength="5" required="" type="text" id="precio" name="precio" value="Ingrese precio" class="control">           
+          </div>
+        <div>
+
+        <br>
+        <div class="alinearboton">
+        <button type="reset" class="boton-formulario">Borrar Todo</button>
+        <button type="submit" class="boton-formulario">Agregar</button>
+        </div>
+    </form>
+</body>
+</html>

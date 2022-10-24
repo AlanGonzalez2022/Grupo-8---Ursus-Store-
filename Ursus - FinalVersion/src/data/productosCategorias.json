@@ -1,0 +1,97 @@
+[{
+    "id": 1,
+    "imagen": "/images/productosporcategoria/remera1.png",
+    "nombre": "Summer Light",
+    "categoria": "Remeras",
+    "genero": "masculino",
+    "color": "blanco",
+    "precio": 50,
+    "talle": "M",
+    "cantidad": 5,
+    "disponible": true
+    },
+    {
+    "id": 2,
+    "imagen": "/images/productosporcategoria/remera2.png",
+    "nombre": "Summer Blue",
+    "categoria": "Remeras",
+    "genero": "masculino",
+    "color": "blanco",
+    "precio": 50,
+    "talle": "M",
+    "cantidad": 5,
+    "disponible": false
+    },
+    {
+    "id": 3,
+    "imagen": "/images/productosporcategoria/remera3.png",
+    "nombre": "Mixed",
+    "categoria": "Remeras",
+    "genero": "masculino",
+    "color": "blanco",
+    "precio": 50,
+    "talle": "M",
+    "cantidad": 5,
+    "disponible": true
+    },
+    {
+    "id": 4,
+    "imagen": "/images/productosporcategoria/remera4.png",
+    "nombre": "Green Eastwood",
+    "categoria": "Remeras",
+    "genero": "masculino",
+    "color": "blanco",
+    "precio": 50,
+    "talle": "M",
+    "cantidad": 5,
+    "disponible": false
+    },
+    {
+    "id": 5,
+    "imagen": "/images/productosporcategoria/remera5.png",
+    "nombre": "Rainbow",
+    "categoria": "Remeras",
+    "genero": "masculino",
+    "color": "blanco",
+    "precio": 50,
+    "talle": "M",
+    "cantidad": 5,
+    "disponible": true
+    },
+    {
+    "id": 6,
+    "nombre": "The Sky",
+    "imagen": "/images/productosporcategoria/remera6.png",
+    "categoria": "Remeras",
+    "genero": "masculino",
+    "color": "blanco",
+    "precio": 50,
+    "talle": "M",
+    "cantidad": 5,
+    "disponible": false
+    },
+    {
+    "id": 7,
+    "imagen": "/images/productosporcategoria/remera7.png",
+    "nombre": "Belize",
+    "categoria": "Remeras",
+    "genero": "masculino",
+    "color": "blanco",
+    "precio": 50,
+    "talle": "M",
+    "cantidad": 5,
+    "disponible": true
+    },
+    {
+    "id": 8,
+    "imagen": "/images/productosporcategoria/remera8.png",
+    "nombre": "Sand Times",
+    "categoria": "Remeras",
+    "genero": "masculino",
+    "color": "blanco",
+    "precio": 50,
+    "talle": "M",
+    "cantidad": 5,
+    "disponible": false
+    }      
+]

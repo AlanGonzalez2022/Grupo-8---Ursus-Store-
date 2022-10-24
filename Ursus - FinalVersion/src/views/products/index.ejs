@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/css/normalize.css">       
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"> 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     
 </head>
 
@@ -20,26 +20,16 @@
     <header class="main-header">
         
         <!-- Menú desplegable -->
-        <div class="dropdown"> 
-            <button class="dropbtn"><i class="fa-solid fa-bars"></button></i>
-            <div class="dropdown-content">
-              <a href="#">Hombres</a>
-              <a href="#">Mujeres</a>
-              <a href="#">Niños</a>
-              <a href="#">Ofertas</a>
-              <a href="#">Lo más vendido</a>
-              <a href="#">Temporada</a>
-              <a href="http://localhost:3032/categorias">Categorías</a>
-            </div>
-        </div> 
+        <%- include ('../partials/menu')%>
+        
         
         <div class="main-header-top-bar center">
            <a href="http://localhost:3032"><img src="./images/logo-ursus.png" class="logo"></a>
         </div> 
             <ul class="right-navbar">
                 <li><a href=""><i class="fa-solid fa-magnifying-glass lupita"></a></i></li>
-                <li><a href="http://localhost:3032/register"><i class="fa-solid fa-user-plus nuevo usuario"></a></i></li>
-                <li><a href="http://localhost:3032/login"><i class="fa-solid fa-user usuario-existente"></a></i></li>
+                <li><a href="/register"><i class="fa-solid fa-user-plus nuevo usuario"></a></i></li>
+                <li><a href="/login"><i class="fa-solid fa-user usuario-existente"></a></i></li>
             </ul>
     </header> 
 
@@ -152,22 +142,8 @@
 
         <!-- Fin Banner de ofertas --> 
 
-        <!-- Footer --> 
-
-        <footer class="footer"> 
-            <div class="pie-de-pagina">
-                <div><a class="pie-de-pagina-textos" href="#">Quienes Somos</a></div>
-                <div><a class="pie-de-pagina-textos" href="#">Nuestra Visión</a></div>
-                <div><a class="pie-de-pagina-textos" href="#">Nuestros Locales</a></div>
-            </div>
-            
-            <div class="iconos">
-                <div><i class="fa-brands fa-square-facebook"></i></div>
-                <div><i class="fa-brands fa-instagram"></i></div>
-                <div><i class="fa-brands fa-twitter"></i></div>
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-        </footer>
+         <!-- Footer --> 
+        <%- include ('../partials/footer')%>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  

@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/db26de78cd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="/login.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>Document</title>
 </head>
 
@@ -14,19 +14,8 @@
 <body>
     <header class="main-header">
 
-        <!-- Menú desplegable -->
-        <div class="dropdown"> 
-            <button class="dropbtn"><i class="fa-solid fa-bars"></button></i>
-            <div class="dropdown-content">
-            <a href="#">Hombres</a>
-            <a href="#">Mujeres</a>
-            <a href="#">Niños</a>
-            <a href="#">Ofertas</a>
-            <a href="#">Lo más vendido</a>
-            <a href="#">Temporada</a>
-            <a href="http://localhost:3032/categorias">Categorías</a>
-            </div>
-        </div> 
+       <!-- Menú desplegable -->
+       <%- include ('../partials/menu')%>
     
         <div class="main-header-top-bar center">
             <a href="http://localhost:3032"><img src="./images/logo-ursus.png" class="logo"></a>
@@ -63,20 +52,9 @@
         </div>
     </div>
 </main>
-    <footer class="footer"> 
-        <div class="pie-de-pagina">
-            <div><a class="pie-de-pagina-textos1" href="#">Quienes Somos</a></div>
-            <div><a class="pie-de-pagina-textos2" href="#">Nuestra Visión</a></div>
-            <div><a class="pie-de-pagina-textos3" href="#">Nuestros Locales</a></div>
-        </div>
-        
-        <div class="iconos">
-            <div><i class="fa-brands fa-square-facebook"></i></div>
-            <div><i class="fa-brands fa-instagram"></i></div>
-            <div><i class="fa-brands fa-twitter"></i></div>
-            <i class="fa-solid fa-envelope"></i>
-        </div>
-    </footer>
+     <!-- Footer --> 
+     <%- include ('../partials/footer')%>
+
 </body>
 
 

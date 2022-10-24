@@ -134,7 +134,7 @@ section p{
     flex-direction: column;
     align-items: center;
     padding-bottom: 3vw;
-    padding-top: 5vw;
+    padding-top: 18vw;
 }
 
 .remera{
@@ -172,6 +172,10 @@ section p{
     padding-bottom: 20px;
     max-width: 229px;
     padding-top: 10px;
+}
+
+.nombre-precio{
+        text-align: center;
 }
 
 .contenedor-color{
@@ -223,23 +227,33 @@ section p{
 .pie-de-pagina{
     display: flex;
     justify-content: space-evenly;
-    width: 70vw;
-    margin-left: 10px;
+    width: 41vw;
+    margin-left: 44px;
+    font-size: 0.75em;
 }
 
 footer {
     background-color: black;
     display: flex;
     height: 10vw;
+    margin-top: 25vw;
+}
+
+.editar-producto{
+    margin-left: 8vw;
+    color: white;
+    background-color: grey;      
+    border-radius: 5px;  
 }
 
 .iconos{
     color: white;
     display: flex;
-    width: 50%;
+    width: 26%;
     justify-content: space-evenly;
     flex-direction: row;
-    padding-top: 10px;
+    padding-top: 4px;
+    margin-left: 15vw;
 }
 
 .pie-de-pagina-textos{
@@ -301,6 +315,7 @@ footer {
         display: flex;
         height: 5vw;
         margin-top: -1vw;
+        margin-left: -5vw;
     }
 
     .iconos{
@@ -311,6 +326,13 @@ footer {
         flex-direction: row;
         padding-top: 10px;
         margin-left: 2vw;
+    }
+
+    .editar-producto{
+        margin-left: 8vw;
+        color: white;
+        background-color: grey;      
+        border-radius: 5px;  
     }
 
 }
@@ -325,9 +347,13 @@ footer {
         border: none;
         margin-top: 7vw;
     }
+
+    .dropdown{
+        margin-left: 2vw;
+    }
     
     .right-navbar {
-        width: 14vw;
+        width: 17vw;
         margin-right: 3vw;
         max-width: 20vw
     }
@@ -341,17 +367,42 @@ footer {
     }
     
     .remera {
-        width: 45%;
+        width: 46%;
         position: absolute;
         right: 38vw;
-        top: 13vw;
+        top: 18vw;
+        height: 47vw;
     }
 
+    .nombre-remera{
+        margin-top: -24VW;
+        margin-left: -34vw;
+    }
+
+    .nombre-precio{
+        margin-top: -19vw;
+        margin-left: 2vw;
+    }
+
+    .marco-remera{
+        margin-top: 9vw;
+        margin-left: 1vw;
+    }
+
+
+    .principal-producto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 7vw;
+    }
+       
     .secundario-producto {
         display: flex;
         height: 60vw;
         flex-direction: column;
         width: 89vw;
+        margin-top: -20vw;
     }
 
     .contenedor-secundario {
@@ -373,22 +424,19 @@ footer {
 
     .agregar {
         position: absolute;
-        left: 64vw;
-        bottom: 21vw;
+        left: 59vw;
+        bottom: 27vw;
         max-width: 271px;
-        min-width: 136px
+        min-width: 136px;
     }
 
     .disponible {
         position: absolute;
-        bottom: 11vw;
-        left: 53vw;
+        bottom: 13vw;
+        left: 54vw;
+        color: white;
     }
     
-    .subdisponible {
-        display: none;
-    }
-
     .camion-contenedor{
         display: flex;
     }
@@ -427,6 +475,10 @@ footer {
         margin-left: 7vw;
     }
 
+    button{
+        margin-left: 5vw;
+    }
+
     .iconos {
         display: flex;
         color: white;
@@ -449,6 +501,7 @@ footer {
         background-color: black;
         display: flex;
         height: 3vw;
+        margin-top: 26vw;
     }
 }
 
@@ -460,4 +513,40 @@ footer {
     height: 3vw;
     margin-left: 3vw;
     }
+
+    .remera {
+        width: 46%;
+        position: absolute;
+        right: 38vw;
+        top: 16vw;
+        height: 47vw;
+    }
+
+    .nombre-precio {
+        margin-top: -18vw;
+        margin-left: 1vw;
+    }
+
+    .detalle {
+        position: absolute;
+        bottom: 42vw;
+        left: 54vw;
+    }
+
+    .agregar {
+        position: absolute;
+        left: 59vw;
+        bottom: 39vw;
+        max-width: 271px;
+        min-width: 136px;
+    }
+
+    .disponible {
+        position: absolute;
+        bottom: 24vw;
+        left: 54vw;
+        color: white;
+    }
+    
+       
 }

@@ -7,23 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="/shopping.css">
+    <link rel="stylesheet" href="css/shopping.css">
     <title>Carrito De Compras</title>
 </head>
 <header class="main-header">
 
-  <!-- Menú desplegable -->
-  <div class="dropdown"> 
-      <button class="dropbtn"><i class="fa-solid fa-bars"></button></i>
-      <div class="dropdown-content">
-        <a href="#">Hombres</a>
-        <a href="#">Mujeres</a>
-        <a href="#">Niños</a>
-        <a href="#">Ofertas</a>
-        <a href="#">Lo más vendido</a>
-        <a href="#">Temporada</a>
-      </div>
-  </div> 
+    <!-- Menú desplegable -->
+    <%- include ('../partials/menu')%>
  
   <div class="main-header-top-bar center">
       <a href="http://localhost:3032"><img src="./images/logo-ursus.png" class="logo"></a>
@@ -113,18 +103,8 @@
         </aside>
       </main>
 </body>
-<footer class="footer"> 
-  <div class="pie-de-pagina">
-      <div><a class="pie-de-pagina-textos1" href="#">Quienes Somos</a></div>
-      <div><a class="pie-de-pagina-textos2" href="#">Nuestra Visión</a></div>
-      <div><a class="pie-de-pagina-textos3" href="#">Nuestros Locales</a></div>
-  </div>
-  
-  <div class="iconos">
-      <div><i class="fa-brands fa-square-facebook"></i></div>
-      <div><i class="fa-brands fa-instagram"></i></div>
-      <div><i class="fa-brands fa-twitter"></i></div>
-      <i class="fa-solid fa-envelope"></i>
-  </div>
-</footer>
+
+  <!-- Footer --> 
+  <%- include ('../partials/footer')%>
+
 </html>

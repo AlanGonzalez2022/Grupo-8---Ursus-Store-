@@ -205,7 +205,7 @@ a.boton-iniciar{
   footer {
     display: flex;
     margin-top: 3vw;
-    margin-left: 5vw;
+    margin-left: -6vw;
   }
   
   .footer a {
@@ -314,7 +314,7 @@ a.boton-iniciar{
   }
  
   .footer {
-    margin-left: 3vw;
+    margin-left: -5vw;
     margin-top: 11vw;
   }
   
@@ -412,8 +412,8 @@ transform: scale(1.2);
    
   .footer {
     display: flex;
-    margin-top: -25vw;
-    margin-left: 6vw;
+    margin-top: -17vw;
+    margin-left: -8vw;
     margin-bottom: -5vw;
   }
 
@@ -454,6 +454,7 @@ transform: scale(1.2);
 
   .pie-de-pagina-textos{
     margin-right: 3vw;
+    font-size: 2vw;
   }
 
   .pie-de-pagina-textos1{
@@ -557,6 +558,10 @@ transform: scale(1.2);
     width: 100%;
   }
 
+  ul li a i{
+    font-size: 2vw;
+  }
+
   .main-header-top-bar{
     margin-left: -3vw;
   }
@@ -572,6 +577,19 @@ transform: scale(1.2);
     margin-bottom: 10vw;
     margin-top: -16%;
     font-size: 3.2vw;
+  }
+  
+
+  .contenedor1{
+      margin-top: -10vw;
+      margin-left: -28vw;  
+  }
+
+  .contenedor2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 34%;
+    margin-left: 27vw;
   }
 
   label{
@@ -596,13 +614,13 @@ transform: scale(1.2);
 
   a.boton-iniciar {
     color: white;
-    font-size: 3vw;
+    font-size: 2vw;
     text-decoration: none;
   }
 
   .boton-ing {
     background: rgb(63, 83, 217);
-    width: 39%;
+    width: 24%;
     height: 2vh;
     border: none;
     margin-bottom: 6vh;
@@ -610,10 +628,10 @@ transform: scale(1.2);
     border-radius: 10px;
     align-items: center;
     justify-content: center;
-    margin-left: 29vw;
+    margin-left: 37vw;
     font-size: 3vw;
     padding: 2vw;
-    margin-top: -15vw;
+    margin-top: -20vw;
   }
 
   .todavía-pregunta{
@@ -628,7 +646,7 @@ transform: scale(1.2);
 
   .footer {
     display: flex;    
-    margin-top: -13vw;
+    margin-top: -11vw;
     margin-left: 20vw;
     margin-bottom: 3vw;
     }
@@ -638,16 +656,18 @@ transform: scale(1.2);
     display: flex;
     text-decoration: none;
     font-size: 1.5vw;
-  }
+    width: 0vw;
+}
   
-  .pie-de-pagina{
-    display: flex;
-    margin-left: -2vw;
-    font-size: 1vw;
-  }
+.pie-de-pagina {
+  display: flex;
+  margin-left: -21vw;
+  font-size: 1vw;
+  width: 43vw;
+}
   
   .pie-de-pagina-textos{
-      margin-right: 3vw;
+      margin-left: 8vw;
   }
 
   a.pie-de-pagina-textos3{    
@@ -698,7 +718,7 @@ transform: scale(1.2);
 
   .iconos {
     font-size: 1.5vw;
-    margin-left: 49vw;
+    margin-left: 55vw;
   }
 
   .dropdown:hover .dropbtn {

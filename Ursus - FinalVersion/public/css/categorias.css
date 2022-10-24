@@ -176,7 +176,7 @@ h2.remeras{
 footer {
     display: flex;
     margin-top: 3vw;
-    margin-left: 5vw;
+    margin-left: -7vw;
   }
   
   .footer a {
@@ -247,7 +247,7 @@ footer {
  @media (min-width:477px) and (max-width:768px){
 
   .footer {
-    margin-left: 3vw;
+    margin-left: -8vw;
   } 
   
   .pie-de-pagina{
@@ -403,6 +403,7 @@ transform: scale(1.2);
 
   section{
     margin-top: -2vw;
+    margin-left: 20vw;
   }
 
  .remeras, .shorts, .calzado, .vestidos, .accesorios, .trajes-de-baño, .camisas, .anteojos{
@@ -420,7 +421,7 @@ transform: scale(1.2);
  .footer {
   display: flex;
   margin-top: 2vw;
-  margin-left: 6vw;
+  margin-left: -4vw;
   margin-bottom: 3vw;
   }
 
@@ -431,7 +432,7 @@ transform: scale(1.2);
   }
 
  .pie-de-pagina-textos{
-   margin-right: 3vw;
+   margin-right: 2,5vw;
   }
 
   .pie-de-pagina-textos1{
@@ -454,7 +455,7 @@ transform: scale(1.2);
 
  .iconos{
   font-size: 2vw;
-  margin-left: 27vw;
+  margin-left: 20vw;
   }
 
   .fa-square-facebook:hover{
@@ -563,8 +564,8 @@ transform: scale(1.2);
   .right-navbar a {
     text-decoration: none;
     color: white;
-    margin-left: -3vw;
-    font-size: 1vw;
+    margin-left: -4vw;
+    font-size: 1.5vw;
   }
 
   .right-navbar {
@@ -572,7 +573,7 @@ transform: scale(1.2);
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 7vw;
+    width: 9vw;
     align-items: center;
     margin-left: 9vw;
     margin-right: 2vw;
@@ -596,8 +597,8 @@ transform: scale(1.2);
 
   section{
     width: 70%;
-    margin-left: 15vw;
-    margin-top: -2vw;
+    margin-left: 21vw;
+    margin-top: -7vw;
   }
 
   .enmarcado-categorias {
@@ -631,7 +632,7 @@ transform: scale(1.2);
   .footer {
     display: flex;
     margin-top: 2vw;
-    margin-left: 12vw;
+    margin-left: 6vw;
     margin-bottom: 3vw;
     }
   
@@ -688,8 +689,8 @@ transform: scale(1.2);
   }
 
   .iconos{
-   font-size: 1vw;
-   margin-left: 66vw;
+    font-size: 2vw;
+    margin-left: 9vw;
   }
 
   .dropdown:hover .dropbtn {

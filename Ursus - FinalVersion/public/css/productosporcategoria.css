@@ -10,6 +10,11 @@ body {
     background-color: black;
 }
 
+a{
+  color: white;
+  text-decoration: none;
+}
+
 .main-header{
   display: flex;
   align-content: stretch;
@@ -132,9 +137,9 @@ img {
     height: auto;
 }
 
-.categorias {
+/* .categorias {
     justify-content: center;
-}
+} */
 
 /*h2 classes*/
 
@@ -146,12 +151,8 @@ h2.remeras{
     margin-top: 23vw;
 }
 
-.remeras-fixing{
-    margin-top: -16vw;
-    color: white;
-}
 
-.shorts {    
+/* .shorts {    
     margin-bottom: 2vw;
     margin-top: 2vw
 }
@@ -169,15 +170,15 @@ h2.remeras{
  .accesorios, .trajes-de-baño, .camisas, .anteojos{
   margin-bottom: 2vw;
   margin-top: 2vw
- }
+ } */
 
 /* Footer CSS */
 
 footer {
-    display: flex;
-    margin-top: 3vw;
-    margin-left: 5vw;
-  }
+  display: flex;
+  margin-top: 3vw;
+  margin-left: -5vw;
+}
   
   .footer a {
     color: white;
@@ -246,9 +247,11 @@ footer {
 
  @media (min-width:477px) and (max-width:768px){
 
-  .footer {
-    margin-left: 3vw;
-  } 
+  footer {
+    display: flex;
+    margin-top: 3vw;
+    margin-left: 5vw;
+  }
   
   .pie-de-pagina{
     font-size: 3vw;
@@ -265,9 +268,13 @@ footer {
   
   .iconos{
     font-size: 3vw;
-    margin-right: 11vw;
+    margin-right: 3vw;
   }
-
+  footer.footer {
+    display: flex;
+    margin-top: 3vw;
+    margin-left: -10vw;
+  }
   .fa-square-facebook, .fa-instagram, .fa-twitter{
    margin-right: -1vw;
  }
@@ -296,16 +303,6 @@ color: white;
 transform: scale(1.2);
 }
  
-
- .primavera-titulo{
-   font-size: 4vw;
-   padding-top: 21vw;
- }
-
- .masvisitados-titulo, .oferta-titulo{
-   font-size: 4vw;
- }
-
  .dropdown {
    position: relative;
    display: inline-block;
@@ -332,13 +329,6 @@ transform: scale(1.2);
    margin-top: 2vw;
  }
 
- .remeras-fixing:hover, .marco-shorts:hover, .marco-calzado:hover, .marco-vestidos:hover, .marco-camisas:hover, .marco-anteojos:hover,
-  .marco-accesorios:hover, .marco-trajes:hover{
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
-    transform: scale(1.2);
-    transition: 2s;
-  }
-
   .right-navbar .fa-solid:hover{
     color: rgb(63,53,217);
     transform: scale(1.3);
@@ -356,16 +346,7 @@ transform: scale(1.2);
     top: -3vw;
     width: 100%;
   }
-
-  .primavera-titulo{
-   font-size: 4vw;
-   padding-top: 21vw;
-  }
-
- .masvisitados-titulo, .oferta-titulo{
-   font-size: 4vw;
-  }
-
+  
  .dropdown{
    top: -1.9vw;
    padding-top: 3.1vw;
@@ -402,27 +383,19 @@ transform: scale(1.2);
    margin-left: -1vw;
   }
 
-  section{
-    margin-top: -2vw;
+  section {
+    margin-top: -1vw;
+    margin-left: 17vw;
   }
 
- .remeras, .shorts, .calzado, .vestidos, .accesorios, .trajes-de-baño, .camisas, .anteojos{
+ .remeras{
    font-size: 3vw;
   }
 
-  .shorts{
-    margin-top: 23vw;
-  }
-
-  p.marco-shorts{
+  footer.footer {
+    display: flex;
     margin-top: 3vw;
-  }
-
- .footer {
-  display: flex;
-  margin-top: 2vw;
-  margin-left: 6vw;
-  margin-bottom: 3vw;
+    margin-left: -5vw;
   }
 
  .pie-de-pagina{
@@ -433,6 +406,10 @@ transform: scale(1.2);
 
  .pie-de-pagina-textos{
    margin-right: 3vw;
+  }
+
+  a.pie-de-pagina-textos{
+    font-size: 0.75em;
   }
 
   .pie-de-pagina-textos1{
@@ -455,7 +432,7 @@ transform: scale(1.2);
 
   .iconos{
     font-size: 2vw;
-    margin-left: 27vw;
+    margin-left: 8vw;
   }
 
 .fa-square-facebook:hover{
@@ -501,27 +478,13 @@ transform: scale(1.2);
     margin-top: -1vw;
   }
 
-  .enmarcado-categorias{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    margin-left: -15vw;
-  }
-
-  .categorias{
+  /* .categorias{
     width: 45%;
     flex-direction: column;
     align-items: stretch;
     margin-bottom: 3vw;
     margin-left: 3vw;
-  }
-
-  .remeras-fixing:hover, .marco-shorts:hover, .marco-calzado:hover, .marco-vestidos:hover, .marco-camisas:hover, .marco-anteojos:hover,
-  .marco-accesorios:hover, .marco-trajes:hover{
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
-    transform: scale(1.2);
-    transition: 2s;
-  }
+  } */
 
   .right-navbar .fa-solid:hover{
     color: rgb(63,53,217);
@@ -595,50 +558,39 @@ transform: scale(1.2);
     transition: 0.5s;
   }
 
-  section{
+  section {
     width: 70%;
-    margin-left: 15vw;
-    margin-top: -2vw;
+    margin-left: 11vw;
+    margin-top: 4vw;
   }
 
-  .enmarcado-categorias {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    margin-left: -15vw;
+  h2{
+    color: white;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
   .categorias {
-    width: 45%;
+    width: 100%;
     flex-direction: column;
     align-items: stretch;
     margin-bottom: 3vw;
     margin-left: 3vw;
-  } 
-
-  .shorts {
-    padding-top: 6vw;
-    margin-bottom: 3vw;
-    margin-top: 17vw;
   }
 
-  .remeras-fixing:hover, .marco-shorts:hover, .marco-calzado:hover, .marco-vestidos:hover, .marco-camisas:hover, .marco-anteojos:hover,
-  .marco-accesorios:hover, .marco-trajes:hover{
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
-    transform: scale(1.2);
-    transition: 2s;
-  }
-
-  .footer {
+  footer {
     display: flex;
-    margin-top: 2vw;
-    margin-left: 12vw;
-    margin-bottom: 3vw;
-    }
+    margin-top: 3vw;
+    margin-left: -5vw;
+  }
   
   .pie-de-pagina{
       display: flex;
-      margin-left: -2vw;
+      margin-left: 2vw;
       font-size: 1vw;
   }
   
@@ -649,6 +601,10 @@ transform: scale(1.2);
   .pie-de-pagina-textos1{
     font-size: 1vw;
     margin-left: -7vw; 
+  }
+
+  a.pie-de-pagina-textos{
+    font-size: 2em;
   }
   
   .pie-de-pagina-textos2, .pie-de-pagina-textos3{
@@ -688,9 +644,9 @@ transform: scale(1.2);
     margin-right: 0vw;
   }
 
-  .iconos{
-    font-size: 1vw;
-    margin-left: 66vw;
+  .iconos {
+    font-size: 1.5vw;
+    margin-left: 29vw;
   }
 
   .dropdown:hover .dropbtn {

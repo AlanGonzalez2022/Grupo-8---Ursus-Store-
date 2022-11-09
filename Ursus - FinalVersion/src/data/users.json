@@ -1,10 +1,10 @@
-[{
-    "id":1,
-    "nombre":"Mirna",
-    "apellido":"De Maria",
-    "email":"mdemaria0@economist.com",
-    "contraseña":"s558MP",
-    "imagen":"/images/avatars/tostada.jpg"
+[   {
+        "id":1,
+        "nombre":"Mirna",
+        "apellido":"De Maria",
+        "email":"mdemaria0@economist.com",
+        "contraseña":"s558MP",
+        "imagen":"/images/avatars/tostada.jpg"
     },
     {
         "id":2,

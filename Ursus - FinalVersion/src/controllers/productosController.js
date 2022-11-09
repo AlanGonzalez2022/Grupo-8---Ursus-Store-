@@ -5,8 +5,6 @@ const productosCategoriasPath = path.join(__dirname, '../data/productosCategoria
 const productosCategorias = JSON.parse(fs.readFileSync(productosCategoriasPath, "utf-8")); //parseo
 
 let productosController = {
-    listado: function(){},
-    crear: function(){},
     categorias: function(req,res) {
         res.render('./products/categorias')
     },
@@ -31,13 +29,6 @@ let productosController = {
 
     crearProducto: function(req,res) {
     
-        // let imagen
-        // console.log(req.files);
-        // if(req.files != undefined){
-        //     imagen = req.files.filename
-        // } else {
-        //     imagen = 'default-image.png'
-        // }
 
         let newProduct = {
             id: Date.now(),

@@ -18,22 +18,14 @@ app.set('view engine', 'ejs')
 const mainRoutes = require('./src/routes/main.js');
 const mainProducts = require ('./src/routes/categorias.js');
 
-
-
-
-
-//recursos estáticos en carpeta 'public'
-//const publicPath = path.resolve(__dirname, './public');
-
+//Ruta public
 app.use(express.static("public"));
 
 
 //direccionando a las respectivas rutas
 app.use('/', mainRoutes)
 app.use('/', mainProducts)
-// app.use('/detalle-producto/:id', mainProducts)
-// app.use('/editarProducto/:id', mainProducts)
-// app.use('/eliminarProducto/:id', mainProducts)
+
 
 
 //servidor donde va a correr la web

@@ -6,6 +6,7 @@ const router = express.Router();
 // **** Controller Require ****
 const multer = require ('multer');
 const { diskStorage } = require('multer');
+
 // No nos muestra la imagen, debido a que en el nombre de nuestra imagen no tenemos la ruta en donde se encuentra nuestra imagen
 // Es redireccionamiento 
 const storage = multer.diskStorage({
@@ -25,7 +26,6 @@ router.get('/categorias/detalle-producto/:id', productosController.detalleProduc
 router.get('/shopping-cart', productosController.shoppingCart);
 
 //Creación de producto:
-
 router.get('/crearProducto',productosController.crear);
 router.post('/crearProducto',upload.single("imagen"), productosController.crearProducto);
 

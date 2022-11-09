@@ -17,7 +17,7 @@
         <%- include ('../partials/menu')%>
         
         <div class="main-header-top-bar center">
-            <a href="http://localhost:3032"><img src="/images/logo-ursus.png" class="logo"></a>
+            <a href="/"><img src="/images/logo-ursus.png" class="logo"></a>
         </div> 
             <ul class="right-navbar">
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass lupita"></a></i></li>
@@ -28,26 +28,26 @@
     <main>
         <section class="principal-producto">
 
-                <img class="remera" src="<%= articulo.imagen %>" alt="remera"> 
+                <img class="remera" src="<%= articulos.imagen %> " alt="remera"> 
             <div class="pieProducto"> 
-                <p class="nombre-remera"><%= articulo.nombre %></p>
+                <p class="nombre-remera"><%= articulos.nombre %></p>
                 <div class="marco-remera">
-                <p class="nombre-precio">$ <%= articulo.precio %></p>
+                <p class="nombre-precio">$ <%= articulos.precio %></p>
                 </div>
             </div>
         </section>
         <section class="contenedor-secundario">
             <div class="secundario-producto">
-                <img class="remera-secundario" src="<%= articulo.imagen %>" alt="remera-secundario">
-                <img class="remera-secundario" src="<%= articulo.imagen %>" alt="remera-secundario">
-                <img class="remera-secundario" src="<%= articulo.imagen %>" alt="remera-secundario">
-                <img class="remera-secundario" src="<%= articulo.imagen %>" alt="remera-secundario">
+                <img class="remera-secundario" src="<%= articulos.imagen %>" alt="remera-secundario">
+                <img class="remera-secundario" src="<%= articulos.imagen %>" alt="remera-secundario">
+                <img class="remera-secundario" src="<%= articulos.imagen %>" alt="remera-secundario">
+                <img class="remera-secundario" src="<%= articulos.imagen %>" alt="remera-secundario">
             </div>
         </section>
         <section class="detalle">
             <label>Talle</label>
             <select name="talle" id="talle">
-                <option><%= articulo.talle %></option> 
+                <option><%= articulos.talle %></option> 
             </select>
             <form class="contenedor-color">
                 <label>Color</label>
@@ -55,11 +55,11 @@
             </form>    
                 <label>Cantidad</label>
                 <select name="cantidad" id="cantidad">
-                    <option><%= articulo.cantidad %></option>
+                    <option><%= articulos.cantidad %></option>
                 </select>    
         </section>
         <section class="disponible">
-            <p class="subdisponible">Artículo disponible: <%= articulo.disponible %></p>
+            <p class="subdisponible">Artículo disponible: <%= articulos.disponible %></p>
             <div class="iconos-envios">
                 <div class="camion-contenedor">
                     <i class="fa-solid fa-truck"></i><p class="costo">Costo de envíos</p>
@@ -72,7 +72,11 @@
         <div class="contenedor-agregar">
         <button class="agregar" type="submit">Agregar al carrito</button>
         </div>
-        <button class="editar-producto"><a href="/editarproducto">Editar Producto</a></button> 
+        <button class="editar-producto"><a href="/editar/<%= articulos.id%>">Editar Producto</a></button> 
+        
+        <form class="eliminar-producto" action="/eliminarProducto/<%= articulos.id%>?_method=DELETE" method="POST" style="display: inline-flex">
+            <button type="submit" class="action-button delete">Eliminar producto</button>
+        </form>
     </main>
 
     <!-- Footer --> 

@@ -7,75 +7,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/db26de78cd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/editarproducto.css">
+    <link rel="stylesheet" href="/css/editarproducto.css">
     <title>Editar Producto</title>
 </head>
 
 <header class="main-header">
     <div class="main-header-top-bar center">
-        <a href="http://localhost:3032"><img src="./images/logo-ursus.png" class="logo"></a>
+        <a href="/"><img src="/images/logo-ursus.png" class="logo"></a>
     </div> 
 </header> 
 
 <body>
-    <form action="/add-product" method="GET">
-        <!-- <div>
-        <label>Producto</label>
-        <input class="forms" type="text" value="Remera">
-        </div>
-        <br> -->
-
+    <form action="/editar/<%= productoEdicion.id %>?_method=PUT" method="POST">
         <div class="forma">
-            <label class="producto" for="producto">Producto:</label>
-            <input minlength="5" required="" type="text" id="producto" name="producto" value="Remera" class="control">           
-          </div>
-        <div>
-        <!-- <label for="descripcion">Nombre</label>
-        <textarea name="descripcion" id="descripcion" placeholder="Ingrese descripción"></textarea>
-        </div>
-        <br> -->
-
-        <div class="forma">
-            <label class="nombre" for="nombre">Nombre:</label>
-            <input minlength="5" required="" type="text" id="nombre" name="nombre" value="Ingrese nombre" class="control">           
-        </div>
-
-        <label>Imagen</label>
-        <input class="forms" type="file" accept=".jpg, .jpeg" value="Imagen">
+            <label class="producto" for="nombre">Producto:</label>
+            <input type="text" name="nombre" id="nombre" value="<%= productoEdicion.nombre %> " class="control">      
         </div>
         
         <div>
-        <label>Categoria:</label>
-        <select name="categoria" class="forma" value="Ingrese categoría">
-            <option>Remeras</option>
-            <option>Shorts</option>
-            <option>Calzados</option>
-            <option>Vestidos</option>
-            <option>Camisas</option>
-            <option>Anteojos</option>
-            <option>Accesorios</option>
-            <option>Trajes De Baño</option>
-        </select>
-        </div>
+            <label for="imagen">Imagen</label>
+            <!-- <img class="remera" src="articulo.imagen APLICAR EJS" alt="remera">  -->
+            <input class="forms" type="file" accept=".jpg, .jpeg">
+        </div>   
         
-        <label>Talle</label>
-        <select name="talle" class="forma" value="Ingrese talle" >
-            <option>XS</option>
-            <option>S</option>
-            <option>M</option>
-            <option>L</option>
-            <option>XL</option>
+        <div>
+            <label for="categoria">Categoria:</label>
+            <select name="categoria" id="categoria" class="forma">
+                <option selected><%= productoEdicion.categoria %></option> 
+                <option value="remeras">Remeras</option>      
+                <option value="shorts">Shorts</option>
+                <option value="salzados">Calzados</option>
+                <option value="vestidos">Vestidos</option>
+                <option value="camisas">Camisas</option>
+                <option value="anteojos">Anteojos</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="trajes-de-baño">Trajes De Baño</option>
+            </select>
+        </div>  
+        <label for="talle">Talle</label>
+        <select name="talle" id="talle" class="forma" value="Ingrese talle" >
+            <option selected><%= productoEdicion.talle %></option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
         </select>
         
+        <label for="genero">Género</label>
+        <select name="genero" id="genero" class="forma" value="Ingrese género" >
+            <option selected><%= productoEdicion.genero %></option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select>
+        
+        <label for="color">Color</label>
+        <select name="color" id="color" class="forma" >
+            <option selected><%= productoEdicion.color%></option>
+            <option value="rojo">Rojo</option>
+            <option value="negro">Negro</option>
+            <option value="blanco">Blanco</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="azul">Azul</option>
+        </select>
+        
+        <label for="cantidad">Cantidad</label>
+        <input required="" type="number" id="cantidad" name="cantidad" value="<%= productoEdicion.cantidad %>" class="control">
+        <br>
+        <label for="disponible">Disponibilidad</label>
+        <select name="disponible" id="disponible" class="forma">
+            <option value="true">Hay</option>
+            <option value="false">No hay disponibilidad de este producto</option> %> 
+        </select>
 
         <div class="forma">
             <label class="precio" for="precio">Precio:</label>
-            <input minlength="5" required="" type="text" id="precio" name="precio" value="Ingrese precio" class="control">           
+            <input type="text" id="precio" name="precio" value="<%= productoEdicion.precio %>" class="control">           
         </div>
-
+        
         <div class="alinearboton">
-        <button type="reset" class="boton-formulario">Borrar Todo</button>
-        <button type="submit" class="boton-formulario">Guardar</button>
+            <button type="reset" class="boton-formulario">Borrar Todo</button>
+            <button type="submit" class="boton-formulario">Guardar</button>
         </div>
     </form>
 </body>

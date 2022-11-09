@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="/css/normalize.css">       
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>  
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"> 
-        <link rel="stylesheet" href="css/productosporcategoria.css">        
+        <link rel="stylesheet" href="/css/productosporcategoria.css">        
     </head>
 
     <header class="main-header">
@@ -21,7 +21,7 @@
         <%- include ('../partials/menu')%>
        
         <div class="main-header-top-bar center">
-            <a href="http://localhost:3032"><img src="./images/logo-ursus.png" class="logo"></a>
+            <a href="http://localhost:3032"><img src="/images/logo-ursus.png" class="logo"></a>
         </div> 
             <ul class="right-navbar">
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass lupita"></a></i></li>
@@ -33,13 +33,11 @@
     <section>
         <% productosCategorias.forEach(productoDetalle => { %>
             <div class="categorias">
-               <h2 class="remeras"><a href="categorias/detalle-producto/<%= productoDetalle.id %>">
-               <img src="<%= productoDetalle.imagen %>" alt="categoría-remeras">
-               <%= productoDetalle.nombre %></a></h2>
+               <h2 class="remeras"></h2>
+               <a href="categorias/detalle-producto/<%= productoDetalle.id %>"><img src="<%= productoDetalle.imagen %>" alt="categoría-remeras"></a>
+               <h2><a><%= productoDetalle.nombre %></a></h2>
             </div>
-            </div>
-        <% }) %>        
-        </div>
+            <% }) %> 
      </section>
 </body>
 

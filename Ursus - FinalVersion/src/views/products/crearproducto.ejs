@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/db26de78cd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/editarproducto.css">
-    <title>Editar Producto</title>
+    <title>Crear Producto</title>
 </head>
 
 <header class="main-header">
@@ -18,63 +18,64 @@
 </header> 
 
 <body>
-    <form action="/add-product" method="GET">
-        <!-- <div>
-        <label>Producto</label>
-        <input class="forms" type="text" value="Remera">
-        </div>
-        <br> -->
-
+    <form action="/crearproducto" method="POST" enctype="multipart/form-data">
         <div class="forma">
-            <label class="producto" for="producto">Producto:</label>
-            <input minlength="5" required="" type="text" id="producto" name="producto" placeholder="Ingrese nombre" class="control">           
+            <label class="producto" for="nombre">Producto:</label>
+            <input required="" type="text" id="nombre" name="nombre" placeholder="Ingrese un nombre" class="control">           
           </div>
         <div>
-        <!-- <label for="descripcion">Nombre</label>
-        <textarea name="descripcion" id="descripcion" placeholder="Ingrese descripción"></textarea>
+       
+        <label for="imagen">Imagen</label>
+        <input class="forms" type="file" id="imagen" name="imagen" accept=".jpg, .jpeg">
         </div>
-        <br> -->
-
-        <div class="forma">
-            <label class="nombre" for="nombre">Descripcion:</label>
-            <input minlength="5" required="" type="text" id="nombre" name="nombre" placeholder="Ingrese descripcion" class="control">           
-        </div>
-
-        <label>Imagen</label>
-        <input class="forms" type="file" accept=".jpg, .jpeg" value="Imagen">
-        </div>
-        <br>
+        
         <div>
-        <label>Categoria:</label>
+        <label for="categorias">Categorias</label>
         <select name="categoria" class="forma">
-            <option>Remeras</option>
-            <option>Shorts</option>
-            <option>Calzados</option>
-            <option>Vestidos</option>
-            <option>Camisas</option>
-            <option>Anteojos</option>
-            <option>Accesorios</option>
-            <option>Trajes De Baño</option>
+        <option value="remeras">Remeras</option>      
+        <option value="shorts">Shorts</option>
+        <option value="calzados">Calzados</option>
+        <option value="vestidos">Vestidos</option>
+        <option value="camisas">Camisas</option>
+        <option value="anteojos">Anteojos</option>
+        <option value="accesorios">Accesorios</option>
+        <option value="trajes-de-baño">Trajes De Baño</option>
         </select>
         </div>
-        <br>
-        <label>Talle</label>
+        
+        <label for="talle">Talle</label>
         <select name="talle" class="forma">
-            <option>XS</option>
-            <option>S</option>
-            <option>M</option>
-            <option>L</option>
-            <option>XL</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
         </select>
-        <br>
+
+        <label for="genero">Género</label>
+        <select name="genero" id="genero" class="forma">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select>
+
+        <label for="color">Color</label>
+        <select name="color" id="color" class="forma">
+            <option value="rojo">Rojo</option>
+            <option value="negro">Negro</option>
+            <option value="blanco">Blanco</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="azul">Azul</option>
+        </select>
+        
+        <label for="cantidad">Cantidad</label>
+            <input required="" type="number" id="cantidad" name="cantidad" placeholder="123" class="control">
+        </select>
 
         <div class="forma">
-            <label class="precio" for="precio">Precio:</label>
-            <input minlength="5" required="" type="text" id="precio" name="precio" placeholder="Ingrese precio" class="control">           
-          </div>
-        <div>
+            <label for="precio" class="precio" for="precio">Precio:</label>
+            <input required="" type="text" id="precio" name="precio" placeholder="5678" class="control">           
+        </div>
 
-        <br>
         <div class="alinearboton">
         <button type="reset" class="boton-formulario">Borrar Todo</button>
         <button type="submit" class="boton-formulario">Agregar</button>

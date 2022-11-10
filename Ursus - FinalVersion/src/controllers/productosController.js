@@ -29,10 +29,11 @@ let productosController = {
 
     crearProducto: function(req,res) {
     
+        console.log(req.files);
 
         let newProduct = {
             id: Date.now(),
-            imagen: req.file.fieldname,
+            imagen: req.files[0].filename,
             nombre: req.body.nombre,
             categoria: req.body.categoria,
             genero: req.body.genero,

@@ -14,7 +14,7 @@ const storage = multer.diskStorage({
         cb(null, path.join(__dirname, '../../public/images/productosporcategoria'))
     },
     filename: function(req, file, cb){
-        cb(null, req.file + '-' + Date.now() + path.extname(file.originalname))
+        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
     }
 })
 
@@ -27,7 +27,7 @@ router.get('/shopping-cart', productosController.shoppingCart);
 
 //Creación de producto:
 router.get('/crearProducto',productosController.crear);
-router.post('/crearProducto',upload.single("imagen"), productosController.crearProducto);
+router.post('/crearProducto',upload.any(), productosController.crearProducto);
 
 //Edición de producto:
 router.get('/editar/:id', productosController.editar);

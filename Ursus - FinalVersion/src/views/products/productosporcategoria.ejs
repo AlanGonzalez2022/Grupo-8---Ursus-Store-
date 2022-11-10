@@ -34,7 +34,7 @@
         <% productosCategorias.forEach(productoDetalle => { %>
             <div class="categorias">
                <h2 class="remeras"></h2>
-               <a href="categorias/detalle-producto/<%= productoDetalle.id %>"><img src="<%= productoDetalle.imagen %>" alt="categoría-remeras"></a>
+               <a href="categorias/detalle-producto/<%= productoDetalle.id %>"><img src="/images/productosporcategoria/<%=productoDetalle.imagen %>" alt="categoría-remeras"></a>
                <h2><a><%= productoDetalle.nombre %></a></h2>
             </div>
             <% }) %> 

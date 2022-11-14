@@ -19,3 +19,11 @@ Sprint 3:
 - Sprint más complejo que lo usual, demasiados conceptos nuevos a aplicarse en un sitio web aún en proceso de desarrollo sin entender en profundidad lo que estábamos haciendo, sino probando a medida que avanzábamos
 - Buen trabajo en equipo, pero nos faltaron reuniones para poder dialogar sobre lo avanzado, fueron semanas que no pudimos juntarnos y charlar sobre cómo solucionar problemas. 
 - Creemos haber llegado a cumplir la consigna, pero necesitamos reorganizarnos mejor para que todos estemos al tanto de lo que hacemos
+
+Retrospectiva Sprint 4:
+
+- El más complejo de todos los sprints que hicimos hasta ahora, aún intentando procesar los temas para aplicarlos correctamente en la ejercitación. La complejidad giró en torno a CRUD, por lógica, y nos costó relacionar de manera correcta los controllers con el ruteo y los tags correctos en EJS. 
+
+- Buena comunicación a pesar de los obstáculos que tenemos para encontrar horarios óptimos para todos, dividimos el trabajo en equipo y logramos tener reuniones de todos los integrantes del mismo para analizar cada paso del proceso hecho.
+
+- Preocupados de cara al próximo sprint porque aún no tenemos un entendimiento claro de Middlewares, Session y Cookies y la aplicación práctica de la teoría no nos resulta simple de entender aún.

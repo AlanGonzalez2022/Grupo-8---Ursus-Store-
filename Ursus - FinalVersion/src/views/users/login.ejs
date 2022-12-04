@@ -18,7 +18,7 @@
        <%- include ('../partials/menu')%>
     
         <div class="main-header-top-bar center">
-            <a href="http://localhost:3032"><img src="./images/logo-ursus.png" class="logo"></a>
+            <a href="/"><img src="./images/logo-ursus.png" class="logo"></a>
         </div> 
             <ul class="right-navbar">
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass lupita"></a></i></li>
@@ -33,18 +33,30 @@
         <div class="contenedor2">
             <h1 class="inicio-sesion">INICIAR SESION</h1>
             
-            <form action="/register" method="GET"></form>
+            <form action="/login" method="POST">
                 <div class="mail">
-                    <label>CORREO ELECTRONICO</label><input class="barra-mail" type="email" placeholder="Email">
+                    <label>CORREO ELECTRONICO</label>
+                    <input class="barra-mail" type="email" name="email" placeholder="Email">
+                    <% if (locals.errors && errors.email) { %>
+                        <div class = "errorRegistro" style="color: red">
+                            <%= errors.email.msg %> 
+                        </div>
+                    <% } %>
                 </div>
                 <div class="contraseña">
-                    <label>CONTRASEÑA</label><input class="barra-mail" type="password" placeholder="Contraseña">
+                    <label>CONTRASEÑA</label>
+                    <input class="barra-mail" type="password" name="password" placeholder="Contraseña">
+                </div>
+                <div>
+                    <label for="recordar">Recordar Usuario</label>
+                    <input type="checkbox" name="recordar">
+                </div>
+                <div class="reg-text">
+                    <input type="submit" value="Ingresá"></label>
                 </div>
             </form>   
 
             <div class="olv"><h5>¿Olvidaste tu contraseña?</h5></div>
-            <div class="boton-ing"><a class="boton-iniciar"href="http://localhost:3032">Iniciar</a></div>
-
             <div class="olv">
                 <span class="todavía-pregunta">¿Todavía no tenés usuario?</span>
                 <a href="http://localhost:3032/register"><h5 class="boton-registrate">Registrate</h5></a>

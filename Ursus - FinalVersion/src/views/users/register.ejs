@@ -18,51 +18,73 @@
       <%- include ('../partials/menu')%>
        
         <div class="main-header-top-bar center">
-            <a href="http://localhost:3032"><img src="./images/logo-ursus.png" class="logo"></a>
+            <a href="/"><img src="./images/logo-ursus.png" class="logo"></a>
         </div> 
             <ul class="right-navbar">
                 <li><a href="www.google.com"><i class="fa-solid fa-magnifying-glass lupita"></a></i></li>
-                <li><a href="http://localhost:3032/login"><i class="fa-solid fa-user usuario-existente"></a></i></li>
-                <li><a href="http://localhost:3032/shopping-cart"><i class="fa-solid fa-cart-shopping"></a></i></li>                
+                <li><a href="/login"><i class="fa-solid fa-user usuario-existente"></a></i></li>
+                <li><a href="/shopping-cart"><i class="fa-solid fa-cart-shopping"></a></i></li>                
             </ul>
 </header>
 
 <body>
     <main>
         <div class="inicio">
-        <h4 class="inicio-sesion">¡Unite a nuestra comunidad! Creá tu cuenta<a class="ingresa-aca" href="http://localhost:3032/login"> ¿Ya
+        <h4 class="inicio-sesion">¡Unite a nuestra comunidad! Creá tu cuenta<a class="ingresa-aca" href="/login"> ¿Ya
             tenés una? Ingresá acá </h4></a>
         </div>
-   
-        
         
         <div class="contenedor1">
             <div class="formularios">
                 <div class="registro"><h2>REGISTRO</h2></div>
-                <form action="/login" method="GET">
+                <form action="/register" method="POST" enctype="multipart/form-data">
                     <div class="nombre">
-                        <label>Nombre</label><input class="forms" type="text" placeholder="Ingrese su nombre">
+                        <label>Usuario</label>
+                        <input class="forms" type="text" name= "usuario" placeholder="Ingrese su Nombre Completo" value="<%= locals.oldData ? oldData.usuario : null %>">
+                        <% if (locals.errors && errors.usuario) { %> 
+                            <div class = "errorRegistro" style="color: red">
+                                <%= errors.usuario.msg %> 
+                            </div>
+                        <% } %>
                     </div>
                     <div class="email">
-                        <label>Email</label><input class="forms" type="email" placeholder="Ingrese su email">
+                        <label>Email</label>
+                        <input class="forms" type="email" name= "email" placeholder="Ingrese su Email" value="<%= locals.oldData ? oldData.email : null %>">
+                        <% if (locals.errors && errors.email) { %> 
+                            <div class = "errorRegistro" style="color: red">
+                                <%= errors.email.msg %> 
+                            </div>
+                        <% } %>
                     </div>
                     <div class="contraseña">
-                        <label>Contraseña</label><input class="forms" type="password" placeholder="Ingrese su contraseña">
+                        <label>Contraseña</label>
+                        <input class="forms" type="password" name= "password" placeholder="Ingrese su Contraseña" value="<%= locals.oldData ? oldData.password : null %>">
+                        <% if (locals.errors && errors.password) { %> 
+                            <div class = "errorRegistro" style="color: red">
+                                <%= errors.password.msg %> 
+                            </div>
+                        <% } %>
                     </div>
                     <div class="confirmacion-contraseña">
-                        <label>Confirmar Contraseña</label><input class="forms" type="password" placeholder="Ingrese su contraseña">
+                        <label>Confirmar Contraseña   
+                        </label><input class="forms" type="password" placeholder="Ingrese su contraseña">
+                    </div>
+                    <div>
+                        <label for="imagenUser">Selecione su foto de perfil</label>
+                        <input class="forms" type="file" id="imagenUser" name="imagenUser" accept=".jpg, .jpeg">
+                        <% if (locals.errors && errors.imagenUser) { %> 
+                            <div class = "errorRegistro" style="color: red">
+                                <%= errors.imagenUser.msg %> 
+                            </div>
+                        <% } %>
+                    </div>
+                    <div class="reg-text">
+                        <input type="submit" value="Registrate"></label>
                     </div>
                 </form>
-                <div class="boton-reg">
-                   <div class="reg-text">
-                       Registrate
-                   </div>
-                </div>
             </div>
-
         
-    <div class="contenedor2">
-        
+    <div class="contenedor2">   
 
             <div class="redes2">
                 <div class="redes"><h6>Tambien podes ingresar con:</h6></div>

@@ -1,241 +1,226 @@
-[   {
-        "id":1,
-        "nombre":"Mirna",
-        "apellido":"De Maria",
-        "email":"mdemaria0@economist.com",
-        "contraseña":"s558MP",
-        "imagen":"/images/avatars/tostada.jpg"
-    },
-    {
-        "id":2,
-        "nombre":"Adolph",
-        "apellido":"Wickerson",
-        "email":"awickerson1@nsw.gov.au",
-        "contraseña":"VE9QvdFKw",
-        "imagen":"/images/avatars/tostada.jpg"
-    },
-    {
-        "id":3,
-        "nombre":"Idaline",
-        "apellido":"Lowndsbrough",
-        "email":"ilowndsbrough2@columbia.edu",
-        "contraseña":"rT73s4L2",
-        "imagen":"/images/avatars/kipa.jpg"
-    },
-    {
-        "id":4,
-        "nombre":"Starr",
-        "apellido":"Redington",
-        "email":"sredington3@comsenz.com",
-        "contraseña":"Xg4ZCuXmL",
-        "imagen":"/images/avatars/jala.jpg"
-    },
-    {
-        "id":5,
-        "nombre":"Sheba",
-        "apellido":"Sponer",
-        "email":"ssponer4@4shared.com",
-        "contraseña":"APd58eNW",
-        "imagen":"/images/avatars/jala.jpg"
-    },
-    {
-        "id":6,
-        "nombre":"Milissent",
-        "apellido":"O'Halloran",
-        "email":"mohalloran5@senate.gov",
-        "contraseña":"khu49xva8",
-        "imagen":"/images/avatars/polloCorazon.jpg"
-    },
-    {
-        "id":7,
-        "nombre":"Travis",
-        "apellido":"Orts",
-        "email":"torts6@cocolog-nifty.com",
-        "contraseña":"51iYR17p",
-        "imagen":""
-    },
-    {
-        "id":8,
-        "nombre":"Rene",
-        "apellido":"Sanzio",
-        "email":"rsanzio7@irs.gov",
-        "contraseña":"ZMV1xvWJvK2t",
-        "imagen":""
-    },
-    {
-        "id":9,
-        "nombre":"Issy",
-        "apellido":"Gunbie",
-        "email":"igunbie8@woothemes.com",
-        "contraseña":"rpF6Kb",
-        "imagen":"/images/avatars/pretzel.jpg"
-    },
-    {
-        "id":10,
-        "nombre":"Christoph",
-        "apellido":"Mendus",
-        "email":"cmendus9@imgur.com",
-        "contraseña":"Fm35JWrtuXc",
-        "imagen":"/images/avatars/jala.jpg"
-    },
-    {
-        "id":11,
-        "nombre":"Quinlan",
-        "apellido":"Worssam",
-        "email":"qworssama@bravesites.com",
-        "contraseña":"i6RXUv",
-        "imagen":"/images/avatars/pletzale.jpg"
-    },
-    {
-        "id":12,
-        "nombre":"Gerda",
-        "apellido":"Harcarse",
-        "email":"gharcarseb@jalbum.net",
-        "contraseña":"32kL3kFpSu9x",
-        "imagen":"/images/avatars/jala.jpg"
-    },
-    {
-        "id":13,
-        "nombre":"Candide",
-        "apellido":"Camoletto",
-        "email":"ccamolettoc@vimeo.com",
-        "contraseña":"01XIu4ljED",
-        "imagen":"/images/avatars/pletzale.jpg"
-    },
-    {
-        "id":14,
-        "nombre":"Shela",
-        "apellido":"Vakhrushev",
-        "email":"svakhrushevd@springer.com",
-        "contraseña":"B7oRDr7Fxe",
-        "imagen":"/images/avatars/pretzel.jpg"
-    },
-    {
-        "id":15,
-        "nombre":"Bee",
-        "apellido":"Barratt",
-        "email":"bbarratte@tripod.com",
-        "contraseña":"WPa4w7YiY",
-        "imagen":""
-    },
-    {
-        "id":16,
-        "nombre":"Darin",
-        "apellido":"Moran",
-        "email":"dmoranf@nhs.uk",
-        "contraseña":"jf2fKilz",
-        "imagen":"/images/avatars/pletzale.jpg"
-    },
-    {
-        "id":17,
-        "nombre":"Florentia",
-        "apellido":"Relf",
-        "email":"frelfg@opensource.org",
-        "contraseña":"BZxogn",
-        "imagen":"/images/avatars/pretzel.jpg"
-    },
-    {
-        "id":18,
-        "nombre":"Iggie",
-        "apellido":"Crayk",
-        "email":"icraykh@google.ca",
-        "contraseña":"Jr8TyeiLEFQ",
-        "imagen":"/images/avatars/jala.jpg"
-    },
-    {
-        "id":19,
-        "nombre":"Petronella",
-        "apellido":"Caustic",
-        "email":"pcaustici@yelp.com",
-        "contraseña":"6arjH0xv",
-        "imagen":"/images/avatars/jala.jpg"
-    },
-    {
-        "id":20,
-        "nombre":"Albertina",
-        "apellido":"Frangione",
-        "email":"afrangionej@joomla.org",
-        "contraseña":"R8h208PQWuBG",
-        "imagen":"/images/avatars/polloCorazon.jpg"
-    },
-    {
-        "id":21,
-        "nombre":"Field",
-        "apellido":"Mosten",
-        "email":"fmostenk@home.pl",
-        "contraseña":"ZimMLQbQxseL",
-        "imagen":"/images/avatars/tostada.jpg"
-    },
-    {
-        "id":22,
-        "nombre":"Jerry",
-        "apellido":"Arnli",
-        "email":"jarnlil@yellowbook.com",
-        "contraseña":"4h8REZ",
-        "imagen":"/images/avatars/jala.jpg"
-    },
-    {
-        "id":23,
-        "nombre":"Simmonds",
-        "apellido":"Dmisek",
-        "email":"sdmisekm@fastcompany.com",
-        "contraseña":"pGoG1fhEa",
-        "imagen":"/images/avatars/jala.jpg"
-    },
-    {
-        "id":24,
-        "nombre":"Shaine",
-        "apellido":"Mohan",
-        "email":"smohann@dropbox.com",
-        "contraseña":"8QAF6VeIY",
-        "imagen":"/images/avatars/pletzale.jpg"
-    },
-    {
-        "id":25,
-        "nombre":"Hillier",
-        "apellido":"Gillow",
-        "email":"hgillowo@tiny.cc",
-        "contraseña":"U4mJ1x",
-        "imagen":"/images/avatars/tostada.jpg"
-    },
-    {
-        "id":26,
-        "nombre":"Imelda",
-        "apellido":"Ackery",
-        "email":"iackeryp@artisteer.com",
-        "contraseña":"8UboNrEX5",
-        "imagen":""
-    },
-    {
-        "id":27,
-        "nombre":"Moina",
-        "apellido":"Dorcey",
-        "email":"mdorceyq@marketwatch.com",
-        "contraseña":"gaLBOglr",
-        "imagen":"/images/avatars/pletzale.jpg"
-    },
-    {
-        "id":28,
-        "nombre":"Marie-jeanne",
-        "apellido":"Garstang",
-        "email":"mgarstangr@mozilla.org",
-        "contraseña":"JCjcBOHG",
-        "imagen":"/images/avatars/polloCorazon.jpg"
-    },
-    {
-        "id":29,
-        "nombre":"Kaycee",
-        "apellido":"Cansdell",
-        "email":"kcansdells@ehow.com",
-        "contraseña":"G0CbxUZec",
-        "imagen":"/images/avatars/jala.jpg"
-    },
-    {
-        "id":30,
-        "nombre":"Temple",
-        "apellido":"Trimmell",
-        "email":"ttrimmellt@hexun.com",
-        "contraseña":"Bxzim1cxlNky",
-        "imagen":"/images/avatars/pletzale.jpg"
-    }
+[
+ {
+  "id": 1,
+  "usuario": "Mirna De Maria",
+  "email": "mdemaria0@economist.com",
+  "password": "s558MP",
+  "imagenUser": "/images/avatars/tostada.jpg"
+ },
+ {
+  "id": 2,
+  "usuario": "Adolph Wickerson",
+  "email": "awickerson1@nsw.gov.au",
+  "password": "VE9QvdFKw",
+  "imagenUser": "/images/avatars/tostada.jpg"
+ },
+ {
+  "id": 3,
+  "usuario": "Idaline Lowndsbrough",
+  "email": "ilowndsbrough2@columbia.edu",
+  "password": "rT73s4L2",
+  "imagenUser": "/images/avatars/kipa.jpg"
+ },
+ {
+  "id": 4,
+  "usuario": "Starr Redington",
+  "email": "sredington3@comsenz.com",
+  "password": "Xg4ZCuXmL",
+  "imagenUser": "/images/avatars/jala.jpg"
+ },
+ {
+  "id": 5,
+  "usuario": "Sheba Sponer",
+  "email": "ssponer4@4shared.com",
+  "password": "APd58eNW",
+  "imagenUser": "/images/avatars/jala.jpg"
+ },
+ {
+  "id": 6,
+  "usuario": "Milissent O'Halloran",
+  "email": "mohalloran5@senate.gov",
+  "password": "khu49xva8",
+  "imagenUser": "/images/avatars/polloCorazon.jpg"
+ },
+ {
+  "id": 7,
+  "usuario": "Travis Orts",
+  "email": "torts6@cocolog-nifty.com",
+  "password": "51iYR17p",
+  "imagenUser": ""
+ },
+ {
+  "id": 8,
+  "usuario": "Rene Sanzio",
+  "email": "rsanzio7@irs.gov",
+  "password": "ZMV1xvWJvK2t",
+  "imagenUser": ""
+ },
+ {
+  "id": 9,
+  "usuario": "Issy Gunbie",
+  "email": "igunbie8@woothemes.com",
+  "password": "rpF6Kb",
+  "imagenUser": "/images/avatars/pretzel.jpg"
+ },
+ {
+  "id": 10,
+  "usuario": "Christoph Mendus",
+  "email": "cmendus9@imgur.com",
+  "password": "Fm35JWrtuXc",
+  "imagenUser": "/images/avatars/jala.jpg"
+ },
+ {
+  "id": 11,
+  "usuario": "Quinlan Worssam",
+  "email": "qworssama@bravesites.com",
+  "password": "i6RXUv",
+  "imagenUser": "/images/avatars/pletzale.jpg"
+ },
+ {
+  "id": 12,
+  "usuario": "Gerda Harcarse",
+  "email": "gharcarseb@jalbum.net",
+  "password": "32kL3kFpSu9x",
+  "imagenUser": "/images/avatars/jala.jpg"
+ },
+ {
+  "id": 13,
+  "usuario": "Candide Camoletto",
+  "email": "ccamolettoc@vimeo.com",
+  "password": "01XIu4ljED",
+  "imagenUser": "/images/avatars/pletzale.jpg"
+ },
+ {
+  "id": 14,
+  "usuario": "Shela Vakhrushev",
+  "email": "svakhrushevd@springer.com",
+  "password": "B7oRDr7Fxe",
+  "imagenUser": "/images/avatars/pretzel.jpg"
+ },
+ {
+  "id": 15,
+  "usuario": "Bee Barratt",
+  "email": "bbarratte@tripod.com",
+  "password": "WPa4w7YiY",
+  "imagenUser": ""
+ },
+ {
+  "id": 16,
+  "usuario": "Darin Moran",
+  "email": "dmoranf@nhs.uk",
+  "password": "jf2fKilz",
+  "imagenUser": "/images/avatars/pletzale.jpg"
+ },
+ {
+  "id": 17,
+  "usuario": "Florentia Relf",
+  "email": "frelfg@opensource.org",
+  "password": "BZxogn",
+  "imagenUser": "/images/avatars/pretzel.jpg"
+ },
+ {
+  "id": 18,
+  "usuario": "Iggie Crayk",
+  "email": "icraykh@google.ca",
+  "password": "Jr8TyeiLEFQ",
+  "imagenUser": "/images/avatars/jala.jpg"
+ },
+ {
+  "id": 19,
+  "usuario": "Petronella Caustic",
+  "email": "pcaustici@yelp.com",
+  "password": "6arjH0xv",
+  "imagenUser": "/images/avatars/jala.jpg"
+ },
+ {
+  "id": 20,
+  "usuario": "Albertina Frangione",
+  "email": "afrangionej@joomla.org",
+  "password": "R8h208PQWuBG",
+  "imagenUser": "/images/avatars/polloCorazon.jpg"
+ },
+ {
+  "id": 21,
+  "usuario": "Field Mosten",
+  "email": "fmostenk@home.pl",
+  "password": "ZimMLQbQxseL",
+  "imagenUser": "/images/avatars/tostada.jpg"
+ },
+ {
+  "id": 22,
+  "usuario": "Jerry Arnli",
+  "email": "jarnlil@yellowbook.com",
+  "password": "4h8REZ",
+  "imagenUser": "/images/avatars/jala.jpg"
+ },
+ {
+  "id": 23,
+  "usuario": "Simmonds Dmisek",
+  "email": "sdmisekm@fastcompany.com",
+  "password": "pGoG1fhEa",
+  "imagenUser": "/images/avatars/jala.jpg"
+ },
+ {
+  "id": 24,
+  "usuario": "Shaine Mohan",
+  "email": "smohann@dropbox.com",
+  "password": "8QAF6VeIY",
+  "imagenUser": "/images/avatars/pletzale.jpg"
+ },
+ {
+  "id": 25,
+  "usuario": "Hillier Gillow",
+  "email": "hgillowo@tiny.cc",
+  "password": "U4mJ1x",
+  "imagenUser": "/images/avatars/tostada.jpg"
+ },
+ {
+  "id": 26,
+  "usuario": "Imelda Ackery",
+  "email": "iackeryp@artisteer.com",
+  "password": "8UboNrEX5",
+  "imagenUser": ""
+ },
+ {
+  "id": 27,
+  "usuario": "Moina Dorcey",
+  "email": "mdorceyq@marketwatch.com",
+  "password": "gaLBOglr",
+  "imagenUser": "/images/avatars/pletzale.jpg"
+ },
+ {
+  "id": 28,
+  "usuario": "Marie-jeanne Garstang",
+  "email": "mgarstangr@mozilla.org",
+  "password": "JCjcBOHG",
+  "imagenUser": "/images/avatars/polloCorazon.jpg"
+ },
+ {
+  "id": 29,
+  "usuario": "Kaycee Cansdell",
+  "email": "kcansdells@ehow.com",
+  "password": "G0CbxUZec",
+  "imagenUser": "/images/avatars/jala.jpg"
+ },
+ {
+  "id": 30,
+  "usuario": "Temple Trimmell",
+  "email": "ttrimmellt@hexun.com",
+  "password": "Bxzim1cxlNky",
+  "imagenUser": "/images/avatars/pletzale.jpg"
+ },
+ {
+  "id": 31,
+  "usuario": "Joelgp",
+  "email": "perrito@gmail.com",
+  "password": "$2a$10$Ly2IDHLXMX7OVdFrvKBbTeT6CcwSaI6.uxCN3UBr67sjk2TgQEgG6",
+  "imagenUser": "imagenUser-1670027754634.jpg"
+ },
+ {
+  "id": 32,
+  "usuario": "Carol",
+  "email": "carol@carol.com",
+  "password": "$2a$10$qKOTXTvgu3R5yAXesO9kDeILeddBX6T5VXBD/K1lOOdDa8WJbRQNW",
+  "imagenUser": "imagenUser-1670103948682.jpg"
+ }
 ]

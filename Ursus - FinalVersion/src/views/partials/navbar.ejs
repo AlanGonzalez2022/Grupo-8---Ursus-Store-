@@ -5,10 +5,10 @@
         </div>
         <% if (locals.logged){ %> 
             <div>Hi <%= locals.userLogged.usuario %> </div>
-            <div><img src="/images/users/"<%= locals.userLogged.imagenUser %>  alt="Imagen Del Usuario"></div>
+            <div><img src="/images/users/<%= locals.userLogged.imagenUser%>"alt="UsImg"></div>
             <li><a href="/profile"><i class="fa-solid fa-user usuario-existente"></i></a></li>      
             <li><a href="/shopping-cart"><i class="fa-solid fa-cart-shopping"></a></i></li>  
-            <li><a href="/logout"></a></li>  
+            <li><a href="/logout"><i class="fa-solid fa-right-from-bracket"></a></i></li>  
         <% } else { %> 
         <li><a href="/login"><i class="fa-solid fa-user usuario-existente"></a></i></li> 
         <li><a href="/register"><i class="fa-solid fa-user-plus nuevo usuario"></a></i></li>

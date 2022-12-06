@@ -9,7 +9,7 @@ const cookies = require("cookie-parser")
 
 // MiddleWare a nivel Aplicación
 const userLoggedMiddleware = require("./src/middlewares/userLoggedMiddleware")
-
+// const adminMiddleware = require("./src/middlewares/adminMiddleware")
 //Ejecuciones
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -22,6 +22,7 @@ app.use(session({
 }));
 app.use(cookies())
 app.use(userLoggedMiddleware);
+// app.use(adminMiddleware);
 
 //template engine ejs seteado
 app.set('view engine', 'ejs')

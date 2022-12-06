@@ -3,6 +3,9 @@ let productosController = require ('../controllers/productosController');
 const path = require ('path');
 const router = express.Router();
 
+//Middleware
+const authMiddleware = require("../middlewares/authMiddleware");
+
 // **** Controller Require ****
 const multer = require ('multer');
 const { diskStorage } = require('multer');
@@ -23,7 +26,7 @@ const storage = multer.diskStorage({
 router.get('/categorias', productosController.categorias);
 router.get('/productosporcategoria', productosController.categoriasProductos);
 router.get('/categorias/detalle-producto/:id', productosController.detalleProducto);
-router.get('/shopping-cart', productosController.shoppingCart);
+router.get('/shopping-cart',authMiddleware,productosController.shoppingCart);
 
 //Creación de producto:
 router.get('/crearProducto',productosController.crear);

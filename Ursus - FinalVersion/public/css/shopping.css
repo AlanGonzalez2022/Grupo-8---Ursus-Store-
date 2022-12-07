@@ -75,6 +75,11 @@ img,
   width: 100%;
 }
 
+
+img.imgpro{
+    width: 5vw;
+}
+
 input,
 button,
 .basket,
@@ -890,7 +895,7 @@ body {
 
 .main-header-top-bar{
   margin-top: 5vw;
-  margin-left: -8vw;
+  margin-left: -21vw;
 }
 
 

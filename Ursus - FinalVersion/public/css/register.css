@@ -50,6 +50,10 @@ body {
       margin-right: 6vw;
       list-style:none;
      }
+
+     i.fa-solid.fa-user.usuario-existente {
+      margin-left: 11vw;
+    }
   
   .right-navbar ul {
       list-style: none;

@@ -24,11 +24,21 @@ body{
     top: -1vw;
 }
   
-  
+
   img.logo{
       width: 20vw;
       display: block;
       margin-left: 13vw;
+}
+
+/* css de imagen de perfil */
+
+img.imgpro{
+    width: 5vw;
+}
+
+ul{
+    list-style: none;
 }
   
   .right-navbar{
@@ -125,6 +135,16 @@ h4{
     padding-top: 10px;
 }
 
+img.logo{
+    width: 20vw;
+    display: block;
+    margin-left: 27vw;
+    margin-top: 5vw; 
+}
+
+div.hi{
+        margin-left: -22vw;
+}
 section p{
     margin: 1px auto;
 }

@@ -17,22 +17,24 @@ body {
   flex-direction: row;
   margin-left: -1vw;
   margin-right: -5vw;
-  width: 100vw;
+  width: 100%;
   background-color: black;
   position: fixed;
   z-index: 2;
   top: -1vw;
 }
 
+
 .main-header-top-bar {
   margin-top: 3vw;
   margin-left: -7vw;
 }
 
-img.logo{
-    width: 20vw;
-    display: block;
-    margin-left: 50px;
+img.logo {
+  width: 20vw;
+  display: block;
+  margin-left: -5vw;
+  margin-top: 18vw;
 }
 
 .right-navbar{
@@ -58,7 +60,7 @@ ul.right-navbar {
     flex-wrap: wrap;
     width: 124vw;
     align-items: center;
-    margin-left: 9vw;
+    margin-left: 2vw;
     margin-right: 2vw;
     padding-top: 1vw;
     text-decoration: none;
@@ -144,6 +146,19 @@ img.imagen-usuario {
   top: 100px;
   color: white;
 }
+/* centralizando al logo */
+
+div.main-header-top-bar.center {
+  margin-top: -16vw;
+  margin-left: 36vw;
+}
+
+/* imagen del navbar */
+
+.imgpro{
+  width: 6vw;
+  margin-right: 4vw;
+}
 
 .swiper .swiper-pagination-bullet-active {
   background-color: white;
@@ -162,9 +177,9 @@ h3{
 
 /*Imagen Usuario */
 img.imagen-usuario {
-    margin-top: 1vw;
-    width: 108%;
-    margin-left: 5vw;
+  margin-top: 25vw;
+  width: 108%;
+  margin-left: 4vw;
 }
 
 /*/////////////////////////////////////FOOTER////////////////////////////////////////////////////////*/

@@ -24,6 +24,16 @@ body {
   top: -1vw;
 }
 
+img.imgpro{
+  width: 5vw;
+}
+
+img.logo {
+  width: 20vw;
+  display: block;
+  margin-left: 21vw;
+}
+
 .main-header-top-bar {
   margin-top: 3vw;
   margin-left: -7vw;
@@ -35,17 +45,24 @@ img.logo{
     margin-left: 50px;
 }
 
-.right-navbar{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 20vw;
-    align-items: center;
-    margin-left: 9vw;
-    margin-right: 6vw;
-    padding-top: 2vw;
-   }
+.right-navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 9vw;
+  align-items: center;
+  margin-left: 21vw;
+  margin-right: -2vw;
+  padding-top: 2vw;
+}
+
+.hi{
+  color: white;
+  margin-left: -30vw;
+}
+
+
 
 .right-navbar ul {
     list-style: none;
@@ -392,8 +409,8 @@ transform: scale(1.2);
 
   .main-header-top-bar {
     margin-top: 3vw;
-    margin-left: -5vw;
-  }
+    margin-left: -14vw;
+}
 
   .right-navbar{
     width: 17vw;

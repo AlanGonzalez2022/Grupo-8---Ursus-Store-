@@ -15,16 +15,8 @@
     <header class="main-header">
 
        <!-- Menú desplegable -->
-       <%- include ('../partials/menu')%>
+       <%- include ('../partials/navbar')%>
     
-        <div class="main-header-top-bar center">
-            <a href="/"><img src="./images/logo-ursus.png" class="logo"></a>
-        </div> 
-            <ul class="right-navbar">
-                <li><a href="#"><i class="fa-solid fa-magnifying-glass lupita"></a></i></li>
-                <li><a href="http://localhost:3032/login"><i class="fa-solid fa-user usuario-existente"></a></i></li>
-                <li><a href="http://localhost:3032/shopping-cart"><i class="fa-solid fa-cart-shopping"></a></i></li>                
-            </ul>
     </header> 
 
 
@@ -52,14 +44,14 @@
                     <input type="checkbox" name="recordar">
                 </div>
                 <div class="reg-text">
-                    <input type="submit" value="Ingresá"></label>
+                    <input id="ingresa" class="reg-text" type="submit" value="Ingresá">
                 </div>
             </form>   
 
             <div class="olv"><h5>¿Olvidaste tu contraseña?</h5></div>
             <div class="olv">
                 <span class="todavía-pregunta">¿Todavía no tenés usuario?</span>
-                <a href="http://localhost:3032/register"><h5 class="boton-registrate">Registrate</h5></a>
+                <a href="/register"><h5 class="boton-registrate">Registrate</h5></a>
             </div>
         </div>
     </div>

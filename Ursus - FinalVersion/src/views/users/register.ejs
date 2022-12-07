@@ -11,23 +11,15 @@
     <link rel="stylesheet" href="css/register.css">
     <title>Document</title>
 </head>
-
-<header class="main-header">
-
-      <!-- Menú desplegable -->
-      <%- include ('../partials/menu')%>
-       
-        <div class="main-header-top-bar center">
-            <a href="/"><img src="./images/logo-ursus.png" class="logo"></a>
-        </div> 
-            <ul class="right-navbar">
-                <li><a href="www.google.com"><i class="fa-solid fa-magnifying-glass lupita"></a></i></li>
-                <li><a href="/login"><i class="fa-solid fa-user usuario-existente"></a></i></li>
-                <li><a href="/shopping-cart"><i class="fa-solid fa-cart-shopping"></a></i></li>                
-            </ul>
-</header>
-
+    
 <body>
+
+    <header class="main-header">
+
+        <!-- Menú desplegable -->
+        <%- include ('../partials/navbar')%>
+        
+    </header>
     <main>
         <div class="inicio">
         <h4 class="inicio-sesion">¡Unite a nuestra comunidad! Creá tu cuenta<a class="ingresa-aca" href="/login"> ¿Ya

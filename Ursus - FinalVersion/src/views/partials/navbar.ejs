@@ -1,12 +1,28 @@
-    <ul class="right-navbar">
-        <!-- <li><a href="#"><i class="fa-solid fa-magnifying-glass lupita"></a></i></li> -->
-        <div class="main-header-top-bar center">
-            <a href="/"><img src="./images/logo-ursus.png" class="logo"></a>
+        <!-- Menú desplegable -->
+    <div class="dropdown"> 
+        <button class="dropbtn"><i class="fa-solid fa-bars"></button></i>
+        <div class="dropdown-content">
+        <a href="#">Hombres</a>
+        <a href="#">Mujeres</a>
+        <a href="#">Niños</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Lo más vendido</a>
+        <a href="#">Temporada</a>
+        <a href="/categorias">Categorías</a>
+        <a href="/crearProducto">Crear Producto</a>
         </div>
+    </div> 
+
+    <div class="main-header-top-bar center">
+        <a href="/"><img src="./images/logo-ursus.png" class="logo"></a>
+    </div>
+   
+   <ul class="right-navbar">
+        <!-- <li><a href="#"><i class="fa-solid fa-magnifying-glass lupita"></a></i></li> -->
+        
         <% if (locals.logged){ %> 
-            <div>Hi <%= locals.userLogged.usuario %> </div>
-            <div><img src="/images/users/"<%= locals.userLogged.imagenUser %>  alt="UsImg"></div>
-            <li><a href="/profile"><i class="fa-solid fa-user usuario-existente"></i></a></li>      
+            <div class="hi">Hi <%= locals.userLogged.usuario %> </div>
+            <div><a href="/profile"><img class='imgpro' src="/images/users/<%= locals.userLogged.imagenUser%>"  alt="UsImg"></a></div>    
             <li><a href="/shopping-cart"><i class="fa-solid fa-cart-shopping"></a></i></li>  
             <li><a href="/logout"><i class="fa-solid fa-right-from-bracket"></a></i></li>  
         <% } else { %> 

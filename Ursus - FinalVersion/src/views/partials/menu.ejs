@@ -9,6 +9,8 @@
       <a href="#">Lo más vendido</a>
       <a href="#">Temporada</a>
       <a href="/categorias">Categorías</a>
-      <a href="/crearProducto">Crear Producto</a>
+      <% if (locals.logged && userLogged.admin === true) { %>
+        <a href="/crearProducto">Crear Producto</a>
+      <% } %>
     </div>
 </div> 

@@ -101,21 +101,25 @@ let usersController = {
   },
 
   processAdmin: function (req, res) {
-    let userAdmin = User.findByField("email", req.body.email);
-
-    if (userAdmin) {
-      let verficationPassword = bcryptjs.compareSync(req.body.password, userAdmin.password);
-      
-      if (verficationPassword) {
+    let userLogin = User.findByField("email", req.body.email);
+      if(userLogin){
+        let verficationPassword = bcryptjs.compareSync(req.body.password,userLogin.password)
+        if(verficationPassword && userLogin.admin === true){
+          delete userLogin.password;
+          req.session.userLogged = userLogin;
         
-         if(userAdmin.admin === true){
-
+          return res.redirect("/")
         }
-        return res.redirect("/")
-      }
-    }
-    
-   },
+      }    
+      
+      res.render("users/admin", {
+        errors: {
+          email: {
+            msg: "Las credenciales son incorrectas",
+          },
+        },
+      });      
+  },
 };
 
 module.exports = usersController;

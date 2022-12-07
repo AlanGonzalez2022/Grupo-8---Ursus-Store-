@@ -21,8 +21,14 @@
         <!-- <li><a href="#"><i class="fa-solid fa-magnifying-glass lupita"></a></i></li> -->
         
         <% if (locals.logged){ %> 
+<<<<<<< HEAD
             <div class="hi">Hi <%= locals.userLogged.usuario %> </div>
             <div><a href="/profile"><img class='imgpro' src="/images/users/<%= locals.userLogged.imagenUser%>"  alt="UsImg"></a></div>    
+=======
+            <div>Hi <%= locals.userLogged.usuario %> </div>
+            <div><img src="/images/users/<%= locals.userLogged.imagenUser%>"alt="UsImg"></div>
+            <li><a href="/profile"><i class="fa-solid fa-user usuario-existente"></i></a></li>      
+>>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
             <li><a href="/shopping-cart"><i class="fa-solid fa-cart-shopping"></a></i></li>  
             <li><a href="/logout"><i class="fa-solid fa-right-from-bracket"></a></i></li>  
         <% } else { %> 

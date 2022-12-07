@@ -1,17 +1,17 @@
 [
- {
-  "id": 1,
-  "imagen": "remera1.png",
-  "nombre": "Summer Light",
-  "categoria": "Remeras",
-  "genero": "masculino",
-  "color": "blanco",
-  "precio": 50,
-  "talle": "M",
-  "cantidad": 5,
-  "disponible": true
- },
- {
+  {
+    "id": 1,
+    "imagen": "remera1.png",
+    "nombre": "Summer Light",
+    "categoria": "Remeras",
+    "genero": "masculino",
+    "color": "blanco",
+    "precio": 50,
+    "talle": "M",
+    "cantidad": 5,
+    "disponible": true
+   },
+  {
   "id": 2,
   "imagen": "remera2.png",
   "nombre": "Summer Blue",

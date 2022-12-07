@@ -64,10 +64,14 @@
         <div class="contenedor-agregar">
         <button class="agregar" type="submit">Agregar al carrito</button>
         </div>
-        <button class="editar-producto"><a href="/editar/<%= articulos.id%>">Editar Producto</a></button> 
-        
+        <% if (locals.logged && userLogged.admin === true) { %>
+            <button class="editar-producto"><a href="/editar/<%= articulos.id%>">Editar Producto</a></button>
+        <% } %>
+         
         <form class="eliminar-producto" action="/eliminarProducto/<%= articulos.id%>?_method=DELETE" method="POST" style="display: inline-flex">
-            <button type="submit" class="action-button delete">Eliminar producto</button>
+            <% if (locals.logged && userLogged.admin === true) { %>
+                <button type="submit" class="action-button delete">Eliminar producto</button>
+            <% } %>
         </form>
     </main>
 

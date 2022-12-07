@@ -92,6 +92,10 @@ let usersController = {
          req.clearCookie("cookieUser")
          req.session.destroy()
          return res.redirect("/")
+      },
+      
+      admin: function(req,res){
+         res.render('users/admin.ejs')
       }
 
 }

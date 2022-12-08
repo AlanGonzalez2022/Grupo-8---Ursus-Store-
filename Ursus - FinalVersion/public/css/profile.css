@@ -17,38 +17,27 @@ body {
   flex-direction: row;
   margin-left: -1vw;
   margin-right: -5vw;
-<<<<<<< HEAD
   width: 100%;
-=======
-  width: 100vw;
->>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
   background-color: black;
   position: fixed;
   z-index: 2;
   top: -1vw;
 }
 
-<<<<<<< HEAD
+div.hi {
+  color: white;
+}
 
-=======
->>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
 .main-header-top-bar {
   margin-top: 3vw;
   margin-left: -7vw;
 }
 
-<<<<<<< HEAD
 img.logo {
   width: 20vw;
   display: block;
   margin-left: -5vw;
   margin-top: 18vw;
-=======
-img.logo{
-    width: 20vw;
-    display: block;
-    margin-left: 50px;
->>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
 }
 
 .right-navbar{
@@ -74,11 +63,7 @@ ul.right-navbar {
     flex-wrap: wrap;
     width: 124vw;
     align-items: center;
-<<<<<<< HEAD
     margin-left: 2vw;
-=======
-    margin-left: 9vw;
->>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
     margin-right: 2vw;
     padding-top: 1vw;
     text-decoration: none;
@@ -164,7 +149,6 @@ img.imagen-usuario {
   top: 100px;
   color: white;
 }
-<<<<<<< HEAD
 /* centralizando al logo */
 
 div.main-header-top-bar.center {
@@ -178,8 +162,6 @@ div.main-header-top-bar.center {
   width: 6vw;
   margin-right: 4vw;
 }
-=======
->>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
 
 .swiper .swiper-pagination-bullet-active {
   background-color: white;
@@ -198,15 +180,9 @@ h3{
 
 /*Imagen Usuario */
 img.imagen-usuario {
-<<<<<<< HEAD
   margin-top: 25vw;
   width: 108%;
   margin-left: 4vw;
-=======
-    margin-top: 1vw;
-    width: 108%;
-    margin-left: 5vw;
->>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
 }
 
 /*/////////////////////////////////////FOOTER////////////////////////////////////////////////////////*/

@@ -21,15 +21,8 @@ router.post('/login', usersController.processLogin);
 router.get("/profile", authMiddleware, usersController.profile);
 router.get("/logout", usersController.logout);
 
-<<<<<<< HEAD
-//Profile Admin
-
-router.get("/admin", usersController.admin)
-
-=======
 //Admin
 router.get("/admin", usersController.admin);
 router.post("/admin", usersController.processAdmin);
->>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
 
 module.exports = router;

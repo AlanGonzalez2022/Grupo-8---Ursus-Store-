@@ -1,15 +1,10 @@
 body {
-<<<<<<< HEAD
     background-color: black;
-=======
-    background-color: #e6e6e6;
->>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
     margin: 0;
     padding: 0;
     font-family: sans-serif;
   }
   
-<<<<<<< HEAD
   form{
     margin: auto;
     width: 400px;
@@ -40,19 +35,6 @@ body {
 
   h1{
     color: white;
-=======
-  .login-container {
-    width: 400px;
-    margin: 100px auto;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
->>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
   }
   
   input[type="text"],
@@ -66,11 +48,7 @@ body {
   }
   
   input[type="submit"] {
-<<<<<<< HEAD
     background-color: rgb(63,53,217);; 
-=======
-    background-color: #4CAF50;
->>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
     color: white;
     padding: 12px 20px;
     border: none;
@@ -79,9 +57,5 @@ body {
   }
   
   input[type="submit"]:hover {
-<<<<<<< HEAD
     background-color: rgb(63,53,217);
-=======
-    background-color: #45a049;
->>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
   }

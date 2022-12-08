@@ -19,16 +19,6 @@ let usersController = {
       });
     }
 
-<<<<<<< HEAD
-      logout: function (req, res) {
-         req.clearCookie("cookieUser")
-         req.session.destroy()
-         return res.redirect("/")
-      },
-      
-      admin: function(req,res){
-         res.render('users/admin.ejs')
-=======
     let userDb = User.findByField("email", req.body.email);
 
     if (userDb) {
@@ -74,7 +64,6 @@ let usersController = {
         }
 
         return res.redirect("/profile");
->>>>>>> be8fbf0baeb329b240d77d3a7d08982306250c54
       }
     }
 

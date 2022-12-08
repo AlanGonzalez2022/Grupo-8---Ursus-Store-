@@ -224,12 +224,11 @@
   "imagenUser": "imagenUser-1670103948682.jpg"
  },
  {
-   "id": 33,
-   "usuario": "Alan",
-   "email": "alan@alan.com",
-   "password": "$2a$10$Ly2IDHLXMX7OVdFrvKBbTeT6CcwSaI6.uxCN3UBr67sjk2TgQEgG6",
-   "admin": true,
-   "imagenUser": "imagenUser-1670103948682.jpg"
-}
-
+  "id": 33,
+  "usuario": "Alan",
+  "email": "alan@alan.com",
+  "password": "$2a$10$Ly2IDHLXMX7OVdFrvKBbTeT6CcwSaI6.uxCN3UBr67sjk2TgQEgG6",
+  "admin": true,
+  "imagenUser": "imagenUser-1670103948682.jpg"
+ }
 ]

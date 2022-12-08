@@ -27,3 +27,10 @@ Retrospectiva Sprint 4:
 - Buena comunicación a pesar de los obstáculos que tenemos para encontrar horarios óptimos para todos, dividimos el trabajo en equipo y logramos tener reuniones de todos los integrantes del mismo para analizar cada paso del proceso hecho.
 
 - Preocupados de cara al próximo sprint porque aún no tenemos un entendimiento claro de Middlewares, Session y Cookies y la aplicación práctica de la teoría no nos resulta simple de entender aún.
+
+Retrospectiva Sprint 5:
+ 
+- Fue un sprint mucho mas complejo que el anterior, porque tuvimos que entender el proceso y aplicación, tanto en validaciones como middlewares y cookies
+- Pudimos aplicar lo aprendido en los videos enseñados al desarrollo de nuestro sitio web
+- A pesar de las dificultades del proceso de aprendizaje, logramos comunicarnos correctamente y llegar a buen puerto.
+- Estamos todavía en un proceso de aprendizaje y sabemos que podemos mejorar.

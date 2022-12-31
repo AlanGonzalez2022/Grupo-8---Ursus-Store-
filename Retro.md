@@ -34,3 +34,13 @@ Retrospectiva Sprint 5:
 - Pudimos aplicar lo aprendido en los videos enseñados al desarrollo de nuestro sitio web
 - A pesar de las dificultades del proceso de aprendizaje, logramos comunicarnos correctamente y llegar a buen puerto.
 - Estamos todavía en un proceso de aprendizaje y sabemos que podemos mejorar.
+
+Retrospectiva Sprint 6:
+
+- Sequelize es con seguridad la herramienta más incómoda y excesivamente técnica que hemos usado hasta el momento como grupo. Asimismo, el diagrama de entidades y relaciones nos fue complejo de entender y ejecutar porque tenemos múltiples tablas secundarias que en nuestro primer acercamiento al proceso nos costó entender para poder ejecutar tareas.
+
+- Hubo menos reuniones de las esperadas producto de las múltiples complicaciones propias de un sprint que se desarrolla en el mes de Diciembre y con todas las interrupciones que eso genera. Creemos que podríamos haber tenido mejor comunicación, pero las dificultades anteriormente expuestas contribuyeron también a que fuera mucho más difícil que la reunión avanzara con naturalidad y éxito dado que nos sentimos muy perdidos en muchísimos momentos. Sequelize, repetimos, es una herramienta muy técnica e incómoda para trabajar con bases de datos, al menos en nuestra experiencia.
+
+- Se logró llevar a los objetivos propuestos pero con muchísimos más obstáculos que lo esperado y a través de ejecuciones que no seguían al pie de la letra la teoría aprendida porque de ese modo no nos permitía poder realizar el armado de los modelos y la ejecución del CRUD.
+
+- Creemos que es mucho material altamente técnico como para poder tener un sprint entendible con facilidad, dado que las propias características de nuestro sitio dificultaban el entendimiento del proceso producto de las múltiples carpetas y subcarpetas.

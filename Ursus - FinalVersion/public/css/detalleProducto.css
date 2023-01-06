@@ -10,111 +10,9 @@ body{
     background-color: black;
 }
 
-.main-header{
-    display: flex;
-    align-content: stretch;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-left: -1vw;
-    margin-right: -5vw;
-    width: 100vw;
-    background-color: black;
-    position: fixed;
-    z-index: 2;
-    top: -1vw;
-}
-  
-
-  img.logo{
-      width: 20vw;
-      display: block;
-      margin-left: 13vw;
-}
-
-/* css de imagen de perfil */
-
-img.imgpro{
-    width: 5vw;
-}
-
 ul{
     list-style: none;
 }
-  
-  .right-navbar{
-    display: flex;
-    justify-content: space-between;
-    width: 30vw;
-    align-items: center;
-    margin-right: 6vw;
-}
-  
-  .right-navbar ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-  }
-  
-  .right-navbar a {
-      text-decoration: none;
-      color: white;
-  }
-  
-  /* Dropdown Button */
-.dropbtn {
-    background-color: black;
-    color: white;
-    font-size: 5vw;
-    border: none;
-    margin-top: 7vw;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: static;
-    display: inline-block;
-    padding-top: 0.1vw;
-    margin-left: 4vw;
-    margin-top: -3vw;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: black;
-    color: white;
-    width: 30vw;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border: white solid 1px;
-    padding-bottom: white solid 1px;
-    overflow: auto;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    background-color: black;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-      background-color: rgb(63,53,217);
-      cursor: pointer;
-    }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    background-color: rgb(63,53,217);
-    transition: 0.5s;
-  }
 
 main{
     background-color: black;
@@ -135,16 +33,7 @@ h4{
     padding-top: 10px;
 }
 
-img.logo{
-    width: 20vw;
-    display: block;
-    margin-left: 27vw;
-    margin-top: 5vw; 
-}
 
-div.hi{
-        margin-left: -22vw;
-}
 section p{
     margin: 1px auto;
 }
@@ -255,8 +144,7 @@ section p{
 footer {
     background-color: black;
     display: flex;
-    height: 10vw;
-    margin-top: 25vw;
+    align-items: flex-end;
 }
 
 .editar-producto{
@@ -311,13 +199,6 @@ footer {
 
 /* Tablet */
 @media (min-width: 477px) and (max-width: 768px){
-    .right-navbar {
-        display: flex;
-        justify-content: space-between;
-        width: 24vw;
-        align-items: center;
-        margin-right: 3vw
-    }
 
     .pie-de-pagina{
         display: flex;
@@ -360,23 +241,6 @@ footer {
 /* Desktop */
 @media (min-width: 769px){
     
-    .dropbtn {
-        background-color: black;
-        color: white;
-        font-size: 2vw;
-        border: none;
-        margin-top: 7vw;
-    }
-
-    .dropdown{
-        margin-left: 2vw;
-    }
-    
-    .right-navbar {
-        width: 17vw;
-        margin-right: 3vw;
-        max-width: 20vw
-    }
 
     .pieProducto {
         position: relative;
@@ -489,11 +353,6 @@ footer {
         font-size: 2vw;
     }
 
-    img.logo {
-        width: 13vw;
-        display: block;
-        margin-left: 7vw;
-    }
 
     button{
         margin-left: 5vw;
@@ -521,7 +380,6 @@ footer {
         background-color: black;
         display: flex;
         height: 3vw;
-        margin-top: 26vw;
     }
 }
 

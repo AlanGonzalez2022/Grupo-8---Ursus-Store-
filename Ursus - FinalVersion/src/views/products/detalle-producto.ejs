@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
@@ -11,47 +11,48 @@
     <title>Productos</title>
 </head>
 <body>
-    <header class="main-header">
         
         <!-- Menú desplegable -->
         <%- include ('../partials/navbar')%>
     
-    </header>
     <main>
+        <div class="prueba">
         <section class="principal-producto">
 
-                <img class="remera" src="/images/productosporcategoria/<%=articulos.imagen %>" alt="remera"> 
+                <img class="remera" src="/images/productosporcategoria/<%=idProducto.imagen %>" alt="remera"> 
             <div class="pieProducto"> 
-                <p class="nombre-remera"><%= articulos.nombre %></p>
+                <p class="nombre-remera"><%= idProducto.nombre %></p>
                 <div class="marco-remera">
-                <p class="nombre-precio">$ <%= articulos.precio %></p>
+                <p class="nombre-precio">Precio:<%= idProducto.precio %></p>
                 </div>
             </div>
         </section>
         <section class="contenedor-secundario">
             <div class="secundario-producto">
-                <img class="remera-secundario" src="/images/productosporcategoria/<%=articulos.imagen %>" alt="remera-secundario">
-                <img class="remera-secundario" src="/images/productosporcategoria/<%=articulos.imagen %>" alt="remera-secundario">
-                <img class="remera-secundario" src="/images/productosporcategoria/<%=articulos.imagen %>" alt="remera-secundario">
-                <img class="remera-secundario" src="/images/productosporcategoria/<%=articulos.imagen %>" alt="remera-secundario">
+                <img class="remera-secundario" src="/images/productosporcategoria/<%=idProducto.imagen %>" alt="remera-secundario">
+                <img class="remera-secundario" src="/images/productosporcategoria/<%=idProducto.imagen %>" alt="remera-secundario">
+                <img class="remera-secundario" src="/images/productosporcategoria/<%=idProducto.imagen %>" alt="remera-secundario">
+                <img class="remera-secundario" src="/images/productosporcategoria/<%=idProducto.imagen %>" alt="remera-secundario">
             </div>
         </section>
         <section class="detalle">
-            <label>Talle</label>
-            <select name="talle" id="talle">
-                <option><%= articulos.talle %></option> 
+            <label for="talle">Talle:</label>
+            <select name="talle" class="forma">
+                <% idProducto.talles.forEach(talle => { %>
+                    <option value="<%= talle.id %> "><%= talle.nombre %> </option>
+                <% }) %>
             </select>
             <form class="contenedor-color">
-                <label>Color</label>
-                <input type="color" name="color" id="color" placeholder="">               
-            </form>    
-                <label>Cantidad</label>
-                <select name="cantidad" id="cantidad">
-                    <option><%= articulos.cantidad %></option>
-                </select>    
+                <label for="genero">Genero:</label>
+                <select name="genero" class="forma">
+                    <% idProducto.generos.forEach(genero => { %>
+                        <option value="<%= genero.id %> "><%= genero.nombre %> </option>
+                    <% }) %>
+                </select>             
+            </form>       
         </section>
         <section class="disponible">
-            <p class="subdisponible">Artículo disponible: <%= articulos.disponible %></p>
+            <p class="subdisponible">Artículo: <%= idProducto.estado %></p>
             <div class="iconos-envios">
                 <div class="camion-contenedor">
                     <i class="fa-solid fa-truck"></i><p class="costo">Costo de envíos</p>
@@ -64,12 +65,13 @@
         <div class="contenedor-agregar">
         <button class="agregar" type="submit">Agregar al carrito</button>
         </div>
-        <% if (locals.logged && userLogged.admin === true) { %>
-            <button class="editar-producto"><a href="/editar/<%= articulos.id%>">Editar Producto</a></button>
+    </div>
+        <% if (locals.logged && userLogged.tipoUsuario.tipo === "admin") { %>
+            <button class="editar-producto"><a href="/editar/<%= idProducto.id%>">Editar Producto</a></button>
         <% } %>
          
-        <form class="eliminar-producto" action="/eliminarProducto/<%= articulos.id%>?_method=DELETE" method="POST" style="display: inline-flex">
-            <% if (locals.logged && userLogged.admin === true) { %>
+        <form class="eliminar-producto" action="/eliminarProducto/<%= idProducto.id%>?_method=DELETE" method="POST" style="display: inline-flex">
+            <% if (locals.logged && userLogged.tipoUsuario.tipo === "admin") { %>
                 <button type="submit" class="action-button delete">Eliminar producto</button>
             <% } %>
         </form>

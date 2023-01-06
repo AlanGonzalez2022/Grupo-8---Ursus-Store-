@@ -11,6 +11,7 @@ const cookies = require("cookie-parser")
 const userLoggedMiddleware = require("./src/middlewares/userLoggedMiddleware")
 // const adminMiddleware = require("./src/middlewares/adminMiddleware")
 //Ejecuciones
+app.use(cookies())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride('_method'));
@@ -20,16 +21,15 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }));
-app.use(cookies())
 app.use(userLoggedMiddleware);
-// app.use(adminMiddleware);
+
 
 //template engine ejs seteado
 app.set('view engine', 'ejs')
 
 //constantes para las rutas
 const mainRoutes = require('./src/routes/main.js');
-const mainProducts = require ('./src/routes/categorias.js');
+const mainProducts = require ('./src/routes/productos.js');
 const mainUsers = require("./src/routes/users.js")
 
 //Ruta public

@@ -32,43 +32,23 @@
         <div>
         <label for="categorias">Categorias</label>
         <select name="categoria" class="forma">
-        <option value="remeras">Remeras</option>      
-        <option value="shorts">Shorts</option>
-        <option value="calzados">Calzados</option>
-        <option value="vestidos">Vestidos</option>
-        <option value="camisas">Camisas</option>
-        <option value="anteojos">Anteojos</option>
-        <option value="accesorios">Accesorios</option>
-        <option value="trajes-de-baño">Trajes De Baño</option>
+        <% categoriasData.forEach(categoria => { %>
+            <option value="<%= categoria.id %> "><%= categoria.nombre %> </option>
+        <% }) %>
         </select>
         </div>
-        
         <label for="talle">Talle</label>
         <select name="talle" class="forma">
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
+            <% tallesData.forEach(talle => { %>
+                <option value="<%= talle.id %> "><%= talle.nombre %> </option>
+            <% }) %>
         </select>
 
         <label for="genero">Género</label>
         <select name="genero" id="genero" class="forma">
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-        </select>
-
-        <label for="color">Color</label>
-        <select name="color" id="color" class="forma">
-            <option value="rojo">Rojo</option>
-            <option value="negro">Negro</option>
-            <option value="blanco">Blanco</option>
-            <option value="amarillo">Amarillo</option>
-            <option value="azul">Azul</option>
-        </select>
-        
-        <label for="cantidad">Cantidad</label>
-            <input required="" type="number" id="cantidad" name="cantidad" placeholder="123" class="control">
+            <% generosData.forEach(genero => { %>
+                <option value="<%= genero.id %> "><%= genero.nombre %> </option>
+            <% }) %>
         </select>
 
         <div class="forma">

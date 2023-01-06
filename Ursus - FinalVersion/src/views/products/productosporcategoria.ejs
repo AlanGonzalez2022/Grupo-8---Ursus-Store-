@@ -15,19 +15,16 @@
         <link rel="stylesheet" href="/css/productosporcategoria.css">        
     </head>
 
-    <header class="main-header">
-
         <!-- Menú desplegable -->
         <%- include ('../partials/navbar')%>
        
-    </header> 
 <body>
     <section>
-        <% productosCategorias.forEach(productoDetalle => { %>
+        <% producto.forEach(producto => { %>
             <div class="categorias">
                <h2 class="remeras"></h2>
-               <a href="categorias/detalle-producto/<%= productoDetalle.id %>"><img src="/images/productosporcategoria/<%=productoDetalle.imagen %>" alt="categoría-remeras"></a>
-               <h2><a><%= productoDetalle.nombre %></a></h2>
+               <a href="categorias/detalle-producto/<%= producto.id %>"><img src="/images/productosporcategoria/<%=producto.imagen%>" alt="categoría-remeras"></a>
+               <h2><a><%= producto.nombre %></a></h2>
             </div>
             <% }) %> 
      </section>

@@ -7,119 +7,9 @@ body{
     font-family: 'Roboto', sans-serif;    
     background-color: #000000;
     color: rgb(230,230,230);
-}
-/*//////////////////////////////////////////// NAV BAR HEADER/////////////////////////////////////*/
-.main-header{
-  display: flex;
-  align-content: stretch;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-left: -1vw;
-  margin-right: -5vw;
-  width: 100vw;
-  background-color: black;
-  position: fixed;
-  z-index: 2;
-  top: -1vw;
-}
-
-.main-header-top-bar{
-  margin-top: 5vw;
-  margin-left: -8vw;
-}
-
-img.logo{
-    width: 20vw;
-    display: block;
-    margin-left: 14vw;
-}
-
-i.fa-solid.fa-user.usuario-existente{
-  margin-left: 11vw;
-}
-
-.right-navbar{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 25vw;
-    align-items: center;
-    size: 5vw;
-    margin-left: 7vw;
-    margin-top: 5vw;
-    margin-right: 6vw;
-    list-style:none;
-   }
-
-.right-navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.right-navbar a {
-    text-decoration: none;
-    color: white;
-}
-
-/* Dropdown Button */
-  .dropbtn {
-    background-color: black;
-    color: white;
-    padding: 22px;
-    font-size: 20px;
-    border: none;
-    font-size: 6vw;
+    flex-direction: column
   }
-
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    padding-top: 5.1vw;
-    margin-left: 6vw;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: black;
-    color: white;
-    width: 30vw;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border: white solid 1px;
-    padding-bottom: white solid 1px;
-    overflow: auto;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    background-color: black;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-      background-color: rgb(63,53,217);
-      cursor: pointer;
-    }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    background-color: rgb(63,53,217);
-    transition: 0.5s;
-  }
-/*/////////////////////////////////////////Acá termina el NAV BAR//////////////////////////////////////////////////////////////*/
 
 
 main {
@@ -291,17 +181,6 @@ a.boton-iniciar{
 
   @media (min-width:477px) and (max-width:768px){
 
-    .main-header-top-bar {
-      margin-top: 3vw;
-      margin-left: -5vw;
-    }
-   
-    .right-navbar{
-      width: 17vw;
-      font-size: 3.1vw;
-      margin-top: 2vw;
-    }
-
     .inicio-sesion{
       margin-top: -15%;
     }
@@ -311,12 +190,6 @@ a.boton-iniciar{
        box-shadow: 0px 0px 10px rgb(255, 255, 255);
        transform: scale(1.2);
        transition: 2s;
-     }
-   
-     .right-navbar .fa-solid:hover{
-       color: rgb(63,53,217);
-       transform: scale(1.3);
-       transition: 0.5s;
      }
    
      .fa-brands:hover,.fa-envelope:hover, .pie-de-pagina-textos1:hover, .pie-de-pagina-textos2:hover, .pie-de-pagina-textos3:hover{
@@ -383,46 +256,7 @@ transform: scale(1.2);
   /*////////////////////////////////////////////////////////////////DESKTOP////////////////////////////////////////////////*/
 
 @media (min-width:769px) and (max-width: 1031px) {
-    .main-header{
-      top: -5vw;
-      width: 100%;
-    }
-
-  .dropdown{
-    position: static;
-    display: inline-block;
-    padding-top: 2.1vw;
-    margin-left: 4vw;
-    }
-
-  .dropbtn{
-    margin-top: 7vw;
-    margin-left: 2vw;
-    font-size: 3vw;
-    }
-
-  .right-navbar a {
-    text-decoration: none;
-    color: white;
-    margin-left: -3vw;
-    font-size: 2vw;
-    }
-
-  .right-navbar {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 11vw;
-      align-items: center;
-      margin-left: 9vw;
-      margin-right: 2vw;
-      padding-top: 1vw;
-    }  
-
-  .main-header-top-bar{
-    margin-left: -1vw;
-    }
+    
    
   .footer {
     display: flex;
@@ -523,67 +357,10 @@ transform: scale(1.2);
 
 @media (min-width:1031px){
 
-  img.logo{
-    width: 12vw;
-    display: block;
-    margin-left: 12vw;
-    margin-top: 1vw;
-  }
-
-  .dropdown {
-    position: static;
-    display: inline-block;
-    top: -1.9vw;
-    padding-top: 2.1vw;
-    margin-left: 4vw;
-  }
-
-  .dropbtn{
-    margin-top: 7vw;
-    margin-left: 2vw;
-    font-size: 2vw;
-  }
-
-  .dropbtn:hover {
-    cursor: pointer;
-    }
-
-  .right-navbar a {
-    text-decoration: none;
-    color: white;
-    margin-left: -3vw;
-    font-size: 1vw;
-  }
-
-  .right-navbar {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 7vw;
-    align-items: center;
-    margin-left: 9vw;
-    margin-right: 2vw;
-    padding-top: 2vw;
-  }
-
-  .main-header{
-    top: -5vw;
-    width: 100%;
-  }
+  
 
   ul li a i{
     font-size: 2vw;
-  }
-
-  .main-header-top-bar{
-    margin-left: -3vw;
-  }
-
-  .right-navbar .fa-solid:hover{
-    color: rgb(63,53,217);
-    transform: scale(1.3);
-    transition: 0.5s;
   }
 
   .inicio-sesion {
@@ -748,15 +525,4 @@ transform: scale(1.2);
     font-size: 1.5vw;
     margin-left: 55vw;
   }
-
-  .dropdown:hover .dropbtn {
-    background-color: rgb(63,53,217);
-    padding-right: 2vw;
-    margin-left: 0vw;
-    transition: 0.5s;
-    padding-top: 1vw;
-    font-size: 2vw;
-    border-radius: 6px;
-    padding-bottom: 1vw;
-    }
 }

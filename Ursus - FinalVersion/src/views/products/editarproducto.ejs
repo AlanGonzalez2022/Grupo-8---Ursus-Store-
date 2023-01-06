@@ -18,10 +18,10 @@
 </header> 
 
 <body>
-    <form action="/editar/<%= productoEdicion.id %>?_method=PUT" method="POST">
+    <form action="/editar/<%= producto.id %>" method="POST" >
         <div class="forma">
             <label class="producto" for="nombre">Producto:</label>
-            <input type="text" name="nombre" id="nombre" value="<%= productoEdicion.nombre %> " class="control">      
+            <input type="text" name="nombre" id="nombre" value="<%= producto.nombre %> " class="control">      
         </div>
         
         <div>
@@ -33,56 +33,45 @@
         <div>
             <label for="categoria">Categoria:</label>
             <select name="categoria" id="categoria" class="forma">
-                <option selected><%= productoEdicion.categoria %></option> 
-                <option value="remeras">Remeras</option>      
-                <option value="shorts">Shorts</option>
-                <option value="salzados">Calzados</option>
-                <option value="vestidos">Vestidos</option>
-                <option value="camisas">Camisas</option>
-                <option value="anteojos">Anteojos</option>
-                <option value="accesorios">Accesorios</option>
-                <option value="trajes-de-baño">Trajes De Baño</option>
+                <% categoria.forEach(categoria => { %>
+                    <% if (categoria.id == producto.idCategoria) { %>
+                        <option value="<%= categoria.id %> " selected><%= categoria.nombre %></option>
+                    <% } else { %>
+                        <option value="<%= categoria.id %>"><%= categoria.nombre %></option>
+                   <% } %>     
+                <% }) %>
             </select>
         </div>  
         <label for="talle">Talle</label>
         <select name="talle" id="talle" class="forma" value="Ingrese talle" >
-            <option selected><%= productoEdicion.talle %></option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
+            <% talle.forEach(talle => { %>
+                <% if (talle.id == producto.idTalle) { %>
+                    <option value="<%= talle.id %> " selected><%= talle.nombre %></option>
+                <% } else { %>
+                    <option value="<%= talle.id %>"><%= talle.nombre %></option>
+               <% } %>     
+            <% }) %>
         </select>
         
         <label for="genero">Género</label>
         <select name="genero" id="genero" class="forma" value="Ingrese género" >
-            <option selected><%= productoEdicion.genero %></option>
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
+            <% genero.forEach(genero => { %>
+                <% if (genero.id == producto.idGenero) { %>
+                    <option value="<%= genero.id %> " selected><%= genero.nombre %></option>
+                <% } else { %>
+                    <option value="<%= genero.id %>"><%= genero.nombre %></option>
+               <% } %>     
+            <% }) %>
         </select>
         
-        <label for="color">Color</label>
-        <select name="color" id="color" class="forma" >
-            <option selected><%= productoEdicion.color%></option>
-            <option value="rojo">Rojo</option>
-            <option value="negro">Negro</option>
-            <option value="blanco">Blanco</option>
-            <option value="amarillo">Amarillo</option>
-            <option value="azul">Azul</option>
-        </select>
-        
-        <label for="cantidad">Cantidad</label>
-        <input required="" type="number" id="cantidad" name="cantidad" value="<%= productoEdicion.cantidad %>" class="control">
-        <br>
-        <label for="disponible">Disponibilidad</label>
         <select name="disponible" id="disponible" class="forma">
-            <option value="true">Hay</option>
-            <option value="false">No hay disponibilidad de este producto</option> %> 
+            <option value="<%= producto.estado %>" selected><%= producto.estado %> </option>
+            <option value="No hay disponibilidad">No disponible</option> 
         </select>
 
         <div class="forma">
             <label class="precio" for="precio">Precio:</label>
-            <input type="text" id="precio" name="precio" value="<%= productoEdicion.precio %>" class="control">           
+            <input type="text" id="precio" name="precio" value="<%= producto.precio %>" class="control">           
         </div>
         
         <div class="alinearboton">

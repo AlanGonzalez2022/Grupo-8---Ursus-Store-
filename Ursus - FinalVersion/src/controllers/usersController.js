@@ -2,14 +2,14 @@ const fs = require("fs");
 const path = require("path");
 const { validationResult } = require("express-validator");
 const bcryptjs = require("bcryptjs");
-const User = require("../models/Users");
+const db = require("../../database/models")
 
 let usersController = {
   register: function (req, res) {
     res.render("users/register");
   },
 
-  processRegister: function (req, res) {
+  processRegister: async function (req, res) {
     const resultValidation = validationResult(req);
 
     if (resultValidation.errors.length > 0) {
@@ -18,8 +18,10 @@ let usersController = {
         oldData: req.body,
       });
     }
-
-    let userDb = User.findByField("email", req.body.email);
+    "email", req.body.email
+    let userDb = await db.Usuario.findOne({
+      where: { email: req.body.email }
+    });
 
     if (userDb) {
       return res.render("users/register", {
@@ -32,13 +34,13 @@ let usersController = {
       });
     }
 
-    let userToCreate = {
+    await db.Usuario.create({
       ...req.body,
       password: bcryptjs.hashSync(req.body.password, 10),
       imagenUser: req.file.filename,
-    };
+      idTipoUsuario: 2
+    })
 
-    let userCreated = User.create(userToCreate);
     res.redirect("/login");
   },
 
@@ -46,8 +48,11 @@ let usersController = {
     res.render("users/login");
   },
 
-  processLogin: function (req, res) {
-    let userLogin = User.findByField("email", req.body.email);
+  processLogin: async function (req, res) {
+    let userLogin = await db.Usuario.findOne({
+      include: [{ association: "tipoUsuario" }],
+      where: { email: req.body.email }
+    });
 
     if (userLogin) {
       let verficationPassword = bcryptjs.compareSync(
@@ -90,6 +95,37 @@ let usersController = {
     });
   },
 
+  editProfile: function (req, res) {
+    return res.render("users/editProfile", {
+      user: req.session.userLogged,
+
+    });
+  },
+
+  confirmEdit: async function (req, res) {
+
+    if (!req.body.filename) {
+      await db.Usuario.update({
+        usuario: req.body.usuario,
+        email: req.body.email,
+
+      }, {
+        where: { id: req.params.id }
+      })
+    } else {
+      await db.Usuario.update({
+        nombre: req.body.nombre,
+        email: req.body.email,
+        imagenUser: req.files[0].filename
+      }, {
+        where: { id: req.params.id }
+      })
+    }
+
+    res.redirect("/profile")
+
+  },
+
   logout: function (req, res) {
     res.clearCookie("cookieUser");
     req.session.destroy();
@@ -100,25 +136,29 @@ let usersController = {
     res.render("users/admin");
   },
 
-  processAdmin: function (req, res) {
-    let userLogin = User.findByField("email", req.body.email);
-      if(userLogin){
-        let verficationPassword = bcryptjs.compareSync(req.body.password,userLogin.password)
-        if(verficationPassword && userLogin.admin === true){
-          delete userLogin.password;
-          req.session.userLogged = userLogin;
-        
-          return res.redirect("/")
-        }
-      }    
-      
-      res.render("users/admin", {
-        errors: {
-          email: {
-            msg: "Las credenciales son incorrectas",
-          },
+  processAdmin: async function (req, res) {
+    let userLogin = await db.Usuario.findOne({
+      include: [{ association: "tipoUsuario" }],
+      where: { email: req.body.email }
+    });
+
+    if (userLogin) {
+      let verficationPassword = bcryptjs.compareSync(req.body.password, userLogin.password)
+      if (verficationPassword && userLogin.tipoUsuario.tipo === "admin") {
+        delete userLogin.password;
+        req.session.userLogged = userLogin;
+
+        return res.redirect("/")
+      }
+    }
+
+    res.render("users/admin", {
+      errors: {
+        email: {
+          msg: "Las credenciales son incorrectas",
         },
-      });      
+      },
+    });
   },
 };
 

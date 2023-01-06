@@ -20,6 +20,8 @@ router.post('/login', usersController.processLogin);
 //Profile de usuario
 router.get("/profile", authMiddleware, usersController.profile);
 router.get("/logout", usersController.logout);
+router.get("/editProfile/:id",usersController.editProfile)
+router.post("/editProfile/:id",uploadFile.single("imagenUser"),usersController.confirmEdit)
 
 //Admin
 router.get("/admin", usersController.admin);

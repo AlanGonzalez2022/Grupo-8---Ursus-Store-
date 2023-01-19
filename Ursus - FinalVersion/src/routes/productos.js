@@ -5,7 +5,8 @@ const router = express.Router();
 
 //Middleware
 const authMiddleware = require("../middlewares/authMiddleware");
-
+const validationsCreate = require("../middlewares/validationProductMiddleware");
+const validationsUpdate = require("../middlewares/validationPUpdateMiddleware")
 // **** Controller Require ****
 const multer = require ('multer');
 const { diskStorage } = require('multer');
@@ -32,11 +33,11 @@ router.get("/buscar",productosController.buscar)
 
 //Creación de producto:
 router.get('/crearProducto',productosController.crear);
-router.post('/crearProducto',upload.any(), productosController.crearProducto);
+router.post('/crearProducto',upload.single("imagen"),validationsCreate, productosController.crearProducto);
 
 //Edición de producto:
 router.get('/editar/:id', productosController.editar);
-router.put('/editar/:id', productosController.editarProducto);
+router.post('/editar/:id',upload.single("imagen"),validationsUpdate, productosController.editarProducto);
 
 //Eliminación de producto:
 router.delete('/eliminarProducto/:id', productosController.eliminarProducto);

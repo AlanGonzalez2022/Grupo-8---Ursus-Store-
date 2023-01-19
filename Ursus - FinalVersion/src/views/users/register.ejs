@@ -1,97 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <script src="https://kit.fontawesome.com/db26de78cd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/register.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <script src="https://kit.fontawesome.com/db26de78cd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/register.css">
+  <title>Document</title>
 </head>
-    
+
 <body>
 
-        <!-- Menú desplegable -->
-        <%- include ('../partials/navbar')%>
+  <!-- Menú desplegable -->
+  <%- include ('../partials/navbar')%>
 
     <main>
-        <div class="inicio">
+      <div class="inicio">
         <h4 class="inicio-sesion">¡Unite a nuestra comunidad! Creá tu cuenta<a class="ingresa-aca" href="/login"> ¿Ya
             tenés una? Ingresá acá </h4></a>
-        </div>
-        
-        <div class="contenedor1">
-            <div class="formularios">
-                <div class="registro"><h2>REGISTRO</h2></div>
-                <form action="/register" method="POST" enctype="multipart/form-data">
-                    <div class="nombre">
-                        <label>Usuario</label>
-                        <input class="forms" type="text" name= "usuario" placeholder="Ingrese su Nombre Completo" value="<%= locals.oldData ? oldData.usuario : null %>">
-                        <% if (locals.errors && errors.usuario) { %> 
-                            <div class = "errorRegistro" style="color: red">
-                                <%= errors.usuario.msg %> 
-                            </div>
-                        <% } %>
-                    </div>
-                    <div class="email">
-                        <label>Email</label>
-                        <input class="forms" type="email" name= "email" placeholder="Ingrese su Email" value="<%= locals.oldData ? oldData.email : null %>">
-                        <% if (locals.errors && errors.email) { %> 
-                            <div class = "errorRegistro" style="color: red">
-                                <%= errors.email.msg %> 
-                            </div>
-                        <% } %>
-                    </div>
-                    <div class="contraseña">
-                        <label>Contraseña</label>
-                        <input class="forms" type="password" name= "password" placeholder="Ingrese su Contraseña" value="<%= locals.oldData ? oldData.password : null %>">
-                        <% if (locals.errors && errors.password) { %> 
-                            <div class = "errorRegistro" style="color: red">
-                                <%= errors.password.msg %> 
-                            </div>
-                        <% } %>
-                    </div>
-                    <div class="confirmacion-contraseña">
-                        <label>Confirmar Contraseña   
-                        </label><input class="forms" type="password" placeholder="Ingrese su contraseña">
-                    </div>
-                    <div>
-                        <label for="imagenUser">Selecione su foto de perfil</label>
-                        <input class="forms" type="file" id="imagenUser" name="imagenUser" accept=".jpg, .jpeg">
-                        <% if (locals.errors && errors.imagenUser) { %> 
-                            <div class = "errorRegistro" style="color: red">
-                                <%= errors.imagenUser.msg %> 
-                            </div>
-                        <% } %>
-                    </div>
-                    <div class="reg-text">
-                        <input type="submit" value="Registrate"></label>
-                    </div>
-                </form>
+      </div>
+
+      <div class="contenedor1">
+        <div class="formularios">
+          <div class="registro">
+            <h2>REGISTRO</h2>
+          </div>
+          <form id="formRegister" action="/register" method="POST" enctype="multipart/form-data">
+            <div class="nombre">
+              <label for="usuario">Usuario</label>
+              <input class="forms" type="text" name="usuario" id="usuario" placeholder="Ingrese su Nombre Completo"
+                value="<%= locals.oldData ? oldData.usuario : null %>">
+              <small id="usuarioError" style="color: red"></small>
+              <% if (locals.errors && errors.usuario) { %>
+                <div class="errorRegistro" style="color: red">
+                  <%= errors.usuario.msg %>
+                </div>
+                <% } %>
             </div>
-        
-    <div class="contenedor2">   
+            <div class="email">
+              <label for="email">Email</label>
+              <input class="forms" type="email" name="email" id="email" placeholder="Ingrese su Email"
+                value="<%= locals.oldData ? oldData.email : null %>">
+              <small id="emailError" style="color: red"></small>
+              <% if (locals.errors && errors.email) { %>
+                <div class="errorRegistro" style="color: red">
+                  <%= errors.email.msg %>
+                </div>
+                <% } %>
+            </div>
+            <div class="contraseña">
+              <label for="password">Contraseña</label>
+              <input class="forms" type="password" name="password" id="password" placeholder="Ingrese su Contraseña"
+                value="<%= locals.oldData ? oldData.password : null %>">
+              <small id="passwordError" style="color: red"></small>
+              <% if (locals.errors && errors.password) { %>
+                <div class="errorRegistro" style="color: red">
+                  <%= errors.password.msg %>
+                </div>
+                <% } %>
+            </div>
+            <div class="confirmacion-contraseña">
+              <label class="label-repassword" for="repassword">Confirmar Contraseña
+                <input class="forms" type="password" name="repassword" id="repassword"
+                  placeholder="Ingrese nuevamente su contraseña">
+                <small id="repasswordError" style="color: red"></small>
+                <% if (locals.errors && errors.repassword) { %>
+                  <div class="errorRegistro" style="color: red">
+                    <%= errors.repassword.msg %>
+                  </div>
+                  <% } %>
+            </div>
+            <div>
+              <label for="imagenUser">Selecione su foto de perfil</label>
+              <input class="forms" type="file" id="imagenUser" name="imagenUser" id="imagenUser" accept=".jpg, .jpeg">
+              <small id="imagenUserError" style="color: red"></small>
+              <% if (locals.errors && errors.imagenUser) { %>
+                <div class="errorRegistro" style="color: red">
+                  <%= errors.imagenUser.msg %>
+                </div>
+                <% } %>
+            </div>
+            <div class="reg-text">
+              <input id="registrate" type="submit" value="Registrate"></label>
+            </div>
+          </form>
+        </div>
 
-            <div class="redes2">
-                <div class="redes"><h6>Tambien podes ingresar con:</h6></div>
+        <div class="contenedor2">
 
-                 <a class="facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i> Facebook</a> 
-
-                 <a class="twitter" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i> Twitter</a>
-            
-                 <a class="instagram" href="https://instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <div class="redes2">
+            <div class="redes">
+              <h6>Tambien podes ingresar con:</h6>
             </div>
 
+            <a class="facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i> Facebook</a>
+
+            <a class="twitter" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i> Twitter</a>
+
+            <a class="instagram" href="https://instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          </div>
+
         </div>
-         </div>
-        </div>
+      </div>
+      </div>
     </main>
 
-     <!-- Footer --> 
-     <%- include ('../partials/footer')%>
-    
+    <!-- Footer -->
+    <%- include ('../partials/footer')%>
+      <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+      <script type="text/javascript" src="/js/validationRegister.js"></script>
 </body>
+
 </html>

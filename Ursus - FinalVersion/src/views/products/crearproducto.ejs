@@ -1,65 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <script src="https://kit.fontawesome.com/db26de78cd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/editarproducto.css">
-    <title>Crear Producto</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <script src="https://kit.fontawesome.com/db26de78cd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/editarproducto.css">
+  <title>Crear Producto</title>
 </head>
 
 <header class="main-header">
-    <div class="main-header-top-bar center">
-        <a href="/"><img src="./images/logo-ursus.png" class="logo"></a>
-    </div> 
-</header> 
+  <div class="main-header-top-bar center">
+    <a href="/"><img src="./images/logo-ursus.png" class="logo"></a>
+  </div>
+</header>
 
 <body>
-    <form action="/crearproducto" method="POST" enctype="multipart/form-data">
-        <div class="forma">
-            <label class="producto" for="nombre">Producto:</label>
-            <input required="" type="text" id="nombre" name="nombre" placeholder="Ingrese un nombre" class="control">           
-          </div>
-        <div>
-       
-        <label for="imagen">Imagen</label>
-        <input class="forms" type="file" id="imagen" name="imagen" accept=".jpg, .jpeg">
+  <form action="/crearproducto" method="POST" enctype="multipart/form-data" id="formProduct">
+    <div class="forma">
+      <label class="producto" for="nombre">Producto:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingrese un nombre" class="control" 
+      value="<%= locals.oldData ? oldData.nombre : null %>">
+      <small id="nombreError" style="color: red"></small>
+      <% if (locals.errors && errors.nombre) { %>
+        <div class="nombreError" style="color: red">
+          <%= errors.nombre.msg %>
         </div>
-        
-        <div>
-        <label for="categorias">Categorias</label>
-        <select name="categoria" class="forma">
-        <% categoriasData.forEach(categoria => { %>
-            <option value="<%= categoria.id %> "><%= categoria.nombre %> </option>
+        <% } %>
+    </div>
+    <div>
+
+      <label for="imagen">Imagen</label>
+      <input class="forms" type="file" id="imagen" name="imagen">
+      <small id="imagenError" style="color: red"></small>
+      <% if (locals.errors && errors.imagen) { %>
+        <div class="imagenError" style="color: red">
+          <%= errors.imagen.msg %>
+        </div>
+        <% } %>
+    </div>
+
+    <div>
+      <label for="categorias">Categorias</label>
+      <select name="categoria" class="forma">
+        <% categoriasData.forEach(categoria=> { %>
+          <option value="<%= categoria.id %> ">
+            <%= categoria.nombre %>
+          </option>
+          <% }) %>
+      </select>
+    </div>
+    <label for="talle">Talle</label>
+    <select name="talle" class="forma">
+      <% tallesData.forEach(talle=> { %>
+        <option value="<%= talle.id %> ">
+          <%= talle.nombre %>
+        </option>
         <% }) %>
-        </select>
-        </div>
-        <label for="talle">Talle</label>
-        <select name="talle" class="forma">
-            <% tallesData.forEach(talle => { %>
-                <option value="<%= talle.id %> "><%= talle.nombre %> </option>
-            <% }) %>
-        </select>
+    </select>
 
-        <label for="genero">Género</label>
-        <select name="genero" id="genero" class="forma">
-            <% generosData.forEach(genero => { %>
-                <option value="<%= genero.id %> "><%= genero.nombre %> </option>
-            <% }) %>
-        </select>
+    <label for="genero">Género</label>
+    <select name="genero" id="genero" class="forma">
+      <% generosData.forEach(genero=> { %>
+        <option value="<%= genero.id %> ">
+          <%= genero.nombre %>
+        </option>
+        <% }) %>
+    </select>
 
-        <div class="forma">
-            <label for="precio" class="precio" for="precio">Precio:</label>
-            <input required="" type="text" id="precio" name="precio" placeholder="5678" class="control">           
+    <div class="forma">
+      <label for="precio" class="precio" for="precio">Precio:</label>
+      <input type="text" id="precio" name="precio" placeholder="ingrese su precio en $" class="control" 
+      value="<%= locals.oldData ? oldData.precio : null %>">
+      <small id="precioError" style="color: red"></small>
+      <% if (locals.errors && errors.precio) { %>
+        <div class="precioError" style="color: red">
+          <%= errors.precio.msg %>
         </div>
+        <% } %>
+    </div>
 
-        <div class="alinearboton">
-        <button type="reset" class="boton-formulario">Borrar Todo</button>
-        <button type="submit" class="boton-formulario">Agregar</button>
-        </div>
-    </form>
+    <div class="alinearboton">
+      <button type="reset" class="boton-formulario">Borrar Todo</button>
+      <button id="agregar" type="submit" class="boton-formulario">Agregar</button>
+    </div>
+  </form>
+  <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+  <script type="text/javascript" src="/js/validationPCreate.js"></script>
 </body>
+
 </html>

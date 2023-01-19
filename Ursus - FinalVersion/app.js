@@ -6,6 +6,7 @@ const path =  require('path');
 const app = express();
 const session = require("express-session")
 const cookies = require("cookie-parser")
+const validator = require("validator")
 
 // MiddleWare a nivel Aplicación
 const userLoggedMiddleware = require("./src/middlewares/userLoggedMiddleware")

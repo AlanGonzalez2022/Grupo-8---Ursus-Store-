@@ -6,6 +6,7 @@ const db = require("../../database/models")
 
 let usersController = {
   register: function (req, res) {
+
     res.render("users/register");
   },
 
@@ -160,6 +161,16 @@ let usersController = {
       },
     });
   },
+
+  emailFound: async function (req, res){
+   let usuariosEmail = await db.Usuario.findAll()
+      return res.status(200).json({
+        total: usuariosEmail.length,
+        data: usuariosEmail,
+        status: 200
+      })
+  }
+
 };
 
 module.exports = usersController;

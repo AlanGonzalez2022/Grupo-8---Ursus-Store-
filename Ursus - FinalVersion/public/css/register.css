@@ -125,6 +125,11 @@ main {
     border-radius: 7px;
 }
 
+.label-repassword{
+  display: flex;
+  flex-direction: column;
+}
+
 .forms{
     width: 32vh;
     height: 9vw;

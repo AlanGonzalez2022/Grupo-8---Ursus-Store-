@@ -2,13 +2,14 @@ const fs = require('fs');
 const path = require('path');
 const { Association, Op } = require('sequelize');
 const db = require("../../database/models")
+const { validationResult } = require("express-validator");
 
 let productosController = {
-  
+
   categorias: function (req, res) {
     res.render('./products/categorias')
   },
-  
+
   //Categorías Productos nos muestra en nuestro proyecto el LISTADO de PRODUCTOS POR CATEGORÍA
 
   categoriasProductos: function (req, res) {
@@ -24,7 +25,7 @@ let productosController = {
       include: [{ association: "generos" }, { association: "talles" }]
     })
       .then(idProducto => {
-        res.render('./products/detalle-producto.ejs', { idProducto:idProducto })
+        res.render('./products/detalle-producto.ejs', { idProducto: idProducto })
       })
   },
 
@@ -32,20 +33,20 @@ let productosController = {
     res.render('./products/shopping-cart.ejs')
   },
 
-  buscar: function(req, res){
+  buscar: function (req, res) {
     let encontrado = req.query.search
     console.log(encontrado);
     db.Producto.findAll({
-        where: {
-            nombre: {[Op.like]: "%" + encontrado + "%"}          
-        }
+      where: {
+        nombre: { [Op.like]: "%" + encontrado + "%" }
+      }
     })
-    .then(encontrada => {
-      console.log(encontrada);
-      res.render("./products/buscar", {encontrada})
-    })
+      .then(encontrada => {
+        console.log(encontrada);
+        res.render("./products/buscar", { encontrada })
+      })
   },
-  
+
   crear: function (req, res) {
     let categorias = db.Categoria.findAll()
     let talles = db.Talle.findAll()
@@ -60,12 +61,29 @@ let productosController = {
   },
 
   crearProducto: async function (req, res) {
-    // Para traer el ID del producto y el nombre
 
-    let ProductoNombre = await db.Producto.findOne({
-      where: {nombre: req.body.nombre}
-    })
+    const resultValidation = validationResult(req)
     
+    if (resultValidation.errors.length > 0) {
+
+      let categoriasData = await db.Categoria.findAll()
+      let tallesData = await db.Talle.findAll()
+      let generosData = await db.Genero.findAll()
+
+      return res.render("products/crearproducto", {
+        errors: resultValidation.mapped(),
+        oldData: req.body,
+        categoriasData,
+        tallesData,
+        generosData
+      });
+    }
+
+    // Para traer el ID del producto y el nombre
+    let ProductoNombre = await db.Producto.findOne({
+      where: { nombre: req.body.nombre }
+    })
+
     let productoEncontrado = await db.Producto.findAll()
 
     let arrayId = productoEncontrado.map(id => {
@@ -74,7 +92,7 @@ let productosController = {
     let idProducto = arrayId.pop()
 
     if (ProductoNombre.nombre === req.body.nombre) {
-      
+
       await db.productoTalle.create({
         idProducto: ProductoNombre.id,
         idTalle: req.body.talle
@@ -85,33 +103,34 @@ let productosController = {
         idGenero: req.body.genero
       })
 
-    }else{
+    } else {
 
-    await db.Producto.create({
-      nombre: req.body.nombre,
-      idCategoria: req.body.genero,
-      precio: req.body.precio,
-      imagen: req.files[0].filename,
-      idTalle: req.body.talle,
-      idGenero: req.body.genero
-    }),
+      await db.Producto.create({
+        nombre: req.body.nombre,
+        idCategoria: req.body.genero,
+        precio: req.body.precio,
+        imagen: req.files[0].filename,
+        idTalle: req.body.talle,
+        idGenero: req.body.genero
+      }),
 
 
-      await db.productoTalle.create({
+        await db.productoTalle.create({
+          idProducto: idProducto + 1,
+          idTalle: req.body.talle
+        })
+
+      await db.productoGenero.create({
         idProducto: idProducto + 1,
-        idTalle: req.body.talle
+        idGenero: req.body.genero
       })
-
-    await db.productoGenero.create({
-      idProducto: idProducto + 1,
-      idGenero: req.body.genero
-    })
-  }
+    }
     res.redirect("/productosporcategoria")
 
   },
 
   editar: function (req, res) {
+    console.log(req.body.imagen);
     let productos = db.Producto.findByPk(req.params.id)
     let categorias = db.Categoria.findAll()
     let talles = db.Talle.findAll()
@@ -123,16 +142,45 @@ let productosController = {
       })
   },
 
-  editarProducto: function (req, res) {
-    db.Producto.update({
-      nombre: req.body.nombre,
-      idCategoria: req.body.genero,
-      precio: req.body.precio,
-      imagen: req.files[0].filename,
-    },
-      { where: { id: req.params.id } }),
+  editarProducto: async function (req, res) {
+  
+    const resultValidation = validationResult(req)
+    
+      if (resultValidation.errors.length > 0) {
+      let producto = await db.Producto.findByPk(req.params.id)
+      let categoria = await db.Categoria.findAll()
+      let talle = await db.Talle.findAll()
+      let genero = await db.Genero.findAll()
 
-      res.redirect("/productosporcategoria")
+      return res.render("./products/editarProducto.ejs", {
+        errors: resultValidation.mapped(),
+        oldData: req.body,
+        producto,
+        categoria,
+        talle,
+        genero
+      });
+    }
+    
+    if (req.body.imagen) {
+      await db.Producto.update({
+        nombre: req.body.nombre,
+        idCategoria: req.body.genero,
+        precio: req.body.precio,
+        imagen: req.files[0].filename,
+      },
+        { where: { id: req.params.id } })
+    } else {
+
+      await db.Producto.update({
+        nombre: req.body.nombre,
+        idCategoria: req.body.genero,
+        precio: req.body.precio,
+      },
+        { where: { id: req.params.id } })
+
+    }
+    res.redirect("/productosporcategoria")
   },
 
   eliminarProducto: function (req, res) {

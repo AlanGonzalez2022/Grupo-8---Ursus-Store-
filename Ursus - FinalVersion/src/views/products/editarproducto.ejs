@@ -1,83 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <script src="https://kit.fontawesome.com/db26de78cd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/editarproducto.css">
-    <title>Editar Producto</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <script src="https://kit.fontawesome.com/db26de78cd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/editarproducto.css">
+  <title>Editar Producto</title>
 </head>
 
 <header class="main-header">
-    <div class="main-header-top-bar center">
-        <a href="/"><img src="/images/logo-ursus.png" class="logo"></a>
-    </div> 
-</header> 
+  <div class="main-header-top-bar center">
+    <a href="/"><img src="/images/logo-ursus.png" class="logo"></a>
+  </div>
+</header>
 
 <body>
-    <form action="/editar/<%= producto.id %>" method="POST" >
-        <div class="forma">
-            <label class="producto" for="nombre">Producto:</label>
-            <input type="text" name="nombre" id="nombre" value="<%= producto.nombre %> " class="control">      
+  <form action="/editar/<%= producto.id %>" method="POST" id="formUpdate" enctype="multipart/form-data">
+    <div class="forma">
+      <label class="producto" for="nombre">Producto:</label>
+      <input type="text" name="nombre" id="nombre" value="<%= producto.nombre %> " class="control">
+      <small id="nombreError" style="color: red"></small>
+      <% if (locals.errors && errors.nombre) { %>
+        <div class="nombreError" style="color: red">
+          <%= errors.nombre.msg %>
         </div>
-        
-        <div>
-            <label for="imagen">Imagen</label>
-            <!-- <img class="remera" src="articulo.imagen APLICAR EJS" alt="remera">  -->
-            <input class="forms" type="file" accept=".jpg, .jpeg">
-        </div>   
-        
-        <div>
-            <label for="categoria">Categoria:</label>
-            <select name="categoria" id="categoria" class="forma">
-                <% categoria.forEach(categoria => { %>
-                    <% if (categoria.id == producto.idCategoria) { %>
-                        <option value="<%= categoria.id %> " selected><%= categoria.nombre %></option>
-                    <% } else { %>
-                        <option value="<%= categoria.id %>"><%= categoria.nombre %></option>
-                   <% } %>     
-                <% }) %>
-            </select>
-        </div>  
-        <label for="talle">Talle</label>
-        <select name="talle" id="talle" class="forma" value="Ingrese talle" >
-            <% talle.forEach(talle => { %>
-                <% if (talle.id == producto.idTalle) { %>
-                    <option value="<%= talle.id %> " selected><%= talle.nombre %></option>
-                <% } else { %>
-                    <option value="<%= talle.id %>"><%= talle.nombre %></option>
-               <% } %>     
-            <% }) %>
-        </select>
-        
-        <label for="genero">Género</label>
-        <select name="genero" id="genero" class="forma" value="Ingrese género" >
-            <% genero.forEach(genero => { %>
-                <% if (genero.id == producto.idGenero) { %>
-                    <option value="<%= genero.id %> " selected><%= genero.nombre %></option>
-                <% } else { %>
-                    <option value="<%= genero.id %>"><%= genero.nombre %></option>
-               <% } %>     
-            <% }) %>
-        </select>
-        
-        <select name="disponible" id="disponible" class="forma">
-            <option value="<%= producto.estado %>" selected><%= producto.estado %> </option>
-            <option value="No hay disponibilidad">No disponible</option> 
-        </select>
+        <% } %>
+    </div>
 
-        <div class="forma">
-            <label class="precio" for="precio">Precio:</label>
-            <input type="text" id="precio" name="precio" value="<%= producto.precio %>" class="control">           
+    <div>
+      <label for="imagen">Imagen</label>
+      <img class=imagen-usuario src="/images/productosporcategoria/<%= producto.imagen %> " width="150px">
+      <input id="imagen" class="forms" type="file" name="imagen">
+      <small id="imagenError" style="color: red"></small>
+      <% if (locals.errors && errors.imagen) { %>
+        <div class="imagenError" style="color: red">
+          <%= errors.imagen.msg %>
         </div>
-        
-        <div class="alinearboton">
-            <button type="reset" class="boton-formulario">Borrar Todo</button>
-            <button type="submit" class="boton-formulario">Guardar</button>
+        <% } %>
+    </div>
+
+    <div>
+      <label for="categoria">Categoria:</label>
+      <select name="categoria" id="categoria" class="forma">
+        <% categoria.forEach(categoria=> { %>
+          <% if (categoria.id==producto.idCategoria) { %>
+            <option value="<%= categoria.id %> " selected>
+              <%= categoria.nombre %>
+            </option>
+            <% } else { %>
+              <option value="<%= categoria.id %>">
+                <%= categoria.nombre %>
+              </option>
+              <% } %>
+                <% }) %>
+      </select>
+    </div>
+    <label for="talle">Talle</label>
+    <select name="talle" id="talle" class="forma" value="Ingrese talle">
+      <% talle.forEach(talle=> { %>
+        <% if (talle.id==producto.idTalle) { %>
+          <option value="<%= talle.id %> " selected>
+            <%= talle.nombre %>
+          </option>
+          <% } else { %>
+            <option value="<%= talle.id %>">
+              <%= talle.nombre %>
+            </option>
+            <% } %>
+              <% }) %>
+    </select>
+
+    <label for="genero">Género</label>
+    <select name="genero" id="genero" class="forma" value="Ingrese género">
+      <% genero.forEach(genero=> { %>
+        <% if (genero.id==producto.idGenero) { %>
+          <option value="<%= genero.id %> " selected>
+            <%= genero.nombre %>
+          </option>
+          <% } else { %>
+            <option value="<%= genero.id %>">
+              <%= genero.nombre %>
+            </option>
+            <% } %>
+              <% }) %>
+    </select>
+
+    <select name="disponible" id="disponible" class="forma">
+      <option value="<%= producto.estado %>" selected>
+        <%= producto.estado %>
+      </option>
+      <option value="No hay disponibilidad">No disponible</option>
+    </select>
+
+    <div class="forma">
+      <label class="precio" for="precio">Precio:</label>
+      <input type="text" id="precio" name="precio" value="<%= producto.precio %>" class="control">
+      <small id="precioError" style="color: red"></small>
+      <% if (locals.errors && errors.precio) { %>
+        <div class="precioError" style="color: red">
+          <%= errors.precio.msg %>
         </div>
-    </form>
+        <% } %>
+    </div>
+
+    <div class="alinearboton">
+      <button type="reset" class="boton-formulario">Borrar Todo</button>
+      <button type="submit" id="btnGuardar" class="boton-formulario">Guardar</button>
+    </div>
+  </form>
+  <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+  <script type="text/javascript" src="/js/validationPUpdate.js"></script>
 </body>
+
 </html>

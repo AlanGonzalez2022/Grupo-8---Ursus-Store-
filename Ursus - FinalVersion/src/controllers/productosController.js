@@ -86,12 +86,17 @@ let productosController = {
 
     let productoEncontrado = await db.Producto.findAll()
 
+    let arrayNombre = productoEncontrado.map(nombre => {
+      return nombre.nombre
+    })
+    
     let arrayId = productoEncontrado.map(id => {
       return id.id
     })
+    console.log(arrayNombre.includes(req.body.nombre));
     let idProducto = arrayId.pop()
 
-    if (ProductoNombre.nombre === req.body.nombre) {
+    if (arrayNombre.includes(req.body.nombre)) {
 
       await db.productoTalle.create({
         idProducto: ProductoNombre.id,
@@ -109,9 +114,7 @@ let productosController = {
         nombre: req.body.nombre,
         idCategoria: req.body.genero,
         precio: req.body.precio,
-        imagen: req.files[0].filename,
-        idTalle: req.body.talle,
-        idGenero: req.body.genero
+        imagen: req.file.filename,
       }),
 
 

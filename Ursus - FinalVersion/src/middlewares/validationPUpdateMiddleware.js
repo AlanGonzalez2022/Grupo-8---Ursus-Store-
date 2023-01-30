@@ -10,7 +10,6 @@ module.exports = [
 	check("imagen").custom((value, { req }) => {
 		let file = req.file;
 		let extencionesPermitidas = [".jpg", ".png", ".jpeg", "gif"]
-		console.log(file + "HOLA!!");
 		if (file) {
 			let ExtensionImg = path.extname(file.originalname)
 			if (!extencionesPermitidas.includes(ExtensionImg)) {

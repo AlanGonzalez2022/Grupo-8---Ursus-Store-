@@ -1,8 +1,6 @@
-CREATE DATABASE  IF NOT EXISTS `ursus_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
-USE `ursus_db`;
 -- MariaDB dump 10.19  Distrib 10.4.27-MariaDB, for Win64 (AMD64)
 --
--- Host: localhost    Database: ursus_db
+-- Host: 127.0.0.1    Database: ursus_db
 -- ------------------------------------------------------
 -- Server version	10.4.27-MariaDB
 
@@ -81,7 +79,7 @@ CREATE TABLE `productos` (
   PRIMARY KEY (`id`),
   KEY `fk_productos_categorias` (`idCategoria`),
   CONSTRAINT `fk_productos_categorias` FOREIGN KEY (`idCategoria`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -98,9 +96,9 @@ CREATE TABLE `productos_generos` (
   PRIMARY KEY (`id`),
   KEY `fk_Prod_idx` (`idProducto`),
   KEY `fk_Genero_idx` (`idGenero`),
-  CONSTRAINT `fk_Generos` FOREIGN KEY (`idGenero`) REFERENCES `generos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Genero` FOREIGN KEY (`idGenero`) REFERENCES `generos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_Prod` FOREIGN KEY (`idProducto`) REFERENCES `productos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -119,7 +117,7 @@ CREATE TABLE `productos_talles` (
   KEY `fk_Talles_idx` (`idTalle`),
   CONSTRAINT `fk_Talles` FOREIGN KEY (`idTalle`) REFERENCES `talles` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_prodT` FOREIGN KEY (`idProducto`) REFERENCES `productos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -179,4 +177,4 @@ CREATE TABLE `usuarios` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-02-06 18:58:10
+-- Dump completed on 2023-01-22 17:55:28

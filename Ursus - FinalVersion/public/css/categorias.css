@@ -222,7 +222,7 @@ transform: scale(1.2);
 
 }
 
-@media (min-width:769px) and (max-width: 1031px) {
+@media (min-width:769px) and (max-width: 1023px) {
 
 
   .primavera-titulo{
@@ -234,17 +234,9 @@ transform: scale(1.2);
    font-size: 4vw;
   }
 
-
- .right-navbar a {
-   text-decoration: none;
-   color: white;
-   margin-left: -3vw;
-   font-size: 2vw;
-  }
-
   section{
     margin-top: -2vw;
-    margin-left: 20vw;
+    margin-left: 5vw;
   }
 
  .remeras, .shorts, .calzado, .vestidos, .accesorios, .trajes-de-baño, .camisas, .anteojos{
@@ -258,6 +250,7 @@ transform: scale(1.2);
   p.marco-shorts{
     margin-top: 3vw;
   }
+
 
  .footer {
   display: flex;
@@ -355,16 +348,9 @@ transform: scale(1.2);
   }
 }
 
-@media (min-width:1031px){
+@media (min-width:1024px){
 
-  img.logo{
-    width: 12vw;
-    display: block;
-    margin-left: 12vw;
-    margin-top: 1vw;
-  }
-
-
+  
   section{
     width: 70%;
     margin-left: 21vw;
@@ -374,8 +360,8 @@ transform: scale(1.2);
   .enmarcado-categorias {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15vw;
-  }
+    margin-left: -20vw;
+}
 
   .categorias {
     width: 45%;
@@ -411,15 +397,16 @@ transform: scale(1.2);
      font-size: 1vw;
   }
   
-  .pie-de-pagina-textos{
-     margin-right: 3vw;
-  }
-  
   .pie-de-pagina-textos1{
     font-size: 1vw;
     margin-left: -7vw; 
   }
-  
+  .pie-de-pagina-textos {
+    display: flex;
+    margin-left: 6vw;
+    font-size: 1vw;
+}
+
   .pie-de-pagina-textos2, .pie-de-pagina-textos3{
     font-size: 1vw;
     margin-left: 2vw;
@@ -458,7 +445,7 @@ transform: scale(1.2);
   }
 
   .iconos{
-    font-size: 2vw;
+    font-size: 1vw;
     margin-left: 9vw;
   }
 

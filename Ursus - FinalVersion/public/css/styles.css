@@ -146,7 +146,7 @@ opacity: 1;
 
 /* Footer CSS */
 
-footer {  
+/* footer {  
   display: flex;
   margin-top: 24vw;
   margin-bottom: 3vw;
@@ -206,18 +206,14 @@ transform: scale(1.2);
 cursor: pointer;
 color: white;
 transform: scale(1.2);
-}
+} */
 
 /*/////////////////////////////////////FIN FOOTER////////////////////////////////////////////////////////*/
 
-
-.fa-brands:hover,.fa-envelope:hover, .pie-de-pagina-textos:hover{
-  cursor: pointer;
-} 
  
  /* ////////////////////////////////////Media Queries//////////////////////////////////////////////////////////////// */
 
- @media (min-width:477px) and (max-width:768px){
+ /* @media (min-width:477px) and (max-width:768px){
    .pie-de-pagina{
      font-size: 3vw;
    }
@@ -263,9 +259,9 @@ transform: scale(1.2);
     font-size: 4vw;
   }
 
- }
+ } */
 
- @media (min-width:769px) and (max-width:1030px) {
+ @media (min-width:769px) and (max-width:1023px) {
   .primavera-titulo{
     font-size: 4vw;
     padding-top: 17vw;
@@ -303,7 +299,7 @@ transform: scale(1.2);
     margin-left: 9vw;
   }
 
-  .footer {
+  /* .footer {
     display: flex;
     margin-top: 24vw;
     margin-left: 5vw;
@@ -367,13 +363,37 @@ transform: scale(1.2);
   transform: scale(1.2);
 }
 
-}
+} */
 
-@media (min-width:1031px){
+@media (min-width:1024px){
+
+  .primavera-titulo {
+    padding-top: 10vw;
+  }
+
+  div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 30vw;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    border: white solid 1px;
+    padding-bottom: white solid 1px;
+    overflow: auto;
+    top: 68px;
+    left: -41px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+  }
   
   .primavera-titulo{
     font-size: 2.5vw;
-    padding-top: 15vw;
     margin-left: 3vw;
   }
 
@@ -410,7 +430,7 @@ transform: scale(1.2);
     margin-left: 9vw;
   }
 
-  .footer {
+  /* .footer {
     display: flex;
     margin-top: 24vw;
     margin-left: 12vw;
@@ -472,6 +492,7 @@ transform: scale(1.2);
 .iconos{
  font-size: 1vw;
  margin-left: 12vw;
-}
+} */
 
+}
 }

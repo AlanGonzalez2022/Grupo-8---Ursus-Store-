@@ -67,6 +67,10 @@ form {
 } 
 
 @media (min-width: 1024px){
+
+    img.logo{
+        width: 10vw;
+    }
     form {
         color: white;
         margin-top: 5vw;
@@ -74,6 +78,6 @@ form {
     }
     
     .alinearboton {
-        margin-left: 4vw;
+        margin-left: 2vw;
     }
 }

@@ -244,7 +244,7 @@ transform: scale(1.2);
         }
  }
 
- @media (min-width:768px) and (max-width:1030px) {
+ @media (min-width:768px) and (max-width:1023px) {
   .primavera-titulo{
     font-size: 4vw;
     padding-top: 17vw;
@@ -370,7 +370,54 @@ transform: scale(1.2);
     }
 }
 
-@media (min-width:1031px){
+@media (min-width:1024px){
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 30vw;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    border: white solid 1px;
+    padding-bottom: white solid 1px;
+    overflow: auto;
+    top: 68px;
+    left: -41px;
+  }
+
+  div.row{
+    margin-top: 14em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2{
+    color:white;
+    font-size: 1vw;
+  }
+
+  img.imagen-usuario {
+    max-width: 15em;
+  }
+
+  .user-email {
+    font-size: 1vw;
+    color: white;
+  }
+
+  button.boton-negro {
+    background-color: rgb(63,53,217);
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 82vw;
+    height: 35px;
+    width: 120px;
+    top: -10vw;
+  }
   
   .primavera-titulo{
     font-size: 2.5vw;
@@ -400,10 +447,6 @@ transform: scale(1.2);
     color: white;
   }
 
-  .container{
-  
-  }
-
   .footer {
     display: flex;
     margin-top: 24vw;
@@ -417,11 +460,12 @@ transform: scale(1.2);
      font-size: 1vw;
   }
 
-    div.pie-de-pagina {
+  div.pie-de-pagina {
     display: flex;
-    margin-left: -8vw;
-    font-size: 2vw;
-    }
+    margin-left: -2vw;
+    font-size: 1vw;
+    margin-top: 3vw;
+  }
   
   .pie-de-pagina-textos{
      margin-right: 3vw;
@@ -475,8 +519,8 @@ transform: scale(1.2);
 }
 
 div.iconos {
-    font-size: 2vw;
-    margin-left: 29vw;
+    font-size: 1vw;
+    margin-left: 42vw;
 }
 
 /* Editar Perfil */

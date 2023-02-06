@@ -7,6 +7,8 @@ const app = express();
 const session = require("express-session")
 const cookies = require("cookie-parser")
 const validator = require("validator")
+const cors = require("cors")
+
 
 // MiddleWare a nivel Aplicación
 const userLoggedMiddleware = require("./src/middlewares/userLoggedMiddleware")
@@ -23,7 +25,7 @@ app.use(session({
     saveUninitialized: false
 }));
 app.use(userLoggedMiddleware);
-
+app.use(cors())
 
 //template engine ejs seteado
 app.set('view engine', 'ejs')

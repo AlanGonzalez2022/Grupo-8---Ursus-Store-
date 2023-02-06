@@ -7,12 +7,12 @@
   <button class="dropbtn">
   <i class="fa-solid fa-bars"></button></i>
   <div class="dropdown-content">
-    <a href="#">Hombres</a>
-    <a href="#">Mujeres</a>
-    <a href="#">Niños</a>
-    <a href="#">Ofertas</a>
-    <a href="#">Lo más vendido</a>
-    <a href="#">Temporada</a>
+    <a href="/productosporcategoria">Remeras</a>
+    <a href="/camisas">Camisas</a>
+    <a href="/vestidos">Vestidos</a>
+    <a href="/shorts">Shorts</a>
+    <a href="/calzados">Calzados</a>
+    <a href="/pantalones">Pantalones</a>
     <a href="/categorias">Categorías</a>
     <% if (locals.logged && userLogged.tipoUsuario.tipo==="admin" ) { %>
       <a href="/crearProducto">Crear Producto</a>
@@ -34,7 +34,7 @@
   <div class="right-navbar">
     <ul class="ul-iconos">
       <% if (locals.logged){ %>
-        <div class="hi">Hi <%= locals.userLogged.usuario %>
+        <div class="hi"><%= locals.userLogged.usuario %>
         </div>
           <a href="/profile"><img class='imgpro' src="/images/users/<%= locals.userLogged.imagenUser%>"alt="UsImg"></a>
         <li><a href="/shopping-cart"><i class="fa-solid fa-cart-shopping"></a></i></li>

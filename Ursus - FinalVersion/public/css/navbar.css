@@ -21,6 +21,10 @@ ul{
     margin-top: 5vw;
     margin-left: -8vw;
   }
+
+div.hi{
+  margin-left: -14px;
+}
   
 .cont-logo {
     display: flex;
@@ -28,7 +32,8 @@ ul{
 }
 
 img.logo {
-    width: 150px;
+  width: 75px;
+  margin-left: -19px;
 }
 
 .imgpro {
@@ -90,7 +95,7 @@ img.logo {
 }
 
 .animacion {
-    width: 50px;
+    width: 14x;
     position: relative;
     display: flex;
     align-items: center;
@@ -140,9 +145,129 @@ img.logo {
     transition: 0.5s;
   }
 
+  @media (min-width:360px) and (max-width:768px){
+    img.logo {
+      width: 75px;
+  }
+
+  div.right-navbar {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100px;
+  }
+
+}
+
+@media (min-width:768px) and (max-width:1023px){
+  i.fa-solid.fa-bars{
+    font-size: 3vw;
+  }
+
+  img.logo {
+    width: 130px;
+  }
+
+  div.right-navbar {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 16px;
+  }
 
 
+  button.dropbtn{
+    font-size: 6vw;
+  }
 
+  div.cont-buscar {
+    display: flex;
+    align-items: center;
+    margin: -12vw;
+  }
+
+  header.main-header{
+    margin-left: -3vw;
+  }
+
+  i.fa-solid.fa-user.usuario-existente{
+    width: 6vw;
+  }
+
+  ul.ul-iconos{
+    font-size: 2.5vw;
+  }
+
+}
+  
+@media (min-width:1024px){
+  
+  i.fa-solid.fa-bars{
+    font-size: 2vw;
+  }
+
+  div.cont-buscar{
+      display: flex;
+      align-items: center;
+      margin-top: 3vw;
+      margin-left: -21vw;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 30vw;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    border: white solid 1px;
+    padding-bottom: white solid 1px;
+    overflow: auto;
+    top: 80px;
+    left: -58px;
+  }
+
+  div.cont-logo{
+      width: 130px;
+      margin-left: -9vw;
+  }
+
+  img.logo {
+    margin-left: -2vw;
+    margin-bottom: -1vw;
+    width: 130px;
+}
+
+  ul.ul-iconos {
+    display: flex;
+    align-items: center;
+    width: 115px;
+    justify-content: space-around;
+    margin-bottom: -3vw;
+  }
+
+  div.right-navbar{
+    margin-right: -4vw;
+  }
+
+  div.hi {
+    margin-left: -100px;
+  }
+  
+  .imgpro {
+    width: 2vw;
+  }
+
+  button.dropbtn{
+    margin-left: -153px;
+  }
+
+  input#query{
+    width: 240px;
+  }
+
+}
     
  
 

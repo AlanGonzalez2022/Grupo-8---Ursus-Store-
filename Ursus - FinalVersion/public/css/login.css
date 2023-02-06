@@ -86,12 +86,12 @@ a.boton-iniciar{
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 12px;
   cursor: pointer;
   width: 35vw;
   display: flex;
   justify-content: space-evenly;
-  margin-left: 27vw;
+  margin-left: 32vw;
   margin-top: 3vw;
 }
 
@@ -130,12 +130,6 @@ a.boton-iniciar{
     font-size: 3vw;
   }
   
-  .iconos {   
-    display: flex;
-    color: white;
-    align-items: center;
-    margin-right: 7vw;  
-  }
   
   footer i {
     padding-left: 1em;
@@ -218,11 +212,6 @@ a.boton-iniciar{
     margin-left: 0vw;
   }
   
-  .iconos{
-    font-size: 3vw;
-    margin-right: 11vw;
-  }
-
   .fa-square-facebook, .fa-instagram, .fa-twitter{
    margin-right: -1vw;
  }
@@ -270,6 +259,22 @@ transform: scale(1.2);
     font-size: 5vw;
     margin-top: 0vw;
   }
+
+
+  div.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: black;
+    color: white;
+    width: 29vw;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    border: white solid 1px;
+    padding-bottom: white solid 1px;
+    overflow: auto;
+    top: 68px;
+    left: 60px;
+}
 
   .boton-ing {
     background: rgb(63, 83, 217);
@@ -323,11 +328,6 @@ transform: scale(1.2);
     margin-right: 0vw;
   }
 
-  .iconos{
-  font-size: 2vw;
-  margin-left: 27vw;
-  }
-
   .fa-square-facebook:hover{
     cursor: pointer;
     color: blue;
@@ -355,9 +355,28 @@ transform: scale(1.2);
 
 /*////////////////////// MEDIDAS MAX/////////////////////*/
 
-@media (min-width:1031px){
+@media (min-width:1024px){
 
-  
+  div.contenedor2{
+    margin-top: 32%;
+  }
+
+  input#query {
+    width: 240px;
+    height: 1.7vw;
+  }
+
+  button.buscar{
+      height: 1.7vw;
+      padding: 2px;
+  }
+
+  i.fa-solid.fa-user.usuario-existente{
+    font-size:17px;
+  }
+  i.fa-solid.fa-user-plus.nuevo.usuario{
+    font-size:17px;
+  }
 
   ul li a i{
     font-size: 2vw;
@@ -365,10 +384,27 @@ transform: scale(1.2);
 
   .inicio-sesion {
     margin: auto;
-    margin-bottom: 10vw;
+    margin-bottom: 9vw;
     margin-top: -16%;
-    font-size: 3.2vw;
+    font-size: 1.4vw;
+    margin-top: -19vw;
   }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 30vw;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    border: white solid 1px;
+    padding-bottom: white solid 1px;
+    overflow: auto;
+    top: 68px;
+    left: -41px;
+  }
+
   
 
   .contenedor1{
@@ -384,23 +420,48 @@ transform: scale(1.2);
   }
 
   label{
-    font-size: 2vw;
+    font-size: 0.7vw;
   }
   
   .barra-mail {
     display: flex;
     border-radius: 6px;
-    width: 60%;
-    height: 6vh;
-    margin-top: 3vw;
+    width: 35%;
+    height: 1.8vw;
+    margin-top: 1vw;
     text-align: center;
-    font-size: 2vw;
+    font-size: 0.5vw;
+  }
+
+  div.mail{
+    margin-top: -2vw;
+  }
+  
+  div.contraseña{
+    margin-top: -5vw;
+  }
+
+  form#formLogin{
+    margin-top:-3vw
+  }
+
+  .recordar{
+    margin-top: -8vw;
+  }
+
+  div.reg-text{
+    margin-left: 6vw;
   }
 
   .olv {
     margin-bottom: 25vw;
-    font-size: 3vw;
-    margin-top: 0vw;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    margin-left: 1vw;
+  }
+
+  div.olv.dos{
+    margin-top: -22vw;
   }
 
   a.boton-iniciar {
@@ -426,8 +487,9 @@ transform: scale(1.2);
   }
 
   .todavía-pregunta{
-    font-size: 2vw;
+    font-size: 1.3vw;
     font-weight: bold;
+    margin-right: -1vw;
   }
 
   input.reg-text{
@@ -449,6 +511,22 @@ transform: scale(1.2);
       text-decoration: none;  
   }
 
+  h5.boton-registrate{
+    background-color: rgb(63,53,217);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 35vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 32vw;
+    margin-top: 3vw;
+    font-size: 1vw;
+    font-weight: 100;
+  }
+
   .footer {
     display: flex;    
     margin-top: -11vw;
@@ -460,7 +538,7 @@ transform: scale(1.2);
     color: white;
     display: flex;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1vw;
     width: 0vw;
 }
   
@@ -469,8 +547,19 @@ transform: scale(1.2);
   margin-left: -21vw;
   font-size: 1vw;
   width: 43vw;
+  margin-top: 3vw;
 }
-  
+
+.quienes{
+  margin-left: 5vw;
+}
+
+div.iconos{
+  display: flex;
+  margin-left: 30vw;
+  margin-top: 4vw;  
+  font-size: 1vw;
+}
   .pie-de-pagina-textos{
       margin-left: 8vw;
   }
@@ -521,8 +610,4 @@ transform: scale(1.2);
     margin-right: 0vw;
   }
 
-  .iconos {
-    font-size: 1.5vw;
-    margin-left: 55vw;
-  }
 }

@@ -74,9 +74,9 @@
                   </div>
                   <% } %>
             </div>
-            <div>
+            <div class="seleccione">
               <label for="imagenUser">Selecione su foto de perfil</label>
-              <input class="forms" type="file" id="imagenUser" name="imagenUser" id="imagenUser" accept=".jpg, .jpeg">
+              <input class="forms" type="file" id="imagenUser" name="imagenUser" id="imagenUser" accept=".jpg, .jpeg"><br>
               <small id="imagenUserError" style="color: red"></small>
               <% if (locals.errors && errors.imagenUser) { %>
                 <div class="errorRegistro" style="color: red">
@@ -85,7 +85,8 @@
                 <% } %>
             </div>
             <div class="reg-text">
-              <input id="registrate" type="submit" value="Registrate"></label>
+              <input id="registrate" type="submit" value="Registrate" style="color: white;
+              background-color: #3F35D9; border-radius: 17px; padding: 1vw;"></label>
             </div>
           </form>
         </div>

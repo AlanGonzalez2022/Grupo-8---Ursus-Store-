@@ -1,0 +1,248 @@
+footer {  
+    display: flex;
+    margin-top: 24vw;
+    margin-bottom: 3vw;
+  
+  }
+  
+  .footer a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+  }
+  
+  .pie-de-pagina {
+    display: flex;
+    margin-left: 6vw;
+  }
+  
+  .iconos {
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: 3vw;
+  
+  }
+  
+  footer i {
+    padding-left: 1em;
+  }
+  
+  .fa-square-facebook, .fa-instagram, .fa-twitter{
+    margin-right: 0;
+  }
+  
+  .fa-envelope{
+    margin-right: 5vw;
+  }
+  
+  .fa-square-facebook:hover{
+    cursor: pointer;
+    color: blue;
+    transform: scale(1.2);
+  }
+  
+  .fa-instagram:hover{
+  cursor: pointer;
+  color: violet;
+  transform: scale(1.2);
+  }
+  
+  .fa-twitter:hover{
+  cursor: pointer;
+  color: rgb(12, 202, 208);
+  transform: scale(1.2);
+  }
+  
+  .fa-envelope:hover{
+  cursor: pointer;
+  color: white;
+  transform: scale(1.2);
+  }
+  
+  .fa-brands:hover,.fa-envelope:hover, .pie-de-pagina-textos:hover{
+    cursor: pointer;
+  } 
+
+
+  @media (min-width:477px) and (max-width:767px){
+    .pie-de-pagina{
+      font-size: 3vw;
+    }
+ 
+    .pie-de-pagina-textos{
+      margin-right: 8vw;
+    }
+ 
+    .fa-square-facebook, .fa-instagram, .fa-twitter{
+     margin-right: 1vw;
+   }
+ 
+   .fa-square-facebook:hover{
+     cursor: pointer;
+     color: blue;
+     transform: scale(1.2);
+   }
+ 
+ .fa-instagram:hover{
+   cursor: pointer;
+   color: violet;
+   transform: scale(1.2);
+ }
+ 
+ .fa-twitter:hover{
+   cursor: pointer;
+   color: rgb(12, 202, 208);
+   transform: scale(1.2);
+ }
+ 
+ .fa-envelope:hover{
+   cursor: pointer;
+   color: white;
+   transform: scale(1.2);
+ }
+ 
+   .primavera-titulo{
+     font-size: 4vw;
+     padding-top: 21vw;
+   }
+ 
+   .masvisitados-titulo, .oferta-titulo{
+     font-size: 4vw;
+   }
+ 
+  }
+
+  @media (min-width:769px) and (max-width:1023px) {
+    .footer {
+        display: flex;
+        margin-top: 24vw;
+        margin-left: 5vw;
+        margin-bottom: 3vw;
+        }
+      
+      .pie-de-pagina{
+         display: flex;
+         margin-left: 13vw;
+         font-size: 2vw;
+      }
+      
+      .pie-de-pagina-textos{
+         margin-right: 3vw;
+      }
+      
+      .pie-de-pagina-textos1{
+        font-size: 2vw;
+        margin-left: -7vw; 
+      }
+      
+      .pie-de-pagina-textos2, .pie-de-pagina-textos3{
+        font-size: 2vw;
+        margin-left: 2vw;
+      }
+      
+      .fa-square-facebook, .fa-instagram, .fa-twitter{
+        margin-right: 0vw;
+      }
+       
+      .fa-envelope{
+        margin-right: 0vw;
+      }
+    
+      .iconos{
+       font-size: 2vw;
+       margin-left: -2vw;
+      }
+    
+      .fa-square-facebook:hover{
+        cursor: pointer;
+        color: blue;
+        transform: scale(1.2);
+      }
+    
+    .fa-instagram:hover{
+      cursor: pointer;
+      color: violet;
+      transform: scale(1.2);
+    }
+    
+    .fa-twitter:hover{
+      cursor: pointer;
+      color: rgb(12, 202, 208);
+      transform: scale(1.2);
+    }
+    
+    .fa-envelope:hover{
+      cursor: pointer;
+      color: white;
+      transform: scale(1.2);
+    }
+    
+    }
+    
+
+@media (min-width:1024px){
+        .footer {
+            display: flex;
+            margin-top: 24vw;
+            margin-left: 12vw;
+            margin-bottom: 3vw;
+            }
+          
+          .pie-de-pagina{
+             display: flex;
+             margin-left: 12vw;
+             font-size: 1vw;
+          }
+          
+          .pie-de-pagina-textos{
+             margin-right: 3vw;
+          }
+          
+          .pie-de-pagina-textos1{
+            font-size: 2vw;
+            margin-left: -7vw; 
+          }
+          
+          .pie-de-pagina-textos2, .pie-de-pagina-textos3{
+            font-size: 2vw;
+            margin-left: 2vw;
+          }
+          
+          .fa-square-facebook, .fa-instagram, .fa-twitter{
+            margin-right: 0vw;
+          }
+           
+          .fa-envelope{
+            margin-right: 0vw;
+          }
+        
+          .fa-square-facebook:hover{
+            cursor: pointer;
+            color: blue;
+            transform: scale(1.2);
+          }
+        
+        .fa-instagram:hover{
+          cursor: pointer;
+          color: violet;
+          transform: scale(1.2);
+        }
+        
+        .fa-twitter:hover{
+          cursor: pointer;
+          color: rgb(12, 202, 208);
+          transform: scale(1.2);
+        }
+        
+        .fa-envelope:hover{
+          cursor: pointer;
+          color: white;
+          transform: scale(1.2);
+        }
+        
+        .iconos{
+         font-size: 1vw;
+         margin-left: 12vw;
+        }  
+    }

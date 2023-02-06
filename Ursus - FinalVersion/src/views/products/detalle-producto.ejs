@@ -55,7 +55,7 @@
             <p class="subdisponible">Artículo: <%= idProducto.estado %></p>
             <div class="iconos-envios">
                 <div class="camion-contenedor">
-                    <i class="fa-solid fa-truck"></i><p class="costo">Costo de envíos</p>
+                    <i class="fa-solid fa-truck"></i><p class="costo"><a href="/costos">Costo de envíos</a></p>
                 </div>
                 <div class="reembolso-contenedor">
                     <i class="fa-solid fa-sack-dollar"></i><p class="reembolso">Reembolsos</p>
@@ -63,7 +63,7 @@
             </div>
         </section>
         <div class="contenedor-agregar">
-        <button class="agregar" type="submit">Agregar al carrito</button>
+        <button class="agregar" type="submit"><a href="/shopping-cart">Agregar al carrito</a></button>
         </div>
     </div>
         <% if (locals.logged && userLogged.tipoUsuario.tipo === "admin") { %>

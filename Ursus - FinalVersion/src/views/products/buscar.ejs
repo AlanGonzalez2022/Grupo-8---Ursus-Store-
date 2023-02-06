@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="initial-scale=1.0">
   <link rel="stylesheet" href="/css/buscar.css">
+  <link rel="stylesheet" href="/css/navbar.css">
   <title>Document</title>
 </head>
 <body>
@@ -14,7 +15,10 @@
       <% if (encontrada.length > 0) { %>
         <ul class="ul-buscar">
           <% encontrada.forEach(producto => { %>
-           <li><a class="link-buscador" href="categorias/detalle-producto/<%= producto.id %>"><%= producto.nombre %></li></a>
+           <div>
+            <li><a class="link-buscador" href="categorias/detalle-producto/<%= producto.id %>"><%= producto.nombre %></li></a>
+            <img src="/images/productosporcategoria/<%= producto.imagen %>" alt="Imagen de producto" width="300em">
+          </div>
           <% }) %>
         </ul>
       <% } else { %>

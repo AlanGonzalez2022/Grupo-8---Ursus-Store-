@@ -137,7 +137,7 @@ let productosController = {
     let arrayId = productoEncontrado.map((id) => {
       return id.id;
     });
-    console.log(arrayNombre.includes(req.body.nombre));
+
     let idProducto = arrayId.pop();
 
     if (arrayNombre.includes(req.body.nombre)) {
@@ -151,19 +151,28 @@ let productosController = {
         idGenero: req.body.genero,
       });
     } else {
+      
       await db.Producto.create({
         nombre: req.body.nombre,
         idCategoria: req.body.genero,
         precio: req.body.precio,
         imagen: req.file.filename,
       }),
-        await db.productoTalle.create({
-          idProducto: idProducto + 1,
+        
+      productoEncontrado = await db.Producto.findAll();
+      let arrayId = productoEncontrado.map((id) => {
+        return id.id;
+      });
+      
+      let idProducto = arrayId.pop();
+      
+      await db.productoTalle.create({
+          idProducto: idProducto,
           idTalle: req.body.talle,
         });
 
       await db.productoGenero.create({
-        idProducto: idProducto + 1,
+        idProducto: idProducto,
         idGenero: req.body.genero,
       });
     }
@@ -233,10 +242,19 @@ let productosController = {
 
   eliminarProducto: function (req, res) {
     db.Producto.destroy({
-      where: {
-        id: req.params.id,
-      },
+      where: {id:req.params.id}
+    })
+    
+    db.productoGenero.destroy({
+      where: {idProducto: req.params.id},
     });
+    
+    db.productoTalle.destroy({
+      where: {idProducto: req.params.id},
+    });
+      
+    
+    res.redirect("/productosporcategoria")
   },
 
   //API Total Productos

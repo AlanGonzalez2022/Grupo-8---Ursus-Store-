@@ -95,6 +95,14 @@ a.boton-iniciar{
   margin-top: 3vw;
 }
 
+input#ingresa.reg-text{
+    background-color: rgb(63,53,217);
+    color: white;
+    padding: 5px;
+    border-radius: 13px;
+    font-weight: bold;
+}
+
 .inicio-sesion{
   margin: auto;
   margin-bottom: 10vw;
@@ -173,7 +181,12 @@ a.boton-iniciar{
   color: white;
   transform: scale(1.2);
 }
-  
+
+footer.footer {
+  margin-top: -1vw;
+  margin-left: -8vw;
+}
+
   /*/////////////////////////////////////FIN FOOTER////////////////////////////////////////////////////////*/
 
   /* ////////////////////////////////////Media Queries////////////////////////////////////////////////////////////////

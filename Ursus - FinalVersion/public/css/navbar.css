@@ -143,6 +143,7 @@ img.logo {
   .animacion:hover .dropbtn {
     background-color: rgb(63,53,217);
     transition: 0.5s;
+    padding: 5px;
   }
 
   @media (min-width:360px) and (max-width:768px){
@@ -249,6 +250,12 @@ img.logo {
 
   div.right-navbar{
     margin-right: -4vw;
+  }
+
+  .animacion:hover .dropbtn {
+    background-color: black;
+    transition: 0.5s;
+    padding: 5px;
   }
 
   div.hi {

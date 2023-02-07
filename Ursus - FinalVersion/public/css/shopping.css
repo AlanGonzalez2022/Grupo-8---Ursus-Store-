@@ -209,6 +209,15 @@ input.quantity-field{
   text-transform: uppercase;
 }
 
+input#query {
+    width: 100px;
+    margin-left: -6vw;
+}
+
+button.buscar{
+    margin-left: 1vw;
+    padding: 0.5px;
+}
 .item-heading {
   padding-left: 4.375rem;
   -webkit-box-sizing: border-box;

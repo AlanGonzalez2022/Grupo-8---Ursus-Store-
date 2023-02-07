@@ -14,12 +14,28 @@ ul{
     list-style: none;
 }
 
+button.editar-producto{
+    background-color: rgb(63,53,217);
+}
+
+button.action-button.delete{
+    background-color: rgb(63,53,217);
+    color: white;
+    border-radius: 0.5vw;
+}
+
 main{
     background-color: black;
     width: 100%;
     color: white;
     position: relative;
 }
+
+    a{
+    color: white;
+    text-decoration: none;
+    }
+
 
 h2{
     text-align: center;
@@ -438,8 +454,17 @@ footer.footer {
         width: 46%;
         position: absolute;
         right: 38vw;
-        top: 16vw;
+        top: 14vw;
         height: 47vw;
+        border-radius: 2vw;
+    }
+
+    img.remera-secundario {
+        border-radius: 2vw;
+    }
+
+    p.nombre-remera{
+        margin-top: -27vw;
     }
 
     .nombre-precio {
@@ -480,8 +505,8 @@ footer.footer {
         border: white solid 1px;
         padding-bottom: white solid 1px;
         overflow: auto;
-        top: 50px;
-        left: -40px;
+        top: 82px;
+        left: -58px;
     }
 
     footer {

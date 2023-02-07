@@ -35,3 +35,24 @@ p {
   display: grid;
     justify-items: center;
 }
+
+
+@media (min-width:1024px) {
+  input#query {
+    width: 240px;
+    height: 2vw;
+  }
+
+  button.buscar{
+    height: 2vw;
+    padding: 0.4vw;
+  }
+
+  .ul-buscar {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: -4vw;
+  }
+}

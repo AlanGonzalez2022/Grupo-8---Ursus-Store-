@@ -111,6 +111,13 @@ footer {
   color: white;
   transform: scale(1.2);
 }
+
+.vision{
+  color: white;
+  font-size: 3vw;
+  margin-top: 31vw;
+  }
+
   
   /*/////////////////////////////////////FIN FOOTER////////////////////////////////////////////////////////*/
 
@@ -284,6 +291,7 @@ transform: scale(1.2);
   img {
     max-width: 100%;
     height: auto;
+    border-radius: 2vw;
   }
 
   .categorias {
@@ -362,6 +370,12 @@ transform: scale(1.2);
     margin-left: 6vw;
     margin-top: -3vw;
   }
+
+  .vision{
+      color: white;
+      margin-top: 23vw;
+      font-size: 1.5vw;
+    }
 
 
 }

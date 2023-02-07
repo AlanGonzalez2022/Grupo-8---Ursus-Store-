@@ -51,6 +51,17 @@ img.imagen-usuario {
   height:360px;
 }
 
+img.imagen-usuario{
+  border-radius: 2vw;
+  width: 65vw;
+  margin-top: -46vw;  
+  margin-left: 13vw;
+}
+
+button.boton-negro{
+    margin-left: 4vw;
+}
+
 .swiper-slide img {
   width: 100%;
 }
@@ -93,7 +104,7 @@ h3{
 
 footer {  
   display: flex;
-  margin-top: 24vw;
+  margin-top: 167vw;
   margin-bottom: 3vw;
 
 }
@@ -387,6 +398,10 @@ transform: scale(1.2);
     left: -41px;
   }
 
+  img.imagen-usuario{
+    border-radius: 2vw;
+  }
+
   div.row{
     margin-top: 14em;
     display: flex;
@@ -400,12 +415,15 @@ transform: scale(1.2);
   }
 
   img.imagen-usuario {
-    max-width: 15em;
+    max-width: 13em;
+    margin-top: 1vw;
+    margin-left: 2vw;
   }
 
   .user-email {
     font-size: 1vw;
     color: white;
+    margin-left: 2vw;
   }
 
   button.boton-negro {

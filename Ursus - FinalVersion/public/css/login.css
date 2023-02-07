@@ -122,6 +122,7 @@ a.boton-iniciar{
       display: flex;
       margin-left: 7vw;
       font-size: 3vw;
+      margin-top: 12vw;
   }
   
   .pie-de-pagina-textos {
@@ -130,6 +131,12 @@ a.boton-iniciar{
     font-size: 3vw;
   }
   
+
+  div.iconos{
+      display: flex;
+      font-size: 3.8vw;
+      margin-top: 15vw;
+  }
   
   footer i {
     padding-left: 1em;

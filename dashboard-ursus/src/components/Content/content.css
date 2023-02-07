@@ -1,0 +1,114 @@
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-contenido {
+  background-color: gainsboro;
+  height: 50em;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+}
+
+.content-TotalProductos {
+  align-items: center;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: space-evenly;
+  position: relative;
+  bottom: 10em;
+}
+
+.content-TotalProductos h2 {
+  position: relative;
+  width: 350px;
+  height: 90px;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+  color: rgb(7, 6, 6);
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.content-TotalProductos h2:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.content-UltimoProducto {
+  position: relative;
+  width: 24em;
+  height: 26em;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+  color: rgb(7, 6, 6);
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.content-UltimoProducto:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.content-info {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    align-content: space-around;
+}
+
+.content-categorias{
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+  color: rgb(7, 6, 6);
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.content-categorias:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+}
+.content-listadoProductos ul{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.listadoProductos{
+  position: relative;
+  width: 21em;
+  height: 4em;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+  color: rgb(7, 6, 6);
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.listadoProductos:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+}

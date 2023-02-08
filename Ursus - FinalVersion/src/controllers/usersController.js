@@ -90,19 +90,22 @@ let usersController = {
   },
 
   profile: function (req, res) {
+    
+    
+    
     return res.render("users/userProfile", {
       user: req.session.userLogged,
     });
   },
 
-  editProfile: function (req, res) {
-    return res.render("users/editProfile", {
-      user: req.session.userLogged,
-    });
+  editProfile: async function (req, res) {
+    
+    return res.render("users/editProfile", {user: req.session.userLogged});
   },
 
   confirmEdit: async function (req, res) {
-    if (!req.body.filename) {
+    if (!req.file) {
+      console.log("POR ACAAAAAAAAAAAAAA PRIMER IF");
       await db.Usuario.update(
         {
           usuario: req.body.usuario,
@@ -112,17 +115,20 @@ let usersController = {
           where: { id: req.params.id },
         }
       );
+      console.log(req.session.userLogged);
     } else {
+      console.log("POR ACAAAAAAAAAAAAAA ELSE");
       await db.Usuario.update(
         {
           nombre: req.body.nombre,
           email: req.body.email,
-          imagenUser: req.files[0].filename,
+          imagenUser: req.file.filename,
         },
         {
           where: { id: req.params.id },
         }
       );
+    
     }
 
     res.redirect("/profile");

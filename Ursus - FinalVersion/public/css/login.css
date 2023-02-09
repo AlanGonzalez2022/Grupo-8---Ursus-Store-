@@ -450,7 +450,7 @@ transform: scale(1.2);
     height: 1.8vw;
     margin-top: 1vw;
     text-align: center;
-    font-size: 0.5vw;
+    font-size: 1.5vw;
   }
 
   div.mail{
@@ -547,6 +547,22 @@ transform: scale(1.2);
     font-weight: 100;
   }
 
+  input#ingresa.reg-text {
+    background-color: rgb(63,53,217);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 35vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 27vw;
+    margin-top: 3vw;
+    font-size: 1vw;
+    font-weight: 100;
+  }
+
   .footer {
     display: flex;    
     margin-top: -11vw;
@@ -628,6 +644,11 @@ div.iconos{
     
   .fa-envelope{
     margin-right: 0vw;
+  }
+
+  footer.footer {
+    margin-top: -1vw;
+    margin-left: 21vw;
   }
 
 }

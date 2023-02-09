@@ -44,3 +44,11 @@ Retrospectiva Sprint 6:
 - Se logró llevar a los objetivos propuestos pero con muchísimos más obstáculos que lo esperado y a través de ejecuciones que no seguían al pie de la letra la teoría aprendida porque de ese modo no nos permitía poder realizar el armado de los modelos y la ejecución del CRUD.
 
 - Creemos que es mucho material altamente técnico como para poder tener un sprint entendible con facilidad, dado que las propias características de nuestro sitio dificultaban el entendimiento del proceso producto de las múltiples carpetas y subcarpetas.
+
+Retrospectiva Sprint 7 - 8:
+
+- Se trabajó a contrarreloj para cumplir con todos los requerimientos de ambos sprints y poder aplicar la funcionalidad en el sitio web, modificando el código en múltiples oportunidades para encontrar nuevos errores que en previas visualizaciones no se observaban y que se generaban a partir de modificaciones en el backend.
+
+- JS para front-end fue mucho más entendible para los integrantes del grupo que temas como Sequelize y Cookies/Session, que fueron grandes problemáticas a la hora de poder aplicar los conocimientos aprendidos porque se nos dificultaba mucho la ejecución de los mismos. React continúa siendo difícil de entender para 3 de los integrantes y habrá que estudiar y trabajar mucho en un proyecto para entenderlo en profundidad
+
+- Se logró exponer el proyecto y escuchar las críticas constructivas para mejorarlo, así como trabajar en equipo en la fase final del mismo para que todos puedan desarrollar frente a los profesores y el resto de los compañeros la estructura de nuestro sitio web desde el lado del invitado, del usuario logueado y desde el admin.
